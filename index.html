@@ -469,5 +469,75 @@
     </footer>
 
     <script>
-        // Animazione per rivelare i contenuti durante lo scroll
-        document.addEventListener('D
+               // Animazione per rivelare i contenuti durante lo scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+
+            // Animazione al scroll
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.content').forEach(content => {
+                observer.observe(content);
+            });
+
+            // Effetto hover migliorato per le card
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0, 229, 255, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.2)';
+                });
+            });
+
+            // Effetto parallax per lo sfondo
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.pageYOffset;
+                const background = document.querySelector('.background-overlay');
+                background.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+            });
+        });
+
+        // Contatore visitatori
+        if (localStorage.getItem('visitCount')) {
+            let count = parseInt(localStorage.getItem('visitCount'));
+            localStorage.setItem('visitCount', count + 1);
+        } else {
+            localStorage.setItem('visitCount', 1);
+        }
+
+        // Mostra il numero di visitatori nel footer
+        window.onload = function() {
+            const visitCount = localStorage.getItem('visitCount');
+            const footer = document.querySelector('footer');
+            const counterElement = document.createElement('p');
+            counterElement.style.marginTop = '10px';
+            counterElement.style.fontSize = '12px';
+            counterElement.innerHTML = `Visite totali: <span style="color: var(--primary)">${visitCount}</span>`;
+            footer.appendChild(counterElement);
+        };
+    </script>
+</body>
+</html>
