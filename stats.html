@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistiche - Phishy</title>
+  <style>
+    /* Imposta l'altezza del body e dell'html al 100% */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sfondo intera pagina con il banner centrale che scorre con la pagina */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('banner-middle2.jpg') no-repeat center center;
+      background-size: cover; /* Copre l'intera area */
+      color: #fff;
+      animation: fadeIn 1.5s ease-in;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Intestazione con la scritta sopra il contenuto */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      position: relative;
+      z-index: 2;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Container per il form e le statistiche, con effetto traslucido */
+    .container {
+      background: rgba(51, 51, 51, 0.8);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 2;
+      animation: fadeInUp 1s ease-out;
+      flex: 1; /* Occupa lo spazio rimanente */
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    input[type="text"]:focus {
+      background: rgba(255, 255, 255, 1);
+      transform: scale(1.02);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .search-btn {
+      background: linear-gradient(to right, #00BFFF, #8A2BE2);
+      color: #fff;
+    }
+
+    .search-btn:hover {
+      background: linear-gradient(to right, #009ACD, #7B1FA2);
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      background: linear-gradient(to right, #FF416C, #FF4B2B);
+      color: #fff;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(to right, #FF1C38, #FF0000);
+      transform: scale(1.05);
+    }
+
+    .result {
+      background: rgba(34, 34, 34, 0.8);
+      padding: 15px;
+      border-radius: 5px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 20px;
+      text-align: left;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    .result h2, .result h3 {
+      color: cyan;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .result p {
+      margin: 10px 0;
+      color: #fff;
+    }
+
+    /* Animazione di caricamento */
+    .loader {
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid cyan;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+      display: none; /* Nascondi di default */
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header con il testo sopra il banner centrale -->
+  <header>
+    Inserisci il tuo numero di telefono
+  </header>
+
+  <!-- Container per il form e le statistiche -->
+  <div class="container">
+    <input type="text" id="phoneNumber" placeholder="Es. +39 353 440 9026">
+    <button class="search-btn" onclick="checkStats()">Cerca Statistiche</button>
+    <button class="back-btn" onclick="goBack()">🔙 Torna Indietro</button>
+    <!-- Animazione di caricamento -->
+    <div class="loader" id="loader"></div>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    function normalizePhoneNumber(phoneNumber) {
+      let normalized = phoneNumber.replace(/\D/g, '');
+      if (normalized.startsWith('39')) {
+        normalized = normalized;
+      }
+      return `${normalized}@s.whatsapp.net`;
+    }
+
+    async function checkStats() {
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const resultDiv = document.getElementById('result');
+      const loader = document.getElementById('loader');
+
+      if (!phoneNumber) {
+        resultDiv.textContent = "Inserisci un numero di telefono valido.";
+        return;
+      }
+
+      // Mostra l'animazione di caricamento
+      loader.style.display = 'block';
+      resultDiv.textContent = ''; // Pulisci i risultati precedenti
+
+      try {
+        const normalizedNumber = normalizePhoneNumber(phoneNumber);
+        const response = await fetch('database.json');
+        const database = await response.json();
+
+        const userStats = database.users[normalizedNumber];
+
+        if (userStats) {
+          let stocksHtml = "<h3>📈 Azioni Possedute:</h3>";
+          if (userStats.stocks) {
+            for (const [stock, quantity] of Object.entries(userStats.stocks)) {
+              if (quantity > 0) {
+                stocksHtml += `<p>💹 ${stock}: ${quantity}</p>`;
+              }
+            }
+          }
+          resultDiv.innerHTML = `
+            <h2>Statistiche per ${userStats.name}</h2>
+            <p>📩 Messaggi: ${userStats.messaggi}</p>
+            <p>🔇 Muto: ${userStats.muto ? "Sì" : "No"}</p>
+            <p>⏳ Premium scade: ${userStats.expired}</p>
+            <p>🛑 Bestemmie: ${userStats.blasphemy}</p>
+            <p>🌟 Premium: ${userStats.premium ? "Sì" : "No"}</p>
+            <p>💎 Tempo premium: ${userStats.premiumTime}</p>
+            <p>⚠️ Ammonizioni: ${userStats.warn}</p>
+            <p>💋 Bacini: ${userStats.bacini}</p>
+            <p>💍 Sposato: ${userStats.sposato ? "Sì" : "No"}</p>
+            <p>❤️ Partner: ${userStats.partner || "Nessuno"}</p>
+            <p>🩸 Salute: ${userStats.health}</p>
+            <p>🎭 Ruolo: ${userStats.role}</p>
+            <p>🎖️ Livello: ${userStats.level}</p>
+            <p>🏆 Esperienza: ${userStats.exp}</p>
+            <p>🍬 Caramelle: ${userStats.limit}</p>
+            <p>💰 Soldi: ${userStats.money ?? "0"}</p>
+            <p>💖 Vita: ${userStats.vita}</p>
+            <p>📌 Forcina: ${userStats.forcina}</p>
+            <h3>🏹 Oggetti:</h3>
+            <p>🧪 Pozione Minore: ${userStats.pozione_minore}</p>
+            <p>🧪 Pozione Maggiore: ${userStats.pozione_maggiore}</p>
+            <p>🧪 Pozione Definitiva: ${userStats.pozione_definitiva}</p>
+            <h3>🚗 Veicoli:</h3>
+            <p>🚗 Macchina: ${userStats.macchina ? "Sì" : "No"}</p>
+            <p>🏍️ Moto: ${userStats.moto ? "Sì" : "No"}</p>
+            <p>🚲 Bici: ${userStats.bici ? "Sì" : "No"}</p>
+            <h3>🔥 Altro:</h3>
+            <p>🔥 Canne fumate: ${userStats.canna}</p>
+            ${stocksHtml}
+          `;
+        } else {
+          resultDiv.textContent = "Nessuna statistica trovata per questo numero.";
+        }
+      } catch (error) {
+        resultDiv.textContent = "Errore durante il caricamento delle statistiche.";
+        console.error(error);
+      } finally {
+        // Nascondi l'animazione di caricamento
+        loader.style.display = 'none';
+      }
+    }
+
+    function goBack() {
+      window.location.href = "index.html"; // Modifica se il nome della homepage è diverso
+    }
+  </script>
+</body>
+</html>
