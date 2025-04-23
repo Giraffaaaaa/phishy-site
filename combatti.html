@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishy - Combattimento Avanzato</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        
+        
+        
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #0f380f;
+            color: #e0f8d0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #f8d030;
+            text-shadow: 3px 3px 0 #c0a020;
+            margin-bottom: 20px;
+        }
+        
+        #battle-container {
+            width: 100%;
+            height: 300px;
+            background-color: #306850;
+            border: 4px solid #e0f8d0;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .pokemon {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 50px;
+            transition: transform 0.3s ease-in-out;
+            image-rendering: pixelated;
+        }
+        
+        #player {
+            left: 100px;
+        }
+        
+        #enemy {
+            right: 100px;
+        }
+        
+        .status-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .status-box {
+            width: 48%;
+            background-color: #306850;
+            border: 4px solid #e0f8d0;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .health-bar {
+            height: 15px;
+            width: 100%;
+            background-color: #1c1c1c;
+            border-radius: 5px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        
+        .health-fill {
+            height: 100%;
+            background-color: #4eac5d;
+            width: 100%;
+            transition: width 0.5s ease-in-out;
+        }
+        
+        .low-health {
+            background-color: #e53935;
+        }
+        
+        .status-effect {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        
+        #battle-text {
+            background-color: #306850;
+            border: 4px solid #e0f8d0;
+            border-radius: 10px;
+            padding: 15px;
+            height: 120px;
+            font-size: 14px;
+            text-align: left;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        button {
+            background-color: #8bac0f;
+            border: none;
+            color: #0f380f;
+            padding: 12px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #f8d030;
+        }
+        
+        button:disabled {
+            background-color: #666;
+            cursor: not-allowed;
+        }
+        
+        .selection-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .animal-card {
+            background-color: #306850;
+            border: 3px solid #e0f8d0;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .animal-card:hover {
+            transform: translateY(-5px);
+            border-color: #f8d030;
+        }
+        
+        .animal-card.selected {
+            border-color: #f8d030;
+            box-shadow: 0 0 10px #f8d030;
+        }
+        
+        .animal-emoji {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .stats {
+            font-size: 10px;
+            text-align: left;
+        }
+        
+        @keyframes attack {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes enemyAttack {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-50px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes hit {
+            0% { opacity: 1; }
+            25% { opacity: 0.5; }
+            50% { opacity: 1; }
+            75% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        @keyframes heal {
+            0% { filter: brightness(1); }
+            50% { filter: brightness(1.5) hue-rotate(90deg); }
+            100% { filter: brightness(1); }
+        }
+        
+        .attack-animation {
+            animation: attack 0.5s ease-in-out;
+        }
+        
+        .enemy-attack-animation {
+            animation: enemyAttack 0.5s ease-in-out;
+        }
+        
+        .hit-animation {
+            animation: hit 0.5s ease-in-out;
+        }
+        
+        .heal-animation {
+            animation: heal 1s ease-in-out;
+        }
+        
+        .defend-effect {
+            border: 3px solid #f8d030 !important;
+        }
+        
+        .status-icons {
+            height: 20px;
+            margin-top: 5px;
+        }
+        
+        .timer {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="game-container">
+        <h1>COMBATTIMENTO PIXEL</h1>
+        
+        <!-- Schermata di selezione dei personaggi -->
+        <div id="selection-screen" style="display: none;">
+            <h2>Scegli il tuo animale!</h2>
+            <div class="selection-grid" id="animal-selection"></div>
+            <button id="confirm-selection" disabled>CONFERMA</button>
+        </div>
+        
+        <!-- Schermata di battaglia -->
+        <div id="battle-screen" style="display: none;">
+            <div id="battle-container">
+                <div class="timer" id="turn-timer">2:00</div>
+                <div id="player" class="pokemon"></div>
+                <div id="enemy" class="pokemon"></div>
+            </div>
+            
+            <div class="status-container">
+                <div class="status-box">
+                    <div id="player-name">Giocatore</div>
+                    <div class="health-bar">
+                        <div id="player-health" class="health-fill"></div>
+                    </div>
+                    <div id="player-hp-text">HP: 100/100</div>
+                    <div class="status-icons" id="player-status"></div>
+                </div>
+                
+                <div class="status-box">
+                    <div id="enemy-name">Nemico</div>
+                    <div class="health-bar">
+                        <div id="enemy-health" class="health-fill"></div>
+                    </div>
+                    <div id="enemy-hp-text">HP: 100/100</div>
+                    <div class="status-icons" id="enemy-status"></div>
+                </div>
+            </div>
+            
+            <div id="battle-text">La battaglia sta per iniziare!</div>
+            
+            <div class="actions">
+                <button id="attack">ATTACCA</button>
+                <button id="defend">DIFENDI</button>
+                <button id="special">ABILITÀ</button>
+                <button id="switch">CAMBIA</button>
+            </div>
+        </div>
+        
+        <!-- Schermata di fine partita -->
+        <div id="end-screen" style="display: none;">
+            <h2 id="result-text">La battaglia è finita!</h2>
+            <div id="result-details"></div>
+            <button id="new-battle">NUOVA BATTAGLIA</button>
+        </div>
+    </div>
+
+    <script>
+        // Configurazione del gioco
+        const animals = {
+            cane: { 
+                name: 'CANE', 
+                emoji: '🐶', 
+                hp: 140, 
+                attack: 35, 
+                defense: 55, 
+                speed: 60,
+                color: '#b89968',
+                special: {
+                    name: 'MORSO POTENTE',
+                    emoji: '🦷',
+                    description: 'Infligge danni elevati basati sull\'attacco'
+                }
+            },
+            gatto: { 
+                name: 'GATTO', 
+                emoji: '🐱', 
+                hp: 95, 
+                attack: 60, 
+                defense: 45, 
+                speed: 85,
+                color: '#a6a6a6',
+                special: {
+                    name: 'GRAFFIO VELOCE',
+                    emoji: '😼',
+                    description: 'Infligge danni e ripristina HP'
+                }
+            },
+            coniglio: { 
+                name: 'CONIGLIO', 
+                emoji: '🐰', 
+                hp: 75, 
+                attack: 45, 
+                defense: 40, 
+                speed: 100,
+                color: '#e0e0e0',
+                special: {
+                    name: 'AGILITÀ',
+                    emoji: '🐰',
+                    description: 'Schiva il prossimo attacco'
+                }
+            },
+            drago: { 
+                name: 'DRAGO', 
+                emoji: '🐉', 
+                hp: 160, 
+                attack: 80, 
+                defense: 60, 
+                speed: 55,
+                color: '#c41e3a',
+                special: {
+                    name: 'SOFFIO DI FUOCO',
+                    emoji: '🔥',
+                    description: 'Infligge danni devastanti'
+                }
+            },
+            cavallo: {
+                name: 'CAVALLO', 
+                emoji: '🐎', 
+                hp: 130, 
+                attack: 65, 
+                defense: 65, 
+                speed: 75,
+                color: '#8b4513',
+                special: {
+                    name: 'CALCIO POTENTE',
+                    emoji: '🐎',
+                    description: 'Infligge danni e stordisce l\'avversario'
+                }
+            },
+            riccio: {
+                name: 'RICCIO', 
+                emoji: '🦔', 
+                hp: 110, 
+                attack: 50, 
+                defense: 90, 
+                speed: 35,
+                color: '#8b4513',
+                special: {
+                    name: 'RICCIO DIFENSIVO',
+                    emoji: '🦔',
+                    description: 'Infligge danni, cura HP e aumenta difesa'
+                }
+            },
+            pesce: {
+                name: 'PESCE', 
+                emoji: '🐟', 
+                hp: 85, 
+                attack: 50, 
+                defense: 45, 
+                speed: 80,
+                color: '#4169e1',
+                special: {
+                    name: 'SCHIZZO D\'ACQUA',
+                    emoji: '🐟',
+                    description: 'Infligge danni e riduce attacco avversario'
+                }
+            },
+            piccione: {
+                name: 'PICCIONE', 
+                emoji: '🐦‍⬛', 
+                hp: 70, 
+                attack: 40, 
+                defense: 40, 
+                speed: 95,
+                color: '#708090',
+                special: {
+                    name: 'ATTACCO RAPIDO',
+                    emoji: '🐦‍⬛',
+                    description: 'Infligge danni con probabilità di stordire'
+                }
+            },
+            serpente: {
+                name: 'SERPENTE', 
+                emoji: '🐍', 
+                hp: 90, 
+                attack: 70, 
+                defense: 45, 
+                speed: 75,
+                color: '#006400',
+                special: {
+                    name: 'MORSO VELENOSO',
+                    emoji: '🐍',
+                    description: 'Infligge danni e avvelena per più turni'
+                }
+            },
+            scoiattolo: {
+                name: 'SCOIATTOLO', 
+                emoji: '🐿️', 
+                hp: 60, 
+                attack: 40, 
+                defense: 35, 
+                speed: 105,
+                color: '#8b4513',
+                special: {
+                    name: 'SCORTA DI NOCCIOLINE',
+                    emoji: '🐿️',
+                    description: 'Ottieni turni extra'
+                }
+            },
+            polpo: {
+                name: 'POLPO', 
+                emoji: '🦑', 
+                hp: 95, 
+                attack: 55, 
+                defense: 40, 
+                speed: 75,
+                color: '#800080',
+                special: {
+                    name: 'LANCIO DI INCHIOSTRO',
+                    emoji: '🦑',
+                    description: 'Può accecare o attaccare più volte'
+                }
+            },
+            ragno: {
+                name: 'RAGNO', 
+                emoji: '🕷️', 
+                hp: 85, 
+                attack: 60, 
+                defense: 70, 
+                speed: 65,
+                color: '#000000',
+                special: {
+                    name: 'RAGNATELA',
+                    emoji: '🕸️',
+                    description: 'Intrappola l\'avversario per un attacco predatorio'
+                }
+            },
+            scorpione: {
+                name: 'SCORPIONE', 
+                emoji: '🦂', 
+                hp: 90, 
+                attack: 75, 
+                defense: 55, 
+                speed: 70,
+                color: '#8b0000',
+                special: {
+                    name: 'PUNGIGLIONE VELENOSO',
+                    emoji: '🦂',
+                    description: 'Infligge danni e veleno potente'
+                }
+            }
+        };
+
+        // Stato del gioco
+        const gameState = {
+            phase: 'selection', // selection, battle, end
+            playerHP: 100,
+            playerMaxHP: 100,
+            playerAnimal: null,
+            enemyHP: 100,
+            enemyMaxHP: 100,
+            enemyAnimal: null,
+            playerDefending: false,
+            enemyDefending: false,
+            turn: 'player', // player, enemy
+            statusEffects: {
+                player: {},
+                enemy: {}
+            },
+            turnTimer: null,
+            timeLeft: 120, // 2 minuti per turno
+            extraTurns: 0
+        };
+
+        // Elementi DOM
+        const selectionScreen = document.getElementById('selection-screen');
+        const battleScreen = document.getElementById('battle-screen');
+        const endScreen = document.getElementById('end-screen');
+        const animalSelection = document.getElementById('animal-selection');
+        const confirmButton = document.getElementById('confirm-selection');
+        const player = document.getElementById('player');
+        const enemy = document.getElementById('enemy');
+        const playerHealth = document.getElementById('player-health');
+        const enemyHealth = document.getElementById('enemy-health');
+        const playerHpText = document.getElementById('player-hp-text');
+        const enemyHpText = document.getElementById('enemy-hp-text');
+        const playerName = document.getElementById('player-name');
+        const enemyName = document.getElementById('enemy-name');
+        const playerStatus = document.getElementById('player-status');
+        const enemyStatus = document.getElementById('enemy-status');
+        const battleText = document.getElementById('battle-text');
+        const turnTimer = document.getElementById('turn-timer');
+        const attackButton = document.getElementById('attack');
+        const defendButton = document.getElementById('defend');
+        const specialButton = document.getElementById('special');
+        const switchButton = document.getElementById('switch');
+        const newBattleButton = document.getElementById('new-battle');
+        const resultText = document.getElementById('result-text');
+        const resultDetails = document.getElementById('result-details');
+
+        // Inizializzazione
+        function init() {
+            showScreen('selection');
+            generateAnimalSelection();
+            setupEventListeners();
+        }
+
+        // Mostra una schermata specifica
+        function showScreen(screen) {
+            selectionScreen.style.display = 'none';
+            battleScreen.style.display = 'none';
+            endScreen.style.display = 'none';
+
+            switch (screen) {
+                case 'selection':
+                    selectionScreen.style.display = 'block';
+                    break;
+                case 'battle':
+                    battleScreen.style.display = 'block';
+                    break;
+                case 'end':
+                    endScreen.style.display = 'block';
+                    break;
+            }
+        }
+
+        // Genera la griglia di selezione animali
+        function generateAnimalSelection() {
+            animalSelection.innerHTML = '';
+
+            for (const [id, animal] of Object.entries(animals)) {
+                const card = document.createElement('div');
+                card.className = 'animal-card';
+                card.dataset.animal = id;
+                card.style.backgroundColor = animal.color;
+                
+                card.innerHTML = `
+                    <div class="animal-emoji">${animal.emoji}</div>
+                    <div class="animal-name">${animal.name}</div>
+                    <div class="stats">
+                        ❤️ HP: ${animal.hp}<br>
+                        ⚔️ ATK: ${animal.attack}<br>
+                        🛡️ DEF: ${animal.defense}<br>
+                        💨 SPD: ${animal.speed}
+                    </div>
+                `;
+                
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('.animal-card').forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    gameState.playerAnimal = id;
+                    confirmButton.disabled = false;
+                });
+                
+                animalSelection.appendChild(card);
+            }
+        }
+
+        // Setup degli event listener
+        function setupEventListeners() {
+            confirmButton.addEventListener('click', () => {
+                if (gameState.playerAnimal) {
+                    // Scelta casuale per il nemico
+                    const enemyAnimals = Object.keys(animals);
+                    gameState.enemyAnimal = enemyAnimals[Math.floor(Math.random() * enemyAnimals.length)];
+                    
+                    initializeBattle();
+                    showScreen('battle');
+                }
+            });
+            
+            attackButton.addEventListener('click', () => {
+                if (gameState.turn === 'player') {
+                    playerAttack();
+                }
+            });
+            
+            defendButton.addEventListener('click', () => {
+                if (gameState.turn === 'player') {
+                    playerDefend();
+                }
+            });
+            
+            specialButton.addEventListener('click', () => {
+                if (gameState.turn === 'player') {
+                    playerSpecial();
+                }
+            });
+            
+            switchButton.addEventListener('click', () => {
+                // Implementa la funzionalità di cambio
+                addMessageToBattleText('Funzione di cambio non ancora implementata!');
+            });
+            
+            newBattleButton.addEventListener('click', () => {
+                resetGame();
+                showScreen('selection');
+            });
+        }
+
+        // Inizializza la battaglia
+        function initializeBattle() {
+            const playerAnimalData = animals[gameState.playerAnimal];
+            const enemyAnimalData = animals[gameState.enemyAnimal];
+            
+            gameState.playerHP = playerAnimalData.hp;
+            gameState.playerMaxHP = playerAnimalData.hp;
+            gameState.enemyHP = enemyAnimalData.hp;
+            gameState.enemyMaxHP = enemyAnimalData.hp;
+            
+            // Determina chi inizia in base alla velocità
+            if (playerAnimalData.speed > enemyAnimalData.speed) {
+                gameState.turn = 'player';
+            } else if (enemyAnimalData.speed > playerAnimalData.speed) {
+                gameState.turn = 'enemy';
+            } else {
+                // In caso di parità, è casuale
+                gameState.turn = Math.random() < 0.5 ? 'player' : 'enemy';
+            }
+            
+            // Aggiorna UI
+            playerName.textContent = `${playerAnimalData.emoji} ${playerAnimalData.name}`;
+            enemyName.textContent = `${enemyAnimalData.emoji} ${enemyAnimalData.name}`;
+            
+            updateHealth();
+            updateStatusEffects();
+            
+            // Disegna sprite
+            drawPixelSprite(player, gameState.playerAnimal, true);
+            drawPixelSprite(enemy, gameState.enemyAnimal, false);
+            
+            // Messaggio iniziale
+            clearBattleText();
+            addMessageToBattleText(`⚔️ BATTAGLIA INIZIATA! ⚔️`);
+            addMessageToBattleText(`Tu: ${playerAnimalData.emoji} ${playerAnimalData.name} (HP: ${gameState.playerHP}/${gameState.playerMaxHP})`);
+            addMessageToBattleText(`Nemico: ${enemyAnimalData.emoji} ${enemyAnimalData.name} (HP: ${gameState.enemyHP}/${gameState.enemyMaxHP})`);
+            
+            if (gameState.turn === 'player') {
+                addMessageToBattleText(`Inizia il giocatore grazie alla velocità superiore (${playerAnimalData.speed})!`);
+                startPlayerTurn();
+            } else {
+                addMessageToBattleText(`Inizia il nemico grazie alla velocità superiore (${enemyAnimalData.speed})!`);
+                startEnemyTurn();
+            }
+            
+            // Avvia timer di turno
+            startTurnTimer();
+        }
+
+        // Disegna sprite pixelato
+        function drawPixelSprite(element, animalType, isPlayer) {
+            const animalData = animals[animalType];
+            const canvas = document.createElement('canvas');
+            canvas.width = 100;
+            canvas.height = 100;
+            const ctx = canvas.getContext('2d');
+            
+            // Colore di base
+            ctx.fillStyle = animalData.color;
+            ctx.fillRect(20, 20, 60, 60);
+            
+            // Dettagli specifici dell'animale
+            switch (animalType) {
+                case 'cane':
+                    // Orecchie
+                    ctx.fillRect(15, 10, 15, 15);
+                    ctx.fillRect(70, 10, 15, 15);
+                    break;
+                case 'gatto':
+                    // Orecchie appuntite
+                    ctx.fillRect(20, 5, 15, 15);
+                    ctx.fillRect(65, 5, 15, 15);
+                    break;
+                case 'coniglio':
+                    // Orecchie lunghe
+                    ctx.fillRect(30, 0, 10, 25);
+                    ctx.fillRect(60, 0, 10, 25);
+                    break;
+                case 'drago':
+                    // Corna
+                    ctx.fillRect(25, 5, 10, 15);
+                    ctx.fillRect(65, 5, 10, 15);
+                    // Coda
+                    ctx.fillRect(80, 40, 15, 10);
+                    break;
+                case 'serpente':
+                    // Corpo più lungo
+                    ctx.fillRect(10, 40, 80, 30);
+                    break;
+                case 'ragno':
+                    // Zampe
+                    ctx.fillRect(5, 30, 10, 40);
+                    ctx.fillRect(85, 30, 10, 40);
+                    ctx.fillRect(15, 60, 10, 20);
+                    ctx.fillRect(75, 60, 10, 20);
+                    break;
+                case 'scorpione':
+                    // Coda con pungiglione
+                    ctx.fillRect(50, 10, 10, 20);
+                    ctx.fillRect(60, 5, 10, 10);
+                    break;
+            }
+            
+            // Occhi
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(35, 35, 10, 10);
+            ctx.fillRect(55, 35, 10, 10);
+            
+            ctx.fillStyle = '#000';
+            ctx.fillRect(38, 38, 4, 4);
+            ctx.fillRect(58, 38, 4, 4);
+            
+            // Bocca in base a player/enemy
+            if (isPlayer) {
+                ctx.fillRect(45, 50, 10, 5); // Sorriso
+            } else {
+                ctx.fillRect(40, 50, 20, 3); // Faccia arrabbiata
+                ctx.fillRect(40, 55, 20, 3);
+            }
+            
+            element.style.backgroundImage = `url(${canvas.toDataURL()})`;
+        }
+
+        // Aggiorna barre della salute
+        function updateHealth() {
+            const playerPercentage = (gameState.playerHP / gameState.playerMaxHP) * 100;
+            const enemyPercentage = (gameState.enemyHP / gameState.enemyMaxHP) * 100;
+            
+            playerHealth.style.width = `${playerPercentage}%`;
+            enemyHealth.style.width = `${enemyPercentage}%`;
+            
+            // Cambia colore se HP basso
+            playerHealth.classList.toggle('low-health', playerPercentage <= 25);
+            enemyHealth.classList.toggle('low-health', enemyPercentage <= 25);
+            
+            playerHpText.textContent = `HP: ${gameState.playerHP}/${gameState.playerMaxHP}`;
+            enemyHpText.textContent = `HP: ${gameState.enemyHP}/${gameState.enemyMaxHP}`;
+            
+            checkBattleEnd();
+        }
+
+     // Aggiorna gli effetti di stato
+function updateStatusEffects() {
+    playerStatus.innerHTML = '';
+    enemyStatus.innerHTML = '';
+    
+    // Effetti di stato giocatore
+    if (gameState.statusEffects.player.poison) {
+        playerStatus.innerHTML += `<span class="status-effect" title="Avvelenato: ${gameState.statusEffects.player.poison.turnsLeft} turni rimanenti">☠️</span>`;
+    }
+    if (gameState.statusEffects.player.stun) {
+        playerStatus.innerHTML += `<span class="status-effect" title="Stordito">😵</span>`;
+    }
+    if (gameState.statusEffects.player.blind) {
+        playerStatus.innerHTML += `<span class="status-effect" title="Accecato: ${gameState.statusEffects.player.blind.turnsLeft} turni rimanenti">👁️</span>`;
+    }
+    if (gameState.playerDefending) {
+        playerStatus.innerHTML += `<span class="status-effect" title="In difesa">🛡️</span>`;
+    }
+    if (gameState.statusEffects.player.trapped) {
+        playerStatus.innerHTML += `<span class="status-effect" title="Intrappolato">🕸️</span>`;
+    }
+    if (gameState.statusEffects.player.dodge) {
+        playerStatus.innerHTML += `<span class="status-effect" title="Schiva prossimo attacco">🐰</span>`;
+    }
+    
+    // Effetti di stato nemico
+    if (gameState.statusEffects.enemy.poison) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="Avvelenato: ${gameState.statusEffects.enemy.poison.turnsLeft} turni rimanenti">☠️</span>`;
+    }
+    if (gameState.statusEffects.enemy.stun) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="Stordito">😵</span>`;
+    }
+    if (gameState.statusEffects.enemy.blind) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="Accecato: ${gameState.statusEffects.enemy.blind.turnsLeft} turni rimanenti">👁️</span>`;
+    }
+    if (gameState.enemyDefending) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="In difesa">🛡️</span>`;
+    }
+    if (gameState.statusEffects.enemy.trapped) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="Intrappolato">🕸️</span>`;
+    }
+    if (gameState.statusEffects.enemy.dodge) {
+        enemyStatus.innerHTML += `<span class="status-effect" title="Schiva prossimo attacco">🐰</span>`;
+    }
+    
+ 
+
+
+
+
+
+
+
+    
+// Completamento della funzione updateStatusEffects
+player.classList.toggle('defend-effect', gameState.playerDefending);
+enemy.classList.toggle('defend-effect', gameState.enemyDefending);
+}
+
+// Aggiungi un messaggio alla finestra di battaglia
+function addMessageToBattleText(message) {
+    if (battleText) {
+        const timestamp = new Date().toLocaleTimeString().split(':').slice(0, 2).join(':');
+        battleText.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+        battleText.scrollTop = battleText.scrollHeight;
+    } else {
+        console.error('battleText element is not defined.');
+    }
+}
+
+// Pulisci il testo della battaglia
+function clearBattleText() {
+    battleText.innerHTML = '';
+}
+
+// Avvia il turno del giocatore
+function startPlayerTurn() {
+    gameState.turn = 'player';
+    
+    // Applica effetti di stato
+    applyStatusEffects('player');
+    
+    // Abilita i pulsanti di azione se il giocatore non è stordito
+    const isStunned = gameState.statusEffects.player.stun;
+    attackButton.disabled = isStunned;
+    defendButton.disabled = isStunned;
+    specialButton.disabled = isStunned;
+    switchButton.disabled = isStunned;
+    
+    if (isStunned) {
+        addMessageToBattleText(`${animals[gameState.playerAnimal].emoji} Sei stordito e salti il turno!`);
+        endPlayerTurn();
+    } else {
+        addMessageToBattleText(`🎮 È il tuo turno! Scegli la tua mossa.`);
+        // Reset timer
+        gameState.timeLeft = 120;
+        updateTimerDisplay();
+    }
+}
+
+// Applica gli effetti di stato
+function applyStatusEffects(target) {
+    const statusEffects = gameState.statusEffects[target];
+    const isPlayer = target === 'player';
+    const animal = animals[isPlayer ? gameState.playerAnimal : gameState.enemyAnimal];
+    
+    // Controlla avvelenamento
+    if (statusEffects.poison) {
+        const poisonDamage = Math.floor(statusEffects.poison.damage);
+        
+        if (isPlayer) {
+            gameState.playerHP -= poisonDamage;
+            addMessageToBattleText(`☠️ ${animal.emoji} Subisci ${poisonDamage} danni da avvelenamento!`);
+        } else {
+            gameState.enemyHP -= poisonDamage;
+            addMessageToBattleText(`☠️ ${animal.emoji} Il nemico subisce ${poisonDamage} danni da avvelenamento!`);
+        }
+        
+        statusEffects.poison.turnsLeft--;
+        
+        if (statusEffects.poison.turnsLeft <= 0) {
+            delete statusEffects.poison;
+            addMessageToBattleText(`✨ L'effetto veleno è terminato!`);
+        }
+        
+        updateHealth();
+    }
+    
+    // Reset stordimento dopo ogni turno
+    if (statusEffects.stun) {
+        delete statusEffects.stun;
+    }
+    
+    // Aggiorna cecità
+    if (statusEffects.blind) {
+        statusEffects.blind.turnsLeft--;
+        if (statusEffects.blind.turnsLeft <= 0) {
+            delete statusEffects.blind;
+            addMessageToBattleText(`✨ L'effetto cecità è terminato!`);
+        }
+    }
+    
+    // Reset stato difensivo alla fine del turno
+    if (isPlayer) {
+        gameState.playerDefending = false;
+    } else {
+        gameState.enemyDefending = false;
+    }
+    
+    updateStatusEffects();
+}
+
+// Calcola i danni in base all'attacco e alla difesa
+function calculateDamage(attackerAnimal, defenderAnimal, isDefending) {
+    const attackPower = animals[attackerAnimal].attack;
+    const defensePower = animals[defenderAnimal].defense;
+    
+    // Formula base per i danni
+    let damage = Math.floor(attackPower * (100 / (100 + defensePower)));
+    
+    // Variazione casuale ±20%
+    const variation = Math.random() * 0.4 - 0.2; // da -20% a +20%
+    damage = Math.floor(damage * (1 + variation));
+    
+    // Riduzione danni se in difesa
+    if (isDefending) {
+        damage = Math.floor(damage * 0.5);
+    }
+    
+    // Minimo 1 danno
+    return Math.max(1, damage);
+}
+
+// Attacco del giocatore
+function playerAttack() {
+    // Disabilita i pulsanti durante l'animazione
+    disableButtons();
+    
+    // Controlla se il nemico schiva l'attacco
+    if (gameState.statusEffects.enemy.dodge) {
+        player.classList.add('attack-animation');
+        setTimeout(() => {
+            player.classList.remove('attack-animation');
+            addMessageToBattleText(`${animals[gameState.playerAnimal].emoji} Il tuo attacco è stato schivato!`);
+            delete gameState.statusEffects.enemy.dodge;
+            updateStatusEffects();
+            enableButtons();
+            endPlayerTurn();
+        }, 500);
+        return;
+    }
+    
+    // Probabilità di mancare se accecato
+    if (gameState.statusEffects.player.blind && Math.random() < 0.5) {
+        player.classList.add('attack-animation');
+        setTimeout(() => {
+            player.classList.remove('attack-animation');
+            addMessageToBattleText(`👁️ Sei accecato e manchi il bersaglio!`);
+            enableButtons();
+            endPlayerTurn();
+        }, 500);
+        return;
+    }
+    
+    // Calcola danni
+    const damage = calculateDamage(
+        gameState.playerAnimal, 
+        gameState.enemyAnimal, 
+        gameState.enemyDefending
+    );
+    
+    // Animazione attacco
+    player.classList.add('attack-animation');
+    
+    setTimeout(() => {
+        player.classList.remove('attack-animation');
+        enemy.classList.add('hit-animation');
+        
+        // Applica danni
+        gameState.enemyHP = Math.max(0, gameState.enemyHP - damage);
+        
+        // Messaggio attacco
+        addMessageToBattleText(`⚔️ ${animals[gameState.playerAnimal].emoji} Hai inflitto ${damage} danni al nemico!`);
+        
+        updateHealth();
+        
+        setTimeout(() => {
+            enemy.classList.remove('hit-animation');
+            enableButtons();
+            
+            if (gameState.enemyHP > 0) {
+                endPlayerTurn();
+            }
+        }, 500);
+    }, 500);
+}
+
+// Difesa del giocatore
+function playerDefend() {
+    disableButtons();
+    
+    gameState.playerDefending = true;
+    player.classList.add('defend-effect');
+    addMessageToBattleText(`🛡️ ${animals[gameState.playerAnimal].emoji} Ti sei messo in difesa! Ridurrai i danni del prossimo attacco.`);
+    
+    updateStatusEffects();
+    enableButtons();
+    endPlayerTurn();
+}
+
+// Abilità speciale del giocatore
+function playerSpecial() {
+    disableButtons();
+    
+    const animal = animals[gameState.playerAnimal];
+    const special = animal.special;
+    
+    addMessageToBattleText(`✨ ${animal.emoji} Usi ${special.name}! ${special.emoji}`);
+    
+    // Logica specifica per ogni abilità
+    switch (gameState.playerAnimal) {
+        case 'cane':
+            // MORSO POTENTE - Danni elevati
+            const damage = Math.floor(animal.attack * 1.8);
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - damage);
+                
+                addMessageToBattleText(`🦷 Morso potente infligge ${damage} danni!`);
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'gatto':
+            // GRAFFIO VELOCE - Danni e cura
+            const catDamage = Math.floor(animal.attack * 1.2);
+            const healAmount = Math.floor(catDamage * 0.4);
+            
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - catDamage);
+                gameState.playerHP = Math.min(gameState.playerMaxHP, gameState.playerHP + healAmount);
+                
+                addMessageToBattleText(`😼 Graffio veloce infligge ${catDamage} danni e ripristina ${healAmount} HP!`);
+                player.classList.add('heal-animation');
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    player.classList.remove('heal-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'coniglio':
+            // AGILITÀ - Schiva prossimo attacco
+            gameState.statusEffects.player.dodge = true;
+            addMessageToBattleText(`🐰 Ti prepari a schivare il prossimo attacco!`);
+            
+            updateStatusEffects();
+            enableButtons();
+            endPlayerTurn();
+            break;
+            
+        case 'drago':
+            // SOFFIO DI FUOCO - Danni molto elevati
+            const dragDamage = Math.floor(animal.attack * 2.2);
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - dragDamage);
+                
+                addMessageToBattleText(`🔥 Soffio di fuoco infligge ${dragDamage} danni devastanti!`);
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'cavallo':
+            // CALCIO POTENTE - Danni e stordimento
+            const horseDamage = Math.floor(animal.attack * 1.5);
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - horseDamage);
+                gameState.statusEffects.enemy.stun = true;
+                
+                addMessageToBattleText(`🐎 Calcio potente infligge ${horseDamage} danni e stordisce il nemico!`);
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'riccio':
+            // RICCIO DIFENSIVO - Danni, cura e aumento difesa
+            const hedgehogDamage = Math.floor(animal.attack * 0.8);
+            const hedgehogHeal = Math.floor(animal.defense * 0.5);
+            
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - hedgehogDamage);
+                gameState.playerHP = Math.min(gameState.playerMaxHP, gameState.playerHP + hedgehogHeal);
+                gameState.playerDefending = true;
+                
+                addMessageToBattleText(`🦔 Riccio difensivo infligge ${hedgehogDamage} danni, ripristina ${hedgehogHeal} HP e aumenta la tua difesa!`);
+                player.classList.add('heal-animation');
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    player.classList.remove('heal-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'pesce':
+            // SCHIZZO D'ACQUA - Danni e riduzione attacco
+            const fishDamage = Math.floor(animal.attack * 1.3);
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - fishDamage);
+                
+                addMessageToBattleText(`🐟 Schizzo d'acqua infligge ${fishDamage} danni e riduce l'attacco nemico!`);
+                // La riduzione dell'attacco è simulata con un effetto temporaneo
+                gameState.statusEffects.enemy.weakened = true;
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'piccione':
+            // ATTACCO RAPIDO - Probabilità di stordire
+            const pigeonDamage = Math.floor(animal.attack * 1.1);
+            const stunChance = 0.4; // 40% di probabilità
+            
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - pigeonDamage);
+                
+                addMessageToBattleText(`🐦‍⬛ Attacco rapido infligge ${pigeonDamage} danni!`);
+                
+                if (Math.random() < stunChance) {
+                    gameState.statusEffects.enemy.stun = true;
+                    addMessageToBattleText(`😵 Il nemico è stordito!`);
+                }
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'serpente':
+            // MORSO VELENOSO - Danni e veleno
+            const snakeDamage = Math.floor(animal.attack * 0.8);
+            const poisonDamage = Math.floor(animal.attack * 0.3);
+            const poisonTurns = 3;
+            
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - snakeDamage);
+                gameState.statusEffects.enemy.poison = {
+                    damage: poisonDamage,
+                    turnsLeft: poisonTurns
+                };
+                
+                addMessageToBattleText(`🐍 Morso velenoso infligge ${snakeDamage} danni e avvelena per ${poisonTurns} turni (${poisonDamage} danni/turno)!`);
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'scoiattolo':
+            // SCORTA DI NOCCIOLINE - Turno extra
+            gameState.extraTurns++;
+            addMessageToBattleText(`🐿️ Scorta di noccioline ti dà energia per un turno extra!`);
+            
+            enableButtons();
+            // Non termina il turno, ottiene un turno extra
+            break;
+            
+        case 'polpo':
+            // LANCIO DI INCHIOSTRO - Acceca o attacca più volte
+            if (Math.random() < 0.5) {
+                // Acceca
+                gameState.statusEffects.enemy.blind = {
+                    turnsLeft: 2
+                };
+                
+                addMessageToBattleText(`🦑 Lancio di inchiostro acceca il nemico per 2 turni!`);
+                updateStatusEffects();
+            } else {
+                // Attacchi multipli
+                const inkDamage = Math.floor(animal.attack * 0.4);
+                let totalDamage = 0;
+                let hits = 0;
+                
+                const attackInterval = setInterval(() => {
+                    hits++;
+                    player.classList.add('attack-animation');
+                    
+                    setTimeout(() => {
+                        player.classList.remove('attack-animation');
+                        enemy.classList.add('hit-animation');
+                        
+                        gameState.enemyHP = Math.max(0, gameState.enemyHP - inkDamage);
+                        totalDamage += inkDamage;
+                        
+                        addMessageToBattleText(`🦑 Colpo ${hits}: ${inkDamage} danni!`);
+                        
+                        updateHealth();
+                        
+                        setTimeout(() => {
+                            enemy.classList.remove('hit-animation');
+                            
+                            if (hits >= 3 || gameState.enemyHP <= 0) {
+                                clearInterval(attackInterval);
+                                addMessageToBattleText(`🦑 Totale: ${totalDamage} danni in ${hits} colpi!`);
+                                enableButtons();
+                                
+                                if (gameState.enemyHP > 0) {
+                                    endPlayerTurn();
+                                }
+                            }
+                        }, 300);
+                    }, 300);
+                }, 800);
+            }
+            break;
+            
+        case 'ragno':
+            // RAGNATELA - Intrappola e attacca
+            gameState.statusEffects.enemy.trapped = true;
+            
+            addMessageToBattleText(`🕸️ Ragnatela intrappola il nemico!`);
+            
+            setTimeout(() => {
+                const spiderDamage = Math.floor(animal.attack * 1.7);
+                player.classList.add('attack-animation');
+                
+                setTimeout(() => {
+                    player.classList.remove('attack-animation');
+                    enemy.classList.add('hit-animation');
+                    
+                    gameState.enemyHP = Math.max(0, gameState.enemyHP - spiderDamage);
+                    
+                    addMessageToBattleText(`🕷️ Attacco predatorio infligge ${spiderDamage} danni!`);
+                    delete gameState.statusEffects.enemy.trapped;
+                    
+                    updateHealth();
+                    updateStatusEffects();
+                    
+                    setTimeout(() => {
+                        enemy.classList.remove('hit-animation');
+                        enableButtons();
+                        
+                        if (gameState.enemyHP > 0) {
+                            endPlayerTurn();
+                        }
+                    }, 500);
+                }, 500);
+            }, 1000);
+            break;
+            
+        case 'scorpione':
+            // PUNGIGLIONE VELENOSO - Danni e veleno potente
+            const scorpionDamage = Math.floor(animal.attack * 1.2);
+            const scorpPoisonDamage = Math.floor(animal.attack * 0.5);
+            const scorpPoisonTurns = 2;
+            
+            player.classList.add('attack-animation');
+            
+            setTimeout(() => {
+                player.classList.remove('attack-animation');
+                enemy.classList.add('hit-animation');
+                
+                gameState.enemyHP = Math.max(0, gameState.enemyHP - scorpionDamage);
+                gameState.statusEffects.enemy.poison = {
+                    damage: scorpPoisonDamage,
+                    turnsLeft: scorpPoisonTurns
+                };
+                
+                addMessageToBattleText(`🦂 Pungiglione velenoso infligge ${scorpionDamage} danni e avvelena potentemente per ${scorpPoisonTurns} turni (${scorpPoisonDamage} danni/turno)!`);
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    enemy.classList.remove('hit-animation');
+                    enableButtons();
+                    
+                    if (gameState.enemyHP > 0) {
+                        endPlayerTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+    }
+}
+
+// Termina il turno del giocatore
+function endPlayerTurn() {
+    // Se abbiamo turni extra, consumane uno
+    if (gameState.extraTurns > 0) {
+        gameState.extraTurns--;
+        addMessageToBattleText(`🐿️ Usi un turno extra! (${gameState.extraTurns} rimanenti)`);
+        startPlayerTurn();
+        return;
+    }
+    
+    // Avvia il turno del nemico
+    setTimeout(() => {
+        startEnemyTurn();
+    }, 1000);
+}
+
+// Avvia il turno del nemico
+function startEnemyTurn() {
+    gameState.turn = 'enemy';
+    
+    // Applica effetti di stato
+    applyStatusEffects('enemy');
+    
+    // Controlla se il nemico è stordito
+    if (gameState.statusEffects.enemy.stun) {
+        addMessageToBattleText(`😵 ${animals[gameState.enemyAnimal].emoji} Il nemico è stordito e salta il turno!`);
+        endEnemyTurn();
+        return;
+    }
+    
+    addMessageToBattleText(`⚠️ È il turno del nemico...`);
+    
+    // Ritardo per simulare la "pensata" del nemico
+    setTimeout(() => {
+        // Strategia AI semplice
+        // Se HP basso (<30%), probabilità più alta di difendersi o usare abilità speciale
+        const healthPercentage = (gameState.enemyHP / gameState.enemyMaxHP) * 100;
+        
+        if (healthPercentage < 30 && Math.random() < 0.7) {
+            if (Math.random() < 0.5) {
+                enemyDefend();
+            } else {
+                enemySpecial();
+            }
+        } else {
+            // Altrimenti scelta casuale tra attacco (60%), difesa (20%) e speciale (20%)
+            const choice = Math.random();
+            
+            if (choice < 0.6) {
+                enemyAttack();
+            } else if (choice < 0.8) {
+                enemyDefend();
+            } else {
+                enemySpecial();
+            }
+        }
+    }, 1500);
+}
+
+// Attacco del nemico
+function enemyAttack() {
+    // Controlla se il giocatore schiva l'attacco
+    if (gameState.statusEffects.player.dodge) {
+        enemy.classList.add('enemy-attack-animation');
+        setTimeout(() => {
+            enemy.classList.remove('enemy-attack-animation');
+            addMessageToBattleText(`${animals[gameState.enemyAnimal].emoji} Il nemico attacca, ma tu schivi!`);
+            delete gameState.statusEffects.player.dodge;
+            updateStatusEffects();
+            endEnemyTurn();
+        }, 500);
+        return;
+    }
+    
+    // Probabilità di mancare se accecato
+    if (gameState.statusEffects.enemy.blind && Math.random() < 0.5) {
+        enemy.classList.add('enemy-attack-animation');
+        setTimeout(() => {
+            enemy.classList.remove('enemy-attack-animation');
+            addMessageToBattleText(`👁️ Il nemico è accecato e manca il bersaglio!`);
+            endEnemyTurn();
+        }, 500);
+        return;
+    }
+    
+    // Calcola danni
+    let damage = calculateDamage(
+        gameState.enemyAnimal, 
+        gameState.playerAnimal, 
+        gameState.playerDefending
+    );
+    
+    // Riduzione danni se il nemico è indebolito
+    if (gameState.statusEffects.enemy.weakened) {
+        damage = Math.floor(damage * 0.7);
+        delete gameState.statusEffects.enemy.weakened;
+    }
+    
+    // Animazione attacco
+    enemy.classList.add('enemy-attack-animation');
+    
+    setTimeout(() => {
+        enemy.classList.remove('enemy-attack-animation');
+        player.classList.add('hit-animation');
+        
+        // Applica danni
+        gameState.playerHP = Math.max(0, gameState.playerHP - damage);
+        
+        // Messaggio attacco
+        addMessageToBattleText(`⚔️ ${animals[gameState.enemyAnimal].emoji} Il nemico ti infligge ${damage} danni!`);
+        
+        updateHealth();
+        
+        setTimeout(() => {
+            player.classList.remove('hit-animation');
+            
+            if (gameState.playerHP > 0) {
+                endEnemyTurn();
+            }
+        }, 500);
+    }, 500);
+}
+
+// Difesa del nemico
+function enemyDefend() {
+    gameState.enemyDefending = true;
+    addMessageToBattleText(`🛡️ ${animals[gameState.enemyAnimal].emoji} Il nemico si mette in difesa!`);
+    
+    updateStatusEffects();
+    endEnemyTurn();
+}
+
+// Abilità speciale del nemico
+function enemySpecial() {
+    const animal = animals[gameState.enemyAnimal];
+    const special = animal.special;
+    
+    addMessageToBattleText(`✨ ${animal.emoji} Il nemico usa ${special.name}! ${special.emoji}`);
+    
+    // Logica specifica per ogni abilità (versione nemica)
+    switch (gameState.enemyAnimal) {
+        case 'cane':
+            // MORSO POTENTE - Danni elevati
+            const damage = Math.floor(animal.attack * 1.8);
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - damage);
+                
+                addMessageToBattleText(`🦷 Morso potente infligge ${damage} danni!`);
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'gatto':
+            // GRAFFIO VELOCE - Danni e cura
+            const catDamage = Math.floor(animal.attack * 1.2);
+            const healAmount = Math.floor(catDamage * 0.4);
+            
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - catDamage);
+                gameState.enemyHP = Math.min(gameState.enemyMaxHP, gameState.enemyHP + healAmount);
+                
+                addMessageToBattleText(`😼 Graffio veloce infligge ${catDamage} danni e ripristina ${healAmount} HP al nemico!`);
+                enemy.classList.add('heal-animation');
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    enemy.classList.remove('heal-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        // ... continua con le altre abilità speciali nemiche in modo simile al giocatore
+        // Per brevità, implemento solo alcune delle principali:
+            
+        case 'drago':
+            // SOFFIO DI FUOCO - Danni molto elevati
+            const dragDamage = Math.floor(animal.attack * 2.2);
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - dragDamage);
+                
+                addMessageToBattleText(`🔥 Soffio di fuoco infligge ${dragDamage} danni devastanti!`);
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'serpente':
+            // MORSO VELENOSO - Danni e veleno
+            const snakeDamage = Math.floor(animal.attack * 0.8);
+            const poisonDamage = Math.floor(animal.attack * 0.3);
+            const poisonTurns = 3;
+            
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - snakeDamage);
+                gameState.statusEffects.player.poison = {
+                    damage: poisonDamage,
+                    turnsLeft: poisonTurns
+                };
+                
+                addMessageToBattleText(`🐍 Morso velenoso infligge ${snakeDamage} danni e ti avvelena per ${poisonTurns} turni!`);
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        case 'polpo':
+            // LANCIO DI INCHIOSTRO - Acceca
+            gameState.statusEffects.player.blind = {
+                turnsLeft: 2
+            };
+            
+            addMessageToBattleText(`🦑 Lancio di inchiostro ti acceca per 2 turni!`);
+            updateStatusEffects();
+            endEnemyTurn();
+            break;
+        
+        case 'scorpione':
+            // PUNGIGLIONE VELENOSO - Danni e veleno potente
+            const scorpionDamage = Math.floor(animal.attack * 1.2);
+            const scorpPoisonDamage = Math.floor(animal.attack * 0.5);
+            const scorpPoisonTurns = 2;
+            
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - scorpionDamage);
+                gameState.statusEffects.player.poison = {
+                    damage: scorpPoisonDamage,
+                    turnsLeft: scorpPoisonTurns
+                };
+                
+                addMessageToBattleText(`🦂 Pungiglione velenoso infligge ${scorpionDamage} danni e ti avvelena potentemente!`);
+                
+                updateHealth();
+                updateStatusEffects();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+            
+        default:
+            // Per gli altri animali, esegui un attacco potenziato
+            const defaultDamage = Math.floor(animal.attack * 1.5);
+            enemy.classList.add('enemy-attack-animation');
+            
+            setTimeout(() => {
+                enemy.classList.remove('enemy-attack-animation');
+                player.classList.add('hit-animation');
+                
+                gameState.playerHP = Math.max(0, gameState.playerHP - defaultDamage);
+                
+                addMessageToBattleText(`${animal.emoji} ${special.name} infligge ${defaultDamage} danni!`);
+                
+                updateHealth();
+                
+                setTimeout(() => {
+                    player.classList.remove('hit-animation');
+                    
+                    if (gameState.playerHP > 0) {
+                        endEnemyTurn();
+                    }
+                }, 500);
+            }, 500);
+            break;
+    }
+}
+
+// Termina il turno nemico
+function endEnemyTurn() {
+    setTimeout(() => {
+        startPlayerTurn();
+    }, 1000);
+}
+
+// Abilita i pulsanti di azione
+function enableButtons() {
+    attackButton.disabled = false;
+    defendButton.disabled = false;
+    specialButton.disabled = false;
+    switchButton.disabled = false;
+}
+
+// Disabilita i pulsanti di azione
+function disableButtons() {
+    attackButton.disabled = true;
+    defendButton.disabled = true;
+    specialButton.disabled = true;
+    switchButton.disabled = true;
+}
+
+// Controlla se la battaglia è finita
+function checkBattleEnd() {
+    if (gameState.playerHP <= 0) {
+        // Sconfitta
+        setTimeout(() => {
+            endBattle(false);
+        }, 1000);
+    } else if (gameState.enemyHP <= 0) {
+        // Vittoria
+        setTimeout(() => {
+            endBattle(true);
+        }, 1000);
+    }
+}
+
+// Termina la battaglia
+function endBattle(playerWon) {
+    // Ferma il timer
+    clearInterval(gameState.turnTimer);
+    
+    showScreen('end');
+    
+    if (playerWon) {
+        resultText.textContent = '🏆 HAI VINTO! 🏆';
+        resultText.style.color = '#4eac5d';
+        
+        resultDetails.innerHTML = `
+            <p>Il tuo ${animals[gameState.playerAnimal].emoji} ${animals[gameState.playerAnimal].name} ha sconfitto
+            ${animals[gameState.enemyAnimal].emoji} ${animals[gameState.enemyAnimal].name}!</p>
+            <p>HP rimanenti: ${gameState.playerHP}/${gameState.playerMaxHP}</p>
+        `;
+    } else {
+        resultText.textContent = '❌ HAI PERSO! ❌';
+        resultText.style.color = '#e53935';
+        
+        resultDetails.innerHTML = `
+            <p>Il tuo ${animals[gameState.playerAnimal].emoji} ${animals[gameState.playerAnimal].name} è stato sconfitto da
+            ${animals[gameState.enemyAnimal].emoji} ${animals[gameState.enemyAnimal].name}!</p>
+            <p>HP nemico rimanenti: ${gameState.enemyHP}/${gameState.enemyMaxHP}</p>
+        `;
+    }
+}
+
+// Reset del gioco
+function resetGame() {
+    // Reset dello stato del gioco
+    gameState.phase = 'selection';
+    gameState.playerHP = 100;
+    gameState.playerMaxHP = 100;
+    gameState.playerAnimal = null;
+    gameState.enemyHP = 100;
+    gameState.enemyMaxHP = 100;
+    gameState.enemyAnimal = null;
+    gameState.playerDefending = false;
+    gameState.enemyDefending = false;
+    gameState.turn = 'player';
+    gameState.statusEffects = {
+        player: {},
+        enemy: {}
+    };
+    gameState.extraTurns = 0;
+    
+    // Ferma il timer se attivo
+    if (gameState.turnTimer) {
+        clearInterval(gameState.turnTimer);
+        gameState.turnTimer = null;
+    }
+    
+    // Reset UI
+    clearBattleText();
+    updateTimerDisplay();
+    
+    // Rimuovi selezione
+    document.querySelectorAll('.animal-card').forEach(c => c.classList.remove('selected'));
+    confirmButton.disabled = true;
+}
+
+// Avvia il timer di turno
+function startTurnTimer() {
+    // Ferma il timer esistente se presente
+    if (gameState.turnTimer) {
+        clearInterval(gameState.turnTimer);
+    }
+    
+    // Reset timer
+    gameState.timeLeft = 120;
+    updateTimerDisplay();
+    
+    // Avvia il nuovo timer
+    gameState.turnTimer = setInterval(() => {
+        gameState.timeLeft--;
+        updateTimerDisplay();
+        
+        if (gameState.timeLeft <= 0) {
+            clearInterval(gameState.turnTimer);
+            
+            if (gameState.turn === 'player') {
+                addMessageToBattleText('⏱️ Tempo scaduto! Perdi il turno!');
+                endPlayerTurn();
+            } else {
+                addMessageToBattleText('⏱️ Tempo scaduto per il nemico!');
+                endEnemyTurn();
+            }
+        }
+    }, 1000);
+}
+
+// Aggiorna la visualizzazione del timer
+function updateTimerDisplay() {
+    const minutes = Math.floor(gameState.timeLeft / 60);
+    const seconds = gameState.timeLeft % 60;
+    turnTimer.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    
+    // Cambia colore quando il tempo sta per scadere
+    if (gameState.timeLeft <= 30) {
+        turnTimer.style.color = '#e53935';
+    } else {
+        turnTimer.style.color = '#e0f8d0';
+    }
+}
+
+// Inizializza il gioco quando la pagina è caricata
+window.addEventListener('DOMContentLoaded', init);
