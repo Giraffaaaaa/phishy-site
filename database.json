@@ -318,7 +318,7 @@
       "warnReasons": []
     },
     "4915210183245@s.whatsapp.net": {
-      "messaggi": 83630,
+      "messaggi": 83631,
       "muto": false,
       "expired": 0,
       "blasphemy": 311,
@@ -349,7 +349,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 374210,
+      "exp": 374220,
       "limit": 227381,
       "money": null,
       "msg": {},
@@ -1731,7 +1731,7 @@
       "warnReasons": []
     },
     "393757301724@s.whatsapp.net": {
-      "messaggi": 18243,
+      "messaggi": 18253,
       "muto": false,
       "expired": 0,
       "blasphemy": 128,
@@ -1762,7 +1762,7 @@
       "gatto": 1,
       "coniglio": false,
       "drago": 5,
-      "exp": 284388,
+      "exp": 284545,
       "limit": 989626,
       "money": null,
       "msg": {},
@@ -7492,7 +7492,7 @@
       "warnReasons": []
     },
     "393899922953@s.whatsapp.net": {
-      "messaggi": 1963,
+      "messaggi": 1968,
       "muto": false,
       "expired": 0,
       "blasphemy": 17,
@@ -7523,7 +7523,7 @@
       "gatto": 1,
       "coniglio": false,
       "drago": 1,
-      "exp": 2783,
+      "exp": 2811,
       "limit": 824,
       "money": null,
       "msg": {},
@@ -155080,7 +155080,7 @@
       "premiumDate": -1
     },
     "393513406641@s.whatsapp.net": {
-      "messaggi": 81,
+      "messaggi": 82,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -155126,9 +155126,9 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 1303,
+      "exp": 1360,
       "limit": 20,
-      "money": null,
+      "money": 0,
       "msg": {},
       "premiumDate": -1
     },
@@ -157791,7 +157791,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 289301,
+      "messaggi": 289318,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -161631,10 +161631,10 @@
       "lastSuccess": 1745627629353
     },
     "menzione-si-no.js": {
-      "total": 21662,
-      "success": 21662,
-      "last": 1745632264238,
-      "lastSuccess": 1745632264238
+      "total": 21664,
+      "success": 21664,
+      "last": 1745633789385,
+      "lastSuccess": 1745633789385
     },
     "risposta-ok.js": {
       "total": 2553,
@@ -162651,10 +162651,10 @@
       "lastSuccess": 1745431099044
     },
     "audio-tutti.js": {
-      "total": 4196,
-      "success": 4196,
-      "last": 1745631745334,
-      "lastSuccess": 1745631745334
+      "total": 4197,
+      "success": 4197,
+      "last": 1745633777743,
+      "lastSuccess": 1745633777743
     },
     "tool-traduci.js": {
       "total": 25,
