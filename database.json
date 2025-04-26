@@ -318,7 +318,7 @@
       "warnReasons": []
     },
     "4915210183245@s.whatsapp.net": {
-      "messaggi": 83684,
+      "messaggi": 83685,
       "muto": false,
       "expired": 0,
       "blasphemy": 311,
@@ -349,7 +349,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 375275,
+      "exp": 375282,
       "limit": 227381,
       "money": null,
       "msg": {},
@@ -486,7 +486,7 @@
       "warnReasons": []
     },
     "393519316866@s.whatsapp.net": {
-      "messaggi": 2208,
+      "messaggi": 2209,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -517,7 +517,7 @@
       "gatto": 1,
       "coniglio": false,
       "drago": 1,
-      "exp": 33732,
+      "exp": 33742,
       "limit": 83620,
       "money": null,
       "msg": {},
@@ -44222,10 +44222,10 @@
       "warnReasons": []
     },
     "393755644208@s.whatsapp.net": {
-      "messaggi": 4869,
+      "messaggi": 4872,
       "muto": false,
       "expired": 0,
-      "blasphemy": 189,
+      "blasphemy": 190,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -44256,7 +44256,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": 1,
-      "exp": 34264,
+      "exp": 34277,
       "limit": 406,
       "money": null,
       "msg": {},
@@ -48747,7 +48747,7 @@
       "warnReasons": []
     },
     "393533376385@s.whatsapp.net": {
-      "messaggi": 391,
+      "messaggi": 393,
       "muto": false,
       "expired": 0,
       "blasphemy": 41,
@@ -48781,7 +48781,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 6129,
+      "exp": 6139,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -157561,7 +157561,7 @@
       "money": null
     },
     "393282272195@s.whatsapp.net": {
-      "messaggi": 1,
+      "messaggi": 2,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -157607,9 +157607,11 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": null,
-      "limit": null,
-      "money": null
+      "exp": 1,
+      "limit": 20,
+      "money": null,
+      "msg": {},
+      "premiumDate": -1
     },
     "393773530920@s.whatsapp.net": {
       "messaggi": 2,
@@ -157905,7 +157907,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 289616,
+      "messaggi": 289624,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
