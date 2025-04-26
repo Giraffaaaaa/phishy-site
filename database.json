@@ -318,7 +318,7 @@
       "warnReasons": []
     },
     "4915210183245@s.whatsapp.net": {
-      "messaggi": 83651,
+      "messaggi": 83653,
       "muto": false,
       "expired": 0,
       "blasphemy": 311,
@@ -349,7 +349,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 374540,
+      "exp": 374551,
       "limit": 227381,
       "money": null,
       "msg": {},
@@ -15502,7 +15502,7 @@
       "warnReasons": []
     },
     "393204689618@s.whatsapp.net": {
-      "messaggi": 5722,
+      "messaggi": 5724,
       "muto": false,
       "expired": 0,
       "blasphemy": 39,
@@ -15534,7 +15534,7 @@
       "gatto": 1,
       "coniglio": 1,
       "drago": 11,
-      "exp": 117651,
+      "exp": 117665,
       "limit": 722188,
       "money": null,
       "msg": {},
@@ -44222,7 +44222,7 @@
       "warnReasons": []
     },
     "393755644208@s.whatsapp.net": {
-      "messaggi": 4864,
+      "messaggi": 4867,
       "muto": false,
       "expired": 0,
       "blasphemy": 189,
@@ -44256,7 +44256,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": 1,
-      "exp": 34192,
+      "exp": 34204,
       "limit": 406,
       "money": null,
       "msg": {},
@@ -55396,7 +55396,7 @@
       "warnReasons": []
     },
     "393791298333@s.whatsapp.net": {
-      "messaggi": 6313,
+      "messaggi": 6317,
       "muto": false,
       "expired": 0,
       "blasphemy": 63,
@@ -55427,13 +55427,13 @@
       "moto": 2,
       "bici": 2,
       "canna": 2,
-      "forcina": 78,
+      "forcina": 77,
       "cane": 2,
       "gatto": 3,
       "coniglio": 1,
       "drago": 2,
-      "exp": 1030166,
-      "limit": 523398,
+      "exp": 1030291,
+      "limit": 732342,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -55451,7 +55451,7 @@
         "𝑼𝒎𝒑𝒂𝑳𝒖𝒎𝒑𝒂™🍬": 1
       },
       "pozioneminore": 5,
-      "lastScassa": 1745581935162,
+      "lastScassa": 1745641365092,
       "pozionedefinitiva": 251,
       "uova": 16,
       "serpente": 1,
@@ -73118,7 +73118,7 @@
       "level": 73,
       "spamMessaggi": 0,
       "bustapaga": 0,
-      "credito": 2321604,
+      "credito": 2112660,
       "pozione_minore": 0,
       "pozione_maggiore": 5,
       "pozione_definitiva": 1,
@@ -157791,7 +157791,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 289541,
+      "messaggi": 289546,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -157850,7 +157850,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 39542,
+      "messaggi": 39547,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -158073,7 +158073,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 29818,
+      "messaggi": 29819,
       "expired": 0,
       "blasphemy": 0,
       "battle": {
@@ -161859,10 +161859,10 @@
       "lastSuccess": 1745574473294
     },
     "info-msg.js": {
-      "total": 439,
-      "success": 439,
-      "last": 1745592376008,
-      "lastSuccess": 1745592376008
+      "total": 440,
+      "success": 440,
+      "last": 1745641348539,
+      "lastSuccess": 1745641348539
     },
     "gp-unwarn.js": {
       "total": 46,
@@ -162225,10 +162225,10 @@
       "lastSuccess": 1744590248878
     },
     "rpg-scassa.js": {
-      "total": 580,
-      "success": 535,
-      "last": 1745620335334,
-      "lastSuccess": 1745620335334
+      "total": 581,
+      "success": 536,
+      "last": 1745641365255,
+      "lastSuccess": 1745641365255
     },
     "video-f1.js": {
       "total": 12,
