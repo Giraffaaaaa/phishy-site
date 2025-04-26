@@ -318,7 +318,7 @@
       "warnReasons": []
     },
     "4915210183245@s.whatsapp.net": {
-      "messaggi": 83624,
+      "messaggi": 83629,
       "muto": false,
       "expired": 0,
       "blasphemy": 311,
@@ -349,7 +349,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 373982,
+      "exp": 374208,
       "limit": 227381,
       "money": null,
       "msg": {},
@@ -566,7 +566,7 @@
       ]
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 1825,
+      "messaggi": 1830,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -597,7 +597,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 28484,
+      "exp": 28708,
       "limit": 515,
       "money": null,
       "msg": {},
@@ -1167,7 +1167,7 @@
       "warnReasons": []
     },
     "393883769389@s.whatsapp.net": {
-      "messaggi": 1756,
+      "messaggi": 1757,
       "muto": false,
       "expired": 0,
       "blasphemy": 25,
@@ -1199,7 +1199,7 @@
       "coniglio": false,
       "drago": false,
       "limit": 10357,
-      "exp": 18510,
+      "exp": 18519,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -1731,7 +1731,7 @@
       "warnReasons": []
     },
     "393757301724@s.whatsapp.net": {
-      "messaggi": 18208,
+      "messaggi": 18237,
       "muto": false,
       "expired": 0,
       "blasphemy": 128,
@@ -1762,7 +1762,7 @@
       "gatto": 1,
       "coniglio": false,
       "drago": 5,
-      "exp": 283830,
+      "exp": 284208,
       "limit": 989626,
       "money": null,
       "msg": {},
@@ -1797,7 +1797,9 @@
       "polpo": false,
       "pozionedefinitiva": 1,
       "missioni": {
-        "attive": [
+        "attive": [],
+        "completate": [],
+        "fallite": [
           {
             "id": "truth",
             "title": "verita",
@@ -1807,11 +1809,10 @@
             "reward": 0,
             "expires": 1745630589623,
             "acceptedAt": 1745025789623,
-            "chatId": "120363329282230325@g.us"
+            "chatId": "120363329282230325@g.us",
+            "failed": true
           }
         ],
-        "completate": [],
-        "fallite": [],
         "dolciGuadagnati": 0
       },
       "antispam": 0,
@@ -4449,7 +4450,7 @@
       "warnReasons": []
     },
     "393923869189@s.whatsapp.net": {
-      "messaggi": 9587,
+      "messaggi": 9588,
       "muto": false,
       "expired": 0,
       "blasphemy": 153,
@@ -4480,7 +4481,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 112091,
+      "exp": 112097,
       "limit": 23,
       "money": null,
       "msg": {},
@@ -7491,7 +7492,7 @@
       "warnReasons": []
     },
     "393899922953@s.whatsapp.net": {
-      "messaggi": 1947,
+      "messaggi": 1962,
       "muto": false,
       "expired": 0,
       "blasphemy": 17,
@@ -7522,7 +7523,7 @@
       "gatto": 1,
       "coniglio": false,
       "drago": 1,
-      "exp": 2585,
+      "exp": 2779,
       "limit": 824,
       "money": null,
       "msg": {},
@@ -68189,7 +68190,7 @@
       "warnReasons": []
     },
     "393894281173@s.whatsapp.net": {
-      "messaggi": 10641,
+      "messaggi": 10658,
       "muto": false,
       "expired": 0,
       "blasphemy": 123,
@@ -68225,7 +68226,7 @@
       "gatto": false,
       "coniglio": 1,
       "drago": 1,
-      "exp": 231487,
+      "exp": 231600,
       "limit": 146977,
       "money": null,
       "msg": {},
@@ -96902,7 +96903,7 @@
       "warnReasons": []
     },
     "393316626199@s.whatsapp.net": {
-      "messaggi": 1413,
+      "messaggi": 1440,
       "muto": false,
       "expired": 0,
       "blasphemy": 8,
@@ -96944,7 +96945,7 @@
       "pesce": false,
       "riccio": false,
       "uova": 0,
-      "exp": 17302,
+      "exp": 17593,
       "limit": 12,
       "money": null,
       "msg": {},
@@ -98171,7 +98172,7 @@
       "warnReasons": []
     },
     "393770447951@s.whatsapp.net": {
-      "messaggi": 274,
+      "messaggi": 275,
       "muto": false,
       "expired": 0,
       "blasphemy": 8,
@@ -98215,7 +98216,7 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 4165,
+      "exp": 4167,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -110732,7 +110733,7 @@
       ]
     },
     "393317302183@s.whatsapp.net": {
-      "messaggi": 2823,
+      "messaggi": 2837,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -110776,7 +110777,7 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 41443,
+      "exp": 41671,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -124012,7 +124013,7 @@
       ]
     },
     "393516566928@s.whatsapp.net": {
-      "messaggi": 158,
+      "messaggi": 163,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -124056,7 +124057,7 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 2384,
+      "exp": 2410,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -157646,6 +157647,57 @@
       "money": null,
       "msg": {},
       "premiumDate": -1
+    },
+    "393519020000@s.whatsapp.net": {
+      "messaggi": 1,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 351 902 0000",
+      "sposato": false,
+      "partner": "",
+      "lavoro": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "spammer": 0,
+      "bustapaga": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "vita": 0,
+      "scudo": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "cavallo": false,
+      "serpente": false,
+      "piccione": false,
+      "pesce": false,
+      "riccio": false,
+      "scoiattolo": false,
+      "polpo": false,
+      "uova": 0,
+      "exp": null,
+      "limit": null,
+      "money": null
     }
   },
   "chats": {
@@ -157678,7 +157730,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 289164,
+      "messaggi": 289285,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -161518,10 +161570,10 @@
       "lastSuccess": 1745627629353
     },
     "menzione-si-no.js": {
-      "total": 21653,
-      "success": 21653,
-      "last": 1745628992299,
-      "lastSuccess": 1745628992299
+      "total": 21660,
+      "success": 21660,
+      "last": 1745629830451,
+      "lastSuccess": 1745629830451
     },
     "risposta-ok.js": {
       "total": 2553,
@@ -161530,10 +161582,10 @@
       "lastSuccess": 1745627061409
     },
     "sticker-pat.js": {
-      "total": 1445,
-      "success": 1445,
-      "last": 1745627816384,
-      "lastSuccess": 1745627816384
+      "total": 1446,
+      "success": 1446,
+      "last": 1745630045404,
+      "lastSuccess": 1745630045404
     },
     "registrati.js": {
       "total": 40,
@@ -161584,10 +161636,10 @@
       "lastSuccess": 1744152590542
     },
     "risposta_comw.js": {
-      "total": 1842,
-      "success": 1842,
-      "last": 1745626175576,
-      "lastSuccess": 1745626175576
+      "total": 1845,
+      "success": 1845,
+      "last": 1745630005865,
+      "lastSuccess": 1745630005865
     },
     "aggiungi-caramelle.js": {
       "total": 49,
@@ -161596,10 +161648,10 @@
       "lastSuccess": 1745577574220
     },
     "menzione-puttana.js": {
-      "total": 775,
-      "success": 775,
-      "last": 1745622709661,
-      "lastSuccess": 1745622709661
+      "total": 776,
+      "success": 776,
+      "last": 1745629903334,
+      "lastSuccess": 1745629903334
     },
     "rpg-buy|compra|shop.js": {
       "total": 1166,
@@ -161608,10 +161660,10 @@
       "lastSuccess": 1745620325209
     },
     "risposta-buonanotte.js": {
-      "total": 1602,
-      "success": 1602,
-      "last": 1745627476787,
-      "lastSuccess": 1745627476787
+      "total": 1608,
+      "success": 1608,
+      "last": 1745629970570,
+      "lastSuccess": 1745629970570
     },
     "rpg-inventario.js": {
       "total": 121,
@@ -161902,10 +161954,10 @@
       "lastSuccess": 1745517088780
     },
     "risposta-amo.js": {
-      "total": 1181,
-      "success": 1181,
-      "last": 1745627736416,
-      "lastSuccess": 1745627736416
+      "total": 1183,
+      "success": 1183,
+      "last": 1745629210468,
+      "lastSuccess": 1745629210468
     },
     "audio-maiale.js": {
       "total": 15,
