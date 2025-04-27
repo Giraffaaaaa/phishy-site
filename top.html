@@ -16,35 +16,35 @@
       background: linear-gradient(135deg, #1a1a2e, #16213e);
       color: #fff;
       min-height: 100vh;
-      padding: 20px;
+      padding: 15px;
     }
     
     header {
       text-align: center;
-      margin-bottom: 30px;
-      padding: 20px;
+      margin-bottom: 25px;
+      padding: 15px;
       background: rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
     
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 10px;
       color: #4cc9f0;
       text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
     }
     
     .leaderboards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
       margin-bottom: 30px;
     }
     
     .leaderboard {
       background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
+      border-radius: 15px;
       padding: 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s, box-shadow 0.3s;
@@ -69,10 +69,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 15px;
-      margin-bottom: 8px;
+      padding: 12px 15px;
+      margin-bottom: 10px;
       background: rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
+      border-radius: 10px;
       transition: background 0.3s;
     }
     
@@ -83,7 +83,8 @@
     .leaderboard-item .rank {
       font-weight: bold;
       color: #4cc9f0;
-      width: 20px;
+      width: 30px;
+      font-size: 1.1rem;
     }
     
     .leaderboard-item .name {
@@ -92,27 +93,31 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      font-size: 1.1rem;
     }
     
     .leaderboard-item .value {
       font-weight: bold;
       color: #f72585;
+      font-size: 1.1rem;
     }
     
     .podium {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      height: 200px;
-      margin-bottom: 20px;
-      gap: 10px;
+      height: 180px;
+      margin-bottom: 25px;
+      gap: 15px;
     }
     
     .podium-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 80px;
+      width: 28%;
+      max-width: 100px;
+      position: relative;
     }
     
     .podium-place {
@@ -120,24 +125,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
       color: white;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     
     .first {
       height: 120px;
       background: linear-gradient(to bottom, #ffd700, #daa520);
+      z-index: 3;
     }
     
     .second {
       height: 90px;
       background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
+      z-index: 2;
     }
     
     .third {
       height: 60px;
       background: linear-gradient(to bottom, #cd7f32, #a05a2c);
+      z-index: 1;
     }
     
     .podium-name {
@@ -148,46 +158,125 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+    
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
     
     .back-btn {
       display: block;
-      width: 200px;
-      margin: 30px auto 0;
-      padding: 12px;
+      width: 80%;
+      max-width: 250px;
+      padding: 15px;
       background: linear-gradient(to right, #f72585, #b5179e);
       color: white;
       border: none;
       border-radius: 50px;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
       cursor: pointer;
       transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     
-    .back-btn:hover {
+    .back-btn:hover, .back-btn:active {
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(247, 37, 133, 0.4);
     }
     
-    @media (max-width: 768px) {
+    /* Animazioni per le classifiche */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .leaderboard {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    
+    .leaderboard:nth-child(1) { animation-delay: 0.1s; }
+    .leaderboard:nth-child(2) { animation-delay: 0.3s; }
+    .leaderboard:nth-child(3) { animation-delay: 0.5s; }
+    
+    /* Loading indicator */
+    .loading {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+      color: #4cc9f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(76, 201, 240, 0.3);
+      border-radius: 50%;
+      border-top-color: #4cc9f0;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Media queries per dispositivi mobili */
+    @media (min-width: 768px) {
       .leaderboards-container {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
       }
       
-      .podium {
-        height: 150px;
+      body {
+        padding: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .podium-place {
+        font-size: 1.5rem;
       }
       
       .first {
-        height: 90px;
+        height: 100px;
       }
       
       .second {
-        height: 70px;
+        height: 75px;
       }
       
       .third {
         height: 50px;
+      }
+      
+      .leaderboard-item {
+        padding: 10px 12px;
+      }
+      
+      .leaderboard-item .rank,
+      .leaderboard-item .name,
+      .leaderboard-item .value {
+        font-size: 1rem;
+      }
+      
+      h1 {
+        font-size: 1.7rem;
+      }
+      
+      .leaderboard-title {
+        font-size: 1.3rem;
       }
     }
   </style>
@@ -195,7 +284,7 @@
 <body>
   <header>
     <h1>🏆 Classifiche Phishy 🏆</h1>
-    <p>Le top 10 degli utenti più attivi e ricchi</p>
+    <p>Le migliori performance degli utenti</p>
   </header>
   
   <div class="leaderboards-container">
@@ -205,12 +294,12 @@
       
       <div class="podium">
         <div class="podium-item">
-          <div class="podium-place first">1</div>
-          <div class="podium-name">Utente1</div>
-        </div>
-        <div class="podium-item">
           <div class="podium-place second">2</div>
           <div class="podium-name">Utente2</div>
+        </div>
+        <div class="podium-item">
+          <div class="podium-place first">1</div>
+          <div class="podium-name">Utente1</div>
         </div>
         <div class="podium-item">
           <div class="podium-place third">3</div>
@@ -229,12 +318,12 @@
       
       <div class="podium">
         <div class="podium-item">
-          <div class="podium-place first">1</div>
-          <div class="podium-name">Utente1</div>
-        </div>
-        <div class="podium-item">
           <div class="podium-place second">2</div>
           <div class="podium-name">Utente2</div>
+        </div>
+        <div class="podium-item">
+          <div class="podium-place first">1</div>
+          <div class="podium-name">Utente1</div>
         </div>
         <div class="podium-item">
           <div class="podium-place third">3</div>
@@ -253,12 +342,12 @@
       
       <div class="podium">
         <div class="podium-item">
-          <div class="podium-place first">1</div>
-          <div class="podium-name">Utente1</div>
-        </div>
-        <div class="podium-item">
           <div class="podium-place second">2</div>
           <div class="podium-name">Utente2</div>
+        </div>
+        <div class="podium-item">
+          <div class="podium-place first">1</div>
+          <div class="podium-name">Utente1</div>
         </div>
         <div class="podium-item">
           <div class="podium-place third">3</div>
@@ -270,51 +359,37 @@
         <!-- I dati verranno inseriti qui via JavaScript -->
       </div>
     </div>
-    
-    <!-- Classifica soldi -->
-    <div class="leaderboard">
-      <h2 class="leaderboard-title">💰 Top 10 Soldi</h2>
-      
-      <div class="podium">
-        <div class="podium-item">
-          <div class="podium-place first">1</div>
-          <div class="podium-name">Utente1</div>
-        </div>
-        <div class="podium-item">
-          <div class="podium-place second">2</div>
-          <div class="podium-name">Utente2</div>
-        </div>
-        <div class="podium-item">
-          <div class="podium-place third">3</div>
-          <div class="podium-name">Utente3</div>
-        </div>
-      </div>
-      
-      <div id="money-top10">
-        <!-- I dati verranno inseriti qui via JavaScript -->
-      </div>
-    </div>
   </div>
   
-  <button class="back-btn" onclick="goBack()">🔙 Torna Indietro</button>
+  <div class="nav-buttons">
+    <button class="back-btn" onclick="goBack()">🔙 Indietro</button>
+  </div>
   
   <script>
     // Funzione per ottenere i dati dal database.json
     async function fetchUserData() {
       try {
+        // Mostra il loader durante il caricamento
+        showLoader();
+        
         const response = await fetch('database.json');
         if (!response.ok) {
           throw new Error('Errore nel caricamento del database');
         }
         const database = await response.json();
+        
+        // Nascondi il loader dopo aver caricato i dati
+        hideLoader();
+        
         return processUserData(database.users);
       } catch (error) {
         console.error('Errore:', error);
+        hideLoader();
+        showError('Impossibile caricare i dati. Riprova più tardi.');
         return {
           sweets: [],
           messages: [],
-          blasphemy: [],
-          banca: []
+          blasphemy: []
         };
       }
     }
@@ -326,8 +401,7 @@
         name: user.name || id.split('@')[0], // Usa il nome o l'ID se il nome non esiste
         sweets: user.limit || 0,
         messages: user.messaggi || 0,
-        blasphemy: user.blasphemy || 0,
-        credito: user.credito || 0
+        blasphemy: user.blasphemy || 0
       }));
 
       return {
@@ -344,12 +418,7 @@
         blasphemy: usersArray
           .sort((a, b) => b.blasphemy - a.blasphemy)
           .slice(0, 10)
-          .map(user => ({ name: user.name, value: user.blasphemy })),
-          
-        credito: usersArray
-          .sort((a, b) => b.credito - a.credito)
-          .slice(0, 10)
-          .map(user => ({ name: user.name, value: user.credito }))
+          .map(user => ({ name: user.name, value: user.blasphemy }))
       };
     }
 
@@ -371,41 +440,84 @@
     }
     
     // Funzione per aggiornare i dati del podio
-    function updatePodium(podiumClass, data) {
-      const podiumItems = document.querySelectorAll(`.${podiumClass} .podium-name`);
-      if (data.length > 0) podiumItems[0].textContent = data[0].name;
-      if (data.length > 1) podiumItems[1].textContent = data[1].name;
-      if (data.length > 2) podiumItems[2].textContent = data[2].name;
+    function updatePodiums(data) {
+      // Aggiorna tutti i podi con i dati corretti
+      updatePodium('sweets-top10', '.leaderboard:nth-child(1)', data.sweets);
+      updatePodium('messages-top10', '.leaderboard:nth-child(2)', data.messages);
+      updatePodium('blasphemy-top10', '.leaderboard:nth-child(3)', data.blasphemy);
+    }
+    
+    function updatePodium(containerId, leaderboardSelector, data) {
+      const podiumItems = document.querySelectorAll(`${leaderboardSelector} .podium-name`);
+      if (data.length > 0) {
+        podiumItems[1].textContent = data[0].name; // Primo posto (al centro)
+        if (data.length > 1) podiumItems[0].textContent = data[1].name; // Secondo posto (a sinistra)
+        if (data.length > 2) podiumItems[2].textContent = data[2].name; // Terzo posto (a destra)
+      }
+    }
+    
+    // Funzione per mostrare il loader
+    function showLoader() {
+      const loaderContainer = document.createElement('div');
+      loaderContainer.className = 'loading';
+      loaderContainer.id = 'loader';
+      
+      const spinner = document.createElement('div');
+      spinner.className = 'spinner';
+      
+      const loaderText = document.createElement('div');
+      loaderText.textContent = 'Caricamento classifiche...';
+      
+      loaderContainer.appendChild(spinner);
+      loaderContainer.appendChild(loaderText);
+      
+      document.body.appendChild(loaderContainer);
+    }
+    
+    // Funzione per nascondere il loader
+    function hideLoader() {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.remove();
+      }
+    }
+    
+    // Funzione per mostrare messaggi di errore
+    function showError(message) {
+      const errorContainer = document.createElement('div');
+      errorContainer.style.textAlign = 'center';
+      errorContainer.style.padding = '20px';
+      errorContainer.style.color = '#f72585';
+      errorContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+      errorContainer.style.borderRadius = '10px';
+      errorContainer.style.margin = '20px';
+      errorContainer.textContent = message;
+      
+      document.body.appendChild(errorContainer);
+      
+      // Nascondi l'errore dopo 5 secondi
+      setTimeout(() => {
+        errorContainer.remove();
+      }, 5000);
     }
     
     // Carica i dati quando la pagina è pronta
     document.addEventListener('DOMContentLoaded', async () => {
-      // Mostra un loader durante il caricamento
-      const loader = document.createElement('div');
-      loader.textContent = 'Caricamento dati in corso...';
-      loader.style.textAlign = 'center';
-      loader.style.margin = '20px';
-      document.body.appendChild(loader);
-      
       // Ottieni i dati dal database.json
       const leaderboardData = await fetchUserData();
-      
-      // Rimuovi il loader
-      loader.remove();
       
       // Popola le classifiche con i dati reali
       populateLeaderboard('sweets-top10', leaderboardData.sweets, ' 🍬');
       populateLeaderboard('messages-top10', leaderboardData.messages, ' 💬');
       populateLeaderboard('blasphemy-top10', leaderboardData.blasphemy, ' 🤬');
-      populateLeaderboard('credito-top10', leaderboardData.credito, ' €');
       
-      // Aggiorna i podi con la classifica dei dolci (o un'altra a scelta)
-      updatePodium('podium', leaderboardData.sweets);
+      // Aggiorna i podi con i dati reali
+      updatePodiums(leaderboardData);
     });
     
     function goBack() {
       window.location.href = "index.html";
     }
-</script>
+  </script>
 </body>
 </html>
