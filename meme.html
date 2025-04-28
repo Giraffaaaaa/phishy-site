@@ -3,607 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phishy - Meme</title>
+    <title>Phishy - Blog</title>
     <style>
-        :root {
-            --primary: #00e5ff;
-            --secondary: #8A2BE2;
-            --dark: #121212;
-            --light-dark: #1e1e1e;
-            --medium-dark: #232323;
-            --text: #ffffff;
-            --accent-yellow: #FFD700;
-            --accent-orange: #FFA500;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-        }
-
+        /* Stili base (aggiungi il tuo CSS completo qui) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--dark);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
         }
-
-        .background-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('sfondo-index.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.4;
-            z-index: -1;
-            animation: fadeIn 2s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 0.4; }
-        }
-
+        
         .container {
+            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
-
-        header {
-            background-color: rgba(18, 18, 18, 0.95);
-            padding: 20px 0;
-            box-shadow: 0 2px 20px rgba(0, 229, 255, 0.15);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 32px;
-            font-weight: bold;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            animation: slideInLeft 1s ease;
-        }
-
-        .logo span {
-            margin-left: 10px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
-        }
-
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        nav {
-            margin-top: 20px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            animation: slideInTop 1s ease;
-        }
-
-        @keyframes slideInTop {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        nav a {
-            color: var(--text);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 17px;
-            padding: 10px 15px;
-            border-radius: 8px;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            transition: width 0.3s ease, left 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-            left: 0;
-        }
-
-        .main-content {
-            margin-top: 150px;
-            padding-bottom: 50px;
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: 50px 0;
-            animation: fadeInUp 1.2s ease;
-        }
-
-        .hero-section h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            background: linear-gradient(90deg, var(--accent-yellow), var(--accent-orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
-        }
-
-        .hero-section p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px;
-            color: #cccccc;
-        }
-
-        /* Meme content styles */
-        .meme-container {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin-top: 20px;
-        }
-
+        
         .meme-post {
-            background-color: rgba(30, 30, 30, 0.85);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            transform: translateY(30px);
-            opacity: 0;
-            animation: fadeInUp 1s ease forwards;
-        }
-
-        .meme-post:nth-child(1) { animation-delay: 0.2s; }
-        .meme-post:nth-child(2) { animation-delay: 0.4s; }
-        .meme-post:nth-child(3) { animation-delay: 0.6s; }
-
-        .post-header {
-            display: flex;
-            align-items: center;
-            padding: 15px 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .creator-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, var(--accent-yellow), var(--accent-orange));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-
-        .creator-info {
-            flex: 1;
-        }
-
-        .creator-name {
-            font-weight: bold;
-            color: var(--accent-yellow);
-        }
-
-        .post-date {
-            font-size: 12px;
-            color: #888;
-        }
-
-        .post-content {
-            padding: 20px;
-        }
-
-        .post-caption {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .video-container {
-            width: 100%;
-            background-color: #000;
+            background: white;
             border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
-
-        .video-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background-color: var(--medium-dark);
-            cursor: pointer;
-        }
-
-        .play-button {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(45deg, var(--accent-yellow), var(--accent-orange));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .play-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 25px rgba(255, 165, 0, 0.5);
-        }
-
-        .play-button svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-            margin-left: 5px;
-        }
-
-        .video-title {
-            font-size: 16px;
-            color: var(--text);
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .post-actions {
-            display: flex;
-            padding: 15px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .action-button {
-            display: flex;
-            align-items: center;
-            background: none;
-            border: none;
-            color: var(--text);
-            margin-right: 20px;
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .action-button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .action-button svg {
-            margin-right: 5px;
-            width: 20px;
-            height: 20px;
-        }
-
-        .like-button svg {
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 2;
-        }
-
-        .comments-section {
             padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
+        
+        .comments-section {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        
         .comment-form {
             display: flex;
+            gap: 10px;
             margin-bottom: 20px;
         }
-
-        .comment-input {
+        
+        .comment-form input {
             flex: 1;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 30px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--text);
-            font-size: 14px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-
-        .comment-input:focus {
-            outline: none;
-            background-color: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 0 0 2px rgba(0, 229, 255, 0.3);
-        }
-
-        .comment-submit {
-            background: linear-gradient(45deg, var(--accent-yellow), var(--accent-orange));
-            border: none;
-            border-radius: 30px;
-            padding: 0 20px;
+        
+        .comment-form button {
+            padding: 10px 20px;
+            background: #4CAF50;
             color: white;
-            font-weight: bold;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
-            margin-left: 10px;
         }
-
-        .comment-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
-        }
-
-        .comments-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
+        
         .comment {
             display: flex;
-            padding: 10px 0;
-        }
-
-        .comment-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background-color: var(--light-dark);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .comment-content {
-            flex: 1;
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 10px 15px;
-            border-radius: 15px;
-        }
-
-        .comment-author {
-            font-weight: bold;
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
-
-        .comment-text {
-            font-size: 14px;
-            color: #ddd;
-        }
-
-        .comment-actions {
-            display: flex;
-            font-size: 12px;
-            color: #888;
-            margin-top: 5px;
-        }
-
-        .comment-like {
-            margin-right: 15px;
-            cursor: pointer;
-        }
-
-        .comment-reply {
-            cursor: pointer;
-        }
-
-        .comment-like:hover, .comment-reply:hover {
-            color: var(--accent-yellow);
-        }
-
-        .upload-section {
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(0, 229, 255, 0.2));
-            border-radius: 15px;
-            padding: 30px;
-            margin: 40px 0;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px dashed rgba(255, 215, 0, 0.3);
-        }
-
-        .upload-section h2 {
+            gap: 10px;
             margin-bottom: 15px;
-            color: var(--accent-yellow);
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
         }
-
-        .upload-section p {
-            margin-bottom: 20px;
-            color: #cccccc;
-        }
-
-        .creator-only {
-            font-size: 12px;
-            color: #ff8c00;
-            font-style: italic;
-            margin-top: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            background-color: rgba(18, 18, 18, 0.95);
-            margin-top: 50px;
-        }
-
-        footer p {
-            color: #888888;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* Modal for video player */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            width: 80%;
-            max-width: 800px;
-            background-color: var(--dark);
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            border-radius: 50%;
+        
+        .comment-avatar {
             width: 40px;
             height: 40px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            color: white;
-            font-size: 24px;
-            z-index: 1;
+            font-weight: bold;
         }
-
-        .close-modal:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .video-player {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Mobile menu button */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text);
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-
-            nav a {
-                margin: 5px 0;
-                width: 80%;
-                text-align: center;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-                position: absolute;
-                right: 20px;
-                top: 20px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            nav.active {
-                display: flex;
-            }
-
-            .main-content {
-                margin-top: 100px;
-            }
-
-            .post-actions {
-                flex-wrap: wrap;
-            }
-
-            .action-button {
-                margin-bottom: 5px;
-            }
-
-            .comment-form {
-                flex-direction: column;
-            }
-
-            .comment-submit {
-                margin-left: 0;
-                margin-top: 10px;
-                width: 100%;
-                padding: 12px;
-            }
-
-            .modal-content {
-                width: 95%;
-            }
-        }
-
-        @keyframes fadeInUp {
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        
+        .error-message {
+            color: #f44336;
+            padding: 10px;
+            background: #ffebee;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -613,7 +92,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="index.html" class="logo">
-                    <span>Phishy - Meme</span>
+                    <span>Phishy - Blog</span>
                 </a>
                 <button class="mobile-menu-btn">☰</button>
                 <nav>
@@ -628,326 +107,181 @@
 
     <div class="container main-content">
         <div class="hero-section">
-            <h1>Meme e Video Divertenti</h1>
-            <p>Guarda i contenuti più divertenti pubblicati dal creatore e interagisci con la community!</p>
+            <h1>Il Blog di Phishy</h1>
+            <p>Leggi i post pubblicati e commenta con il tuo nome!</p>
         </div>
 
-        <div class="upload-section">
-            <h2>Area Contenuti</h2>
-            <p>Qui verranno pubblicati tutti i video divertenti e meme della community</p>
-            <div class="creator-only">* Solo il creatore può pubblicare nuovi contenuti</div>
-        </div>
-
-        <div class="meme-container">
-            <!-- Meme Post 1 -->
-            <div class="meme-post">
-                <div class="post-header">
-                    <div class="creator-avatar">P</div>
-                    <div class="creator-info">
-                        <div class="creator-name">Phishy Admin</div>
-                        <div class="post-date">27 Aprile 2025</div>
-                    </div>
-                </div>
-                <div class="post-content">
-                    <div class="post-caption">Quando entri nei gruppi Phishy per la prima volta 😂</div>
-                    <div class="video-container">
-                        <div class="video-placeholder" data-video-id="meme1">
-                            <div class="play-button">
-                                <svg viewBox="0 0 24 24">
-                                    <polygon points="5,3 19,12 5,21"></polygon>
-                                </svg>
-                            </div>
-                            <div class="video-title">Primo giorno nella Community</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-actions">
-                    <button class="action-button like-button">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                        </svg>
-                        125 Mi Piace
-                    </button>
-                    <button class="action-button">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                        42 Commenti
-                    </button>
-                    <button class="action-button">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                            <polyline points="16 6 12 2 8 6"></polyline>
-                            <line x1="12" y1="2" x2="12" y2="15"></line>
-                        </svg>
-                        Condividi
-                    </button>
-                </div>
-                <div class="comments-section">
-                    <form class="comment-form">
-                        <input type="text" class="comment-input" placeholder="Scrivi un commento...">
-                        <button type="submit" class="comment-submit">Invia</button>
-                    </form>
-                    <div class="comments-list">
-                        <div class="comment">
-                            <div class="comment-avatar">M</div>
-                            <div class="comment-content">
-                                <div class="comment-author">Marco</div>
-                                <div class="comment-text">Questo è esattamente come mi sono sentito il primo giorno nel gruppo! 🤣</div>
-                                <div class="comment-actions">
-                                    <span class="comment-like">Mi piace (15)</span>
-                                    <span class="comment-reply">Rispondi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-avatar">L</div>
-                            <div class="comment-content">
-                                <div class="comment-author">Lucia</div>
-                                <div class="comment-text">Troppo divertente! Qualcuno mi può spiegare come funzionano i comandi di gioco?</div>
-                                <div class="comment-actions">
-                                    <span class="comment-like">Mi piace (8)</span>
-                                    <span class="comment-reply">Rispondi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-avatar">G</div>
-                            <div class="comment-content">
-                                <div class="comment-author">Giovanni</div>
-                                <div class="comment-text">Aspettiamo altri contenuti come questo! 👏</div>
-                                <div class="comment-actions">
-                                    <span class="comment-like">Mi piace (3)</span>
-                                    <span class="comment-reply">Rispondi</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Meme Post 2 -->
-            <div class="meme-post">
-                <div class="post-header">
-                    <div class="creator-avatar">P</div>
-                    <div class="creator-info">
-                        <div class="creator-name">Phishy Admin</div>
-                        <div class="post-date">26 Aprile 2025</div>
-                    </div>
-                </div>
-                <div class="post-content">
-                    <div class="post-caption">Quando usi il comando /combatti per la prima volta 🤺</div>
-                    <div class="video-container">
-                        <div class="video-placeholder" data-video-id="meme2">
-                            <div class="play-button">
-                                <svg viewBox="0 0 24 24">
-                                    <polygon points="5,3 19,12 5,21"></polygon>
-                                </svg>
-                            </div>
-                            <div class="video-title">Primi combattimenti nel gruppo</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-actions">
-                    <button class="action-button like-button">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                        </svg>
-                        87 Mi Piace
-                    </button>
-                    <button class="action-button">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                        28 Commenti
-                    </button>
-                    <button class="action-button">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                            <polyline points="16 6 12 2 8 6"></polyline>
-                            <line x1="12" y1="2" x2="12" y2="15"></line>
-                        </svg>
-                        Condividi
-                    </button>
-                </div>
-                <div class="comments-section">
-                    <form class="comment-form">
-                        <input type="text" class="comment-input" placeholder="Scrivi un commento...">
-                        <button type="submit" class="comment-submit">Invia</button>
-                    </form>
-                    <div class="comments-list">
-                        <div class="comment">
-                            <div class="comment-avatar">S</div>
-                            <div class="comment-content">
-                                <div class="comment-author">Sara</div>
-                                <div class="comment-text">Mi sono ritrovata completamente in questo video 😂 Ancora non ho capito come vincere!</div>
-                                <div class="comment-actions">
-                                    <span class="comment-like">Mi piace (12)</span>
-                                    <span class="comment-reply">Rispondi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-avatar">A</div>
-                            <div class="comment-content">
-                                <div class="comment-author">Alessandro</div>
-                                <div class="comment-text">Chi vuole sfidare il campione in carica? Sono al livello 15 😎</div>
-                                <div class="comment-actions">
-                                    <span class="comment-like">Mi piace (7)</span>
-                                    <span class="comment-reply">Rispondi</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Video Modal -->
-    <div class="modal" id="videoModal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <video class="video-player" controls>
-                <source src="" type="video/mp4">
-                Il tuo browser non supporta la riproduzione video.
-            </video>
+        <div id="post-container" class="meme-container">
+            <!-- I post verranno caricati dinamicamente -->
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>© 2025 Phishy Community. Tutti i diritti riservati.</p>
+            <p>&copy; 2025 Phishy - Blog. Tutti i diritti riservati.</p>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const nav = document.querySelector('nav');
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        const fileNames = [
+            "post1.mp4",
+            "post2-1.mp4",
+            "post2-2.mp4",
+            "post3.mp4",
+            "post4-1.mp4",
+            "post4-2.mp4",
+            "post5-1.mp4",
+            "post5-2.mp4",
+            "post6.mp4",
+            "post7-1.mp4",
+            "post7-2.mp4",
+            "post8.mp4",
+            "post9.mp4",
+            "post10.mp4",
+        ];
+
+        const container = document.getElementById('post-container');
+        const API_BASE_URL = window.location.origin; // Base URL automatico
+
+        // Funzione per mostrare errori nell'UI
+        function showError(container, message) {
+            // Rimuovi errori precedenti
+            const oldError = container.querySelector('.error-message');
+            if (oldError) oldError.remove();
             
-            mobileMenuBtn.addEventListener('click', function() {
-                nav.classList.toggle('active');
-            });
-
-            // Video modal functionality
-            const modal = document.getElementById('videoModal');
-            const videoPlayer = document.querySelector('.video-player');
-            const videoPlaceholders = document.querySelectorAll('.video-placeholder');
-            const closeModal = document.querySelector('.close-modal');
-            
-            // Sample video sources (in a real app, these would be actual video URLs)
-            const videoSources = {
-                'meme1': 'https://example.com/videos/community-intro.mp4',
-                'meme2': 'https://example.com/videos/first-battle.mp4'
-            };
-            
-         videoPlaceholders.forEach(placeholder => {
-    placeholder.addEventListener('click', function() {
-        const videoId = this.getAttribute('data-video-id');
-        // In a real implementation, set the actual video source
-        videoPlayer.src = videoSources[videoId];
-        videoPlayer.load();
-        modal.style.display = 'flex';
-    });
-});
-
-closeModal.addEventListener('click', function() {
-    modal.style.display = 'none';
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
-});
-
-// Close modal when clicking outside of content
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-        videoPlayer.pause();
-        videoPlayer.currentTime = 0;
-    }
-});
-
-// Like button functionality
-const likeButtons = document.querySelectorAll('.like-button');
-likeButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        // Toggle active class for styling
-        this.classList.toggle('active');
-        
-        // Update like count (in a real app, this would involve an API call)
-        const likeText = this.textContent.trim();
-        const likeCount = parseInt(likeText.match(/\d+/)[0]);
-        
-        if (this.classList.contains('active')) {
-            this.innerHTML = `
-                <svg viewBox="0 0 24 24" fill="red" stroke="red">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                </svg>
-                ${likeCount + 1} Mi Piace`;
-        } else {
-            this.innerHTML = `
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                </svg>
-                ${likeCount} Mi Piace`;
+            const errorEl = document.createElement('div');
+            errorEl.className = 'error-message';
+            errorEl.textContent = message;
+            container.appendChild(errorEl);
         }
-    });
-});
 
-// Comment form handling
-const commentForms = document.querySelectorAll('.comment-form');
-commentForms.forEach(form => {
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const input = this.querySelector('.comment-input');
-        const commentText = input.value.trim();
-        
-        if (commentText) {
-            // Create new comment (in a real app, this would involve an API call)
-            const commentsList = this.nextElementSibling;
-            const newComment = document.createElement('div');
-            newComment.className = 'comment';
-            
-            // Create a random initial for the avatar
-            const initials = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            const randomInitial = initials[Math.floor(Math.random() * initials.length)];
-            
-            newComment.innerHTML = `
-                <div class="comment-avatar">${randomInitial}</div>
+        // Funzione per aggiungere commenti all'UI
+        function addCommentToUI(name, text, container) {
+            const commentEl = document.createElement('div');
+            commentEl.className = 'comment';
+            commentEl.innerHTML = `
+                <div class="comment-avatar">${name[0].toUpperCase()}</div>
                 <div class="comment-content">
-                    <div class="comment-author">Utente</div>
-                    <div class="comment-text">${commentText}</div>
-                    <div class="comment-actions">
-                        <span class="comment-like">Mi piace (0)</span>
-                        <span class="comment-reply">Rispondi</span>
-                    </div>
+                    <div class="comment-author">${name}</div>
+                    <div class="comment-text">${text}</div>
                 </div>
             `;
-            
-            commentsList.prepend(newComment);
-            input.value = '';
-            
-            // Add event listeners to new comment actions
-            const newLikeBtn = newComment.querySelector('.comment-like');
-            newLikeBtn.addEventListener('click', handleCommentLike);
+            container.appendChild(commentEl);
         }
-    });
-});
 
-// Handle comment likes
-function handleCommentLike() {
-    const likeText = this.textContent.trim();
-    const likeCount = parseInt(likeText.match(/\d+/)[0]);
-    this.textContent = `Mi piace (${likeCount + 1})`;
-    this.style.color = 'var(--accent-yellow)';
-    this.removeEventListener('click', handleCommentLike);
-}
+        // Funzione per caricare i commenti esistenti
+        async function loadComments(postIndex, commentsList) {
+            try {
+                const res = await fetch(`${API_BASE_URL}/api/comments/${postIndex}`);
+                if (!res.ok) throw new Error('Errore nel caricamento');
+                
+                const comments = await res.json();
+                commentsList.innerHTML = ''; // Svuota la lista
+                
+                if (comments.length === 0) {
+                    commentsList.innerHTML = '<p>Nessun commento ancora</p>';
+                    return;
+                }
+                
+                comments.forEach(({ name, text }) => {
+                    addCommentToUI(name, text, commentsList);
+                });
+            } catch (err) {
+                console.error('Errore caricando i commenti:', err);
+                showError(commentsList, 'Errore nel caricamento dei commenti');
+            }
+        }
 
-// Apply initial event listeners to existing comment likes
-const commentLikes = document.querySelectorAll('.comment-like');
-commentLikes.forEach(like => {
-    like.addEventListener('click', handleCommentLike);
-});
-});
+        // Creazione dei post
+        fileNames.forEach((fileName, index) => {
+            const extension = fileName.split('.').pop().toLowerCase();
+            const isImage = ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(extension);
+            const isVideo = ['mp4', 'webm', 'ogg'].includes(extension);
+
+            const postEl = document.createElement('div');
+            postEl.className = 'meme-post';
+            postEl.innerHTML = `
+                <div class="post-header">
+                    <div class="creator-avatar">P</div>
+                    <div class="creator-info">
+                        <div class="creator-name">Phishy Admin</div>
+                        <div class="post-date">${new Date().toLocaleDateString('it-IT')}</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="badge" style="margin-bottom:10px;font-weight:bold;color:#FFD700;">
+                        ${isImage ? '📷 Foto' : isVideo ? '🎥 Video' : ''}
+                    </div>
+                    <div class="post-caption">Post #${index + 1}</div>
+                    ${isImage ? `<img src="posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:20px;">` : isVideo ? `
+                    <video controls style="width:100%;border-radius:10px;margin-bottom:20px;">
+                        <source src="posts/${fileName}" type="video/${extension}">
+                        Il tuo browser non supporta il tag video.
+                    </video>` : ''}
+                </div>
+                <div class="comments-section">
+                    <form class="comment-form" data-post-index="${index}">
+                        <input type="text" class="comment-name" placeholder="Nome" required>
+                        <input type="text" class="comment-input" placeholder="Scrivi un commento..." required>
+                        <button type="submit" class="comment-submit">Invia</button>
+                    </form>
+                    <div class="comments-list"></div>
+                </div>
+            `;
+            container.appendChild(postEl);
+
+            const form = postEl.querySelector('.comment-form');
+            const commentsList = postEl.querySelector('.comments-list');
+
+            // Carica i commenti iniziali
+            loadComments(index, commentsList);
+
+            // Gestione invio commenti
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const nameInput = form.querySelector('.comment-name');
+                const textInput = form.querySelector('.comment-input');
+                const name = nameInput.value.trim();
+                const text = textInput.value.trim();
+                
+                if (!name || !text) {
+                    showError(form, 'Inserisci nome e commento');
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`${API_BASE_URL}/api/comments`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ 
+                            postIndex: index, 
+                            name, 
+                            text 
+                        })
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Errore nel salvataggio');
+                    }
+
+                    // Ricarica i commenti dal server
+                    await loadComments(index, commentsList);
+                    
+                    // Reset del form
+                    nameInput.value = '';
+                    textInput.value = '';
+                    
+                } catch (err) {
+                    console.error('Errore salvando il commento:', err);
+                    showError(form, err.message || 'Errore nel salvataggio del commento');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
