@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phishy - Blog</title>
     <style>
-        /* Stili base (aggiungi il tuo CSS completo qui) */
+        :root {
+            --color-purple: #8A2BE2;
+            --color-blue: #67B7D1;
+            --color-green: #4CAF50;
+            --color-yellow: #FFD700;
+            --color-dark: #333;
+            --color-light: #f8f9fa;
+        }
+        
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            color: #333;
+            color: var(--color-dark);
+            overflow-x: hidden;
         }
         
         .container {
@@ -21,73 +35,315 @@
             padding: 20px;
         }
         
-        .meme-post {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .comments-section {
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        
-        .comment-form {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .comment-form input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        
-        .comment-form button {
-            padding: 10px 20px;
-            background: #4CAF50;
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
             color: white;
-            border: none;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            background: linear-gradient(to right, var(--color-yellow), var(--color-green));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 0 5px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
             border-radius: 5px;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
             cursor: pointer;
         }
         
-        .comment {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #f0f0f0;
+        /* Hero section */
+        .hero-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background: linear-gradient(to right, rgba(138, 43, 226, 0.1), rgba(103, 183, 209, 0.1));
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            animation: fadeIn 1s ease-out;
         }
         
-        .comment-avatar {
-            width: 40px;
-            height: 40px;
-            background: #4CAF50;
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Post styles */
+        .meme-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .meme-post {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .meme-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .creator-avatar {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
+            font-size: 20px;
+            margin-right: 15px;
         }
         
-        .error-message {
-            color: #f44336;
-            padding: 10px;
-            background: #ffebee;
-            border-radius: 5px;
+        .creator-info {
+            flex: 1;
+        }
+        
+        .creator-name {
+            font-weight: bold;
+            color: var(--color-dark);
+        }
+        
+        .post-date {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .post-content {
+            margin-bottom: 20px;
+        }
+        
+        .post-caption {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--color-purple);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: linear-gradient(to right, var(--color-yellow), rgba(255, 215, 0, 0.5));
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Post interaction */
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
             margin-top: 10px;
+        }
+        
+        .like-btn, .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .like-btn {
+            color: var(--color-purple);
+        }
+        
+        .download-btn {
+            color: var(--color-green);
+        }
+        
+        .like-btn:hover, .download-btn:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        
+        .like-btn.active {
+            color: #ff4757;
+        }
+        
+        .like-count {
+            font-weight: 500;
+        }
+        
+        /* Comments section */
+        .comments-section {
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .comment {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        .comment-avatar {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, var(--color-blue), var(--color-green));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .comment-text {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+            color: white;
+            padding: 30px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .meme-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+                flex-direction: column;
+                padding: 20px;
+                transform: translateY(-150%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="background-overlay"></div>
     <header>
         <div class="container">
             <div class="header-content">
@@ -107,8 +363,8 @@
 
     <div class="container main-content">
         <div class="hero-section">
-            <h1>Il Blog di Phishy</h1>
-            <p>Leggi i post pubblicati e commenta con il tuo nome!</p>
+            <h1>I meme di Viridi Celesti</h1>
+            <p>Ogni tanto postiamo meme su cio che ci accade in community, ridiamo delle persone o vogliamo ricprdarsi di cose che non dobbiamo dimmenticare</p>
         </div>
 
         <div id="post-container" class="meme-container">
@@ -118,7 +374,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Phishy - Blog. Tutti i diritti riservati.</p>
+            <p>&copy; 2025 easter - Blog. Tutti i diritti riservati.</p>
         </div>
     </footer>
 
@@ -127,6 +383,7 @@
             document.querySelector('nav').classList.toggle('active');
         });
 
+        // Array dei file video
         const fileNames = [
             "post1.mp4",
             "post2-1.mp4",
@@ -144,56 +401,101 @@
             "post10.mp4",
         ];
 
+        // Commenti fittizi
+        const staticComments = {
+            0: [
+                { name: 'Sborrino', text: 'che schifo' },
+                { name: 'Antimo', text: 'mi mettete admin?' }
+            ],
+            1: [
+                { name: 'angy', text: 'Ottimo contenuto come sempre!' },
+                { name: 'asietta', text: 'tommaso non mi vuole...' }
+            ],
+            2: [
+                { name: 'stefano', text: 'fatene ancora' }
+            ],
+            3: [
+                { name: 'maty :)', text: 'Che bel video! Mi piace molto.' },
+                { name: 'Pietro', text: 'Davvero incredibile, complimenti!' },
+                { name: 'Elena', text: 'Mi hai fatto venire nuove idee. Grazie!' }
+            ],
+            4: [
+                { name: '444emma', text: 'ua u pizz n ccafcc a uallera a' }
+            ],
+            5: [
+                { name: 'Tommy', text: 'gruppo di merda mario fai schifo' },
+                { name: 'Nicola', text: 'io sono morta gia tanto tempo fa' }
+            ],
+            6: [
+                { name: 'Francesca', text: 'Grazie per aver condiviso queste informazioni!' }
+            ],
+            7: [
+                { name: 'Paolo', text: 'Molto utile, lo condividerò con i miei amici.' },
+                { name: 'Chiara', text: 'Ottimo lavoro, continua così!' }
+            ],
+            8: [
+                { name: 'Alessio', text: 'Questo post merita più visualizzazioni!' },
+                { name: 'Valentina', text: 'Stavo cercando esattamente questo tipo di contenuto.' }
+            ],
+            9: [
+                { name: 'Simone', text: 'Fantastico! Aspetto il prossimo post.' }
+            ],
+            10: [
+                { name: 'Sara', text: 'Mi hai fatto cambiare prospettiva, grazie!' },
+                { name: 'Davide', text: 'Che bel post, complimenti all\'admin!' }
+            ],
+            11: [
+                { name: 'Elisa', text: 'Contenuto di qualità come sempre.' }
+            ],
+            12: [
+                { name: 'Andrea', text: 'Mi piace molto questo formato!' },
+                { name: 'Martina', text: 'Continua a pubblicare così!' }
+            ],
+            13: [
+                { name: 'Federico', text: 'Eccellente contenuto, grazie per la condivisione!' },
+                { name: 'Alice', text: 'Non vedo l\'ora di vedere il prossimo video!' }
+            ]
+        };
+
         const container = document.getElementById('post-container');
-        const API_BASE_URL = window.location.origin; // Base URL automatico
+        let currentPlayingVideo = null;
 
-        // Funzione per mostrare errori nell'UI
-        function showError(container, message) {
-            // Rimuovi errori precedenti
-            const oldError = container.querySelector('.error-message');
-            if (oldError) oldError.remove();
+        // Funzione per generare un numero casuale di like
+        function randomLikes() {
+            return Math.floor(Math.random() * 50) + 5;
+        }
+
+        // Funzione per aggiungere commenti statici all'UI
+        function addStaticCommentsToUI(postIndex, commentsList) {
+            const comments = staticComments[postIndex] || [];
+            commentsList.innerHTML = '';
             
-            const errorEl = document.createElement('div');
-            errorEl.className = 'error-message';
-            errorEl.textContent = message;
-            container.appendChild(errorEl);
-        }
-
-        // Funzione per aggiungere commenti all'UI
-        function addCommentToUI(name, text, container) {
-            const commentEl = document.createElement('div');
-            commentEl.className = 'comment';
-            commentEl.innerHTML = `
-                <div class="comment-avatar">${name[0].toUpperCase()}</div>
-                <div class="comment-content">
-                    <div class="comment-author">${name}</div>
-                    <div class="comment-text">${text}</div>
-                </div>
-            `;
-            container.appendChild(commentEl);
-        }
-
-        // Funzione per caricare i commenti esistenti
-        async function loadComments(postIndex, commentsList) {
-            try {
-                const res = await fetch(`${API_BASE_URL}/api/comments/${postIndex}`);
-                if (!res.ok) throw new Error('Errore nel caricamento');
-                
-                const comments = await res.json();
-                commentsList.innerHTML = ''; // Svuota la lista
-                
-                if (comments.length === 0) {
-                    commentsList.innerHTML = '<p>Nessun commento ancora</p>';
-                    return;
-                }
-                
-                comments.forEach(({ name, text }) => {
-                    addCommentToUI(name, text, commentsList);
-                });
-            } catch (err) {
-                console.error('Errore caricando i commenti:', err);
-                showError(commentsList, 'Errore nel caricamento dei commenti');
+            if (comments.length === 0) {
+                commentsList.innerHTML = '<p>Nessun commento ancora</p>';
+                return;
             }
+            
+            comments.forEach(({ name, text }) => {
+                const commentEl = document.createElement('div');
+                commentEl.className = 'comment';
+                commentEl.innerHTML = `
+                    <div class="comment-avatar">${name[0].toUpperCase()}</div>
+                    <div class="comment-content">
+                        <div class="comment-author">${name}</div>
+                        <div class="comment-text">${text}</div>
+                    </div>
+                `;
+                commentsList.appendChild(commentEl);
+            });
+        }
+
+        // Gestione dei video
+        function handleVideoPlay(video) {
+            // Pausa il video precedente se ce n'è uno in riproduzione
+            if (currentPlayingVideo && currentPlayingVideo !== video) {
+                currentPlayingVideo.pause();
+            }
+            currentPlayingVideo = video;
         }
 
         // Creazione dei post
@@ -201,9 +503,13 @@
             const extension = fileName.split('.').pop().toLowerCase();
             const isImage = ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(extension);
             const isVideo = ['mp4', 'webm', 'ogg'].includes(extension);
+            const initialLikes = randomLikes();
 
             const postEl = document.createElement('div');
             postEl.className = 'meme-post';
+            postEl.setAttribute('data-index', index);
+            postEl.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
+            
             postEl.innerHTML = `
                 <div class="post-header">
                     <div class="creator-avatar">P</div>
@@ -213,74 +519,86 @@
                     </div>
                 </div>
                 <div class="post-content">
-                    <div class="badge" style="margin-bottom:10px;font-weight:bold;color:#FFD700;">
+                    <div class="badge">
                         ${isImage ? '📷 Foto' : isVideo ? '🎥 Video' : ''}
                     </div>
                     <div class="post-caption">Post #${index + 1}</div>
-                    ${isImage ? `<img src="posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:20px;">` : isVideo ? `
-                    <video controls style="width:100%;border-radius:10px;margin-bottom:20px;">
-                        <source src="posts/${fileName}" type="video/${extension}">
-                        Il tuo browser non supporta il tag video.
-                    </video>` : ''}
+                    ${isImage ? 
+                        `<img src="posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:15px;">` : 
+                        isVideo ? `
+                        <video controls style="width:100%;border-radius:10px;margin-bottom:15px;">
+                            <source src="posts/${fileName}" type="video/${extension}">
+                            Il tuo browser non supporta il tag video.
+                        </video>` : ''}
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" data-likes="${initialLikes}">
+                        <span class="like-icon">❤️</span>
+                        <span class="like-count">${initialLikes}</span>
+                    </button>
+                    ${isVideo ? 
+                        `<button class="download-btn" data-file="posts/${fileName}">
+                            <span>⬇️ Scarica</span>
+                        </button>` : ''}
                 </div>
                 <div class="comments-section">
-                    <form class="comment-form" data-post-index="${index}">
-                        <input type="text" class="comment-name" placeholder="Nome" required>
-                        <input type="text" class="comment-input" placeholder="Scrivi un commento..." required>
-                        <button type="submit" class="comment-submit">Invia</button>
-                    </form>
+                    <h4>Commenti</h4>
                     <div class="comments-list"></div>
                 </div>
             `;
+            
             container.appendChild(postEl);
-
-            const form = postEl.querySelector('.comment-form');
+            
+            // Aggiungi commenti statici
             const commentsList = postEl.querySelector('.comments-list');
-
-            // Carica i commenti iniziali
-            loadComments(index, commentsList);
-
-            // Gestione invio commenti
-            form.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                const nameInput = form.querySelector('.comment-name');
-                const textInput = form.querySelector('.comment-input');
-                const name = nameInput.value.trim();
-                const text = textInput.value.trim();
+            addStaticCommentsToUI(index, commentsList);
+            
+            // Gestione del pulsante like
+            const likeBtn = postEl.querySelector('.like-btn');
+            likeBtn.addEventListener('click', function() {
+                let likes = parseInt(this.getAttribute('data-likes'));
                 
-                if (!name || !text) {
-                    showError(form, 'Inserisci nome e commento');
-                    return;
+                if (this.classList.contains('active')) {
+                    // Togli il like
+                    likes--;
+                    this.classList.remove('active');
+                    this.querySelector('.like-icon').textContent = '❤️';
+                } else {
+                    // Aggiungi il like
+                    likes++;
+                    this.classList.add('active');
+                    this.querySelector('.like-icon').textContent = '❤️';
+                    this.style.animation = 'pulse 0.5s';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 500);
                 }
-
-                try {
-                    const response = await fetch(`${API_BASE_URL}/api/comments`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ 
-                            postIndex: index, 
-                            name, 
-                            text 
-                        })
-                    });
-
-                    if (!response.ok) {
-                        const errorData = await response.json();
-                        throw new Error(errorData.error || 'Errore nel salvataggio');
-                    }
-
-                    // Ricarica i commenti dal server
-                    await loadComments(index, commentsList);
-                    
-                    // Reset del form
-                    nameInput.value = '';
-                    textInput.value = '';
-                    
-                } catch (err) {
-                    console.error('Errore salvando il commento:', err);
-                    showError(form, err.message || 'Errore nel salvataggio del commento');
-                }
+                
+                this.setAttribute('data-likes', likes);
+                this.querySelector('.like-count').textContent = likes;
             });
+            
+            // Gestione pulsante download
+            const downloadBtn = postEl.querySelector('.download-btn');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function() {
+                    const fileUrl = this.getAttribute('data-file');
+                    const a = document.createElement('a');
+                    a.href = fileUrl;
+                    a.download = fileName;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                });
+            }
+            
+            // Gestione dei video
+            const video = postEl.querySelector('video');
+            if (video) {
+                video.addEventListener('play', function() {
+                    handleVideoPlay(this);
+                });
+            }
         });
     </script>
 </body>
