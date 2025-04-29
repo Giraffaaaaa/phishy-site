@@ -181,7 +181,7 @@
       ]
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 16402,
+      "messaggi": 16404,
       "muto": false,
       "expired": 0,
       "blasphemy": 77,
@@ -239,7 +239,7 @@
         "muratore": 1743180649919,
         "cameriere": 1743375444483
       },
-      "exp": 959883,
+      "exp": 959945,
       "level": 84,
       "jobCooldown": 1745790856866,
       "ultimoLavoro": {
@@ -3603,7 +3603,7 @@
       "warnReasons": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 7741,
+      "messaggi": 7744,
       "muto": false,
       "expired": 0,
       "blasphemy": 29,
@@ -3634,7 +3634,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 95835,
+      "exp": 95859,
       "limit": 10875,
       "money": null,
       "msg": {},
@@ -174296,7 +174296,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 5828,
+      "messaggi": 5829,
       "expired": 0,
       "blasphemy": 0,
       "antivoip": true,
@@ -174377,7 +174377,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 4311,
+      "messaggi": 4314,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -174599,7 +174599,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 283,
+      "messaggi": 284,
       "expired": 0,
       "blasphemy": 0,
       "antivoip": true,
@@ -179064,10 +179064,10 @@
       "lastSuccess": 1745956470822
     },
     "info-ping.js": {
-      "total": 75,
-      "success": 75,
-      "last": 1745852993756,
-      "lastSuccess": 1745852993756
+      "total": 76,
+      "success": 76,
+      "last": 1745961096600,
+      "lastSuccess": 1745961096600
     },
     "audio-bestemmie.js": {
       "total": 9,
