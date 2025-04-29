@@ -456,7 +456,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
+                <a href="/phishy-site" class="logo">
                     <span>Spiegel - Community</span>
                 </a>
                 <button class="mobile-menu-btn">☰</button>
@@ -623,12 +623,6 @@
         if (localStorage.getItem('visitCount')) {
             let count = parseInt(localStorage.getItem('visitCount'));
             localStorage.setItem('visitCount', count + 1);
-        } else {
-            localStorage.setItem('visitCount', 1);
-        }
-
-        // Redirect the "Phishy - Community" button to phishy-site.html
-        document.querySelector('.logo').setAttribute('href', 'phishy-site/');
         } else {
             localStorage.setItem('visitCount', 1);
         }
