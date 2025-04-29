@@ -865,46 +865,156 @@
   </div>
   
   <script>
-    // Dati di esempio per le classifiche
-    const leaderboardData = {
-      sweets: [
-        {name: "Marco", value: 148},
-        {name: "Giulia", value: 137},
-        {name: "Francesco", value: 122},
-        {name: "Laura", value: 114},
-        {name: "Alessandro", value: 103},
-        {name: "Valentina", value: 97},
-        {name: "Roberto", value: 89},
-        {name: "Elisa", value: 78},
-        {name: "Davide", value: 72},
-        {name: "Chiara", value: 65}
-      ],
-      messages: [
-        {name: "Valentina", value: 856},
-        {name: "Roberto", value: 789},
-        {name: "Giulia", value: 745},
-        {name: "Marco", value: 672},
-        {name: "Laura", value: 621},
-        {name: "Alessandro", value: 598},
-        {name: "Elisa", value: 567},
-        {name: "Francesco", value: 534},
-        {name: "Chiara", value: 489},
-        {name: "Davide", value: 421}
-      ],
-      blasphemy: [
-        {name: "Francesco", value: 53},
-        {name: "Marco", value: 47},
-        {name: "Alessandro", value: 42},
-        {name: "Roberto", value: 38},
-        {name: "Davide", value: 35},
-        {name: "Valentina", value: 29},
-        {name: "Laura", value: 24},
-        {name: "Giulia", value: 21},
-        {name: "Elisa", value: 18},
-        {name: "Chiara", value: 15}
-      ]
-    };
+   // Funzione per ottenere i dati dal database.json
+    async function fetchUserData() {
+      try {
+        // Mostra il loader durante il caricamento
+        showLoader();
+        
+        const response = await fetch('database.json');
+        if (!response.ok) {
+          throw new Error('Errore nel caricamento del database');
+        }
+        const database = await response.json();
+        
+        // Nascondi il loader dopo aver caricato i dati
+        hideLoader();
+        
+        return processUserData(database.users);
+      } catch (error) {
+        console.error('Errore:', error);
+        hideLoader();
+        showError('Impossibile caricare i dati. Riprova più tardi.');
+        return {
+          sweets: [],
+          messages: [],
+          blasphemy: []
+        };
+      }
+    }
+
+    // Funzione per elaborare i dati degli utenti e generare le classifiche
+    function processUserData(users) {
+      const usersArray = Object.entries(users).map(([id, user]) => ({
+        id,
+        name: user.name || id.split('@')[0], // Usa il nome o l'ID se il nome non esiste
+        sweets: user.limit || 0,
+        messages: user.messaggi || 0,
+        blasphemy: user.blasphemy || 0
+      }));
+
+      return {
+        sweets: usersArray
+          .sort((a, b) => b.sweets - a.sweets)
+          .slice(0, 10)
+          .map(user => ({ name: user.name, value: user.sweets })),
+        
+        messages: usersArray
+          .sort((a, b) => b.messages - a.messages)
+          .slice(0, 10)
+          .map(user => ({ name: user.name, value: user.messages })),
+          
+        blasphemy: usersArray
+          .sort((a, b) => b.blasphemy - a.blasphemy)
+          .slice(0, 10)
+          .map(user => ({ name: user.name, value: user.blasphemy }))
+      };
+    }
+
+    // Funzione per popolare una classifica
+    function populateLeaderboard(containerId, data, suffix = '') {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '';
+      
+      data.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.className = 'leaderboard-item';
+        itemElement.innerHTML = `
+          <span class="rank">${index + 1}.</span>
+          <span class="name">${item.name}</span>
+          <span class="value">${item.value}${suffix}</span>
+        `;
+        container.appendChild(itemElement);
+      });
+    }
     
+    // Funzione per aggiornare i dati del podio
+    function updatePodiums(data) {
+      // Aggiorna tutti i podi con i dati corretti
+      updatePodium('sweets-top10', '.leaderboard:nth-child(1)', data.sweets);
+      updatePodium('messages-top10', '.leaderboard:nth-child(2)', data.messages);
+      updatePodium('blasphemy-top10', '.leaderboard:nth-child(3)', data.blasphemy);
+    }
+    
+    function updatePodium(containerId, leaderboardSelector, data) {
+      const podiumItems = document.querySelectorAll(`${leaderboardSelector} .podium-name`);
+      if (data.length > 0) {
+        podiumItems[1].textContent = data[0].name; // Primo posto (al centro)
+        if (data.length > 1) podiumItems[0].textContent = data[1].name; // Secondo posto (a sinistra)
+        if (data.length > 2) podiumItems[2].textContent = data[2].name; // Terzo posto (a destra)
+      }
+    }
+    
+    // Funzione per mostrare il loader
+    function showLoader() {
+      const loaderContainer = document.createElement('div');
+      loaderContainer.className = 'loading';
+      loaderContainer.id = 'loader';
+      
+      const spinner = document.createElement('div');
+      spinner.className = 'spinner';
+      
+      const loaderText = document.createElement('div');
+      loaderText.textContent = 'Caricamento classifiche...';
+      
+      loaderContainer.appendChild(spinner);
+      loaderContainer.appendChild(loaderText);
+      
+      document.body.appendChild(loaderContainer);
+    }
+    
+    // Funzione per nascondere il loader
+    function hideLoader() {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.remove();
+      }
+    }
+    
+    // Funzione per mostrare messaggi di errore
+    function showError(message) {
+      const errorContainer = document.createElement('div');
+      errorContainer.style.textAlign = 'center';
+      errorContainer.style.padding = '20px';
+      errorContainer.style.color = '#f72585';
+      errorContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+      errorContainer.style.borderRadius = '10px';
+      errorContainer.style.margin = '20px';
+      errorContainer.textContent = message;
+      
+      document.body.appendChild(errorContainer);
+      
+      // Nascondi l'errore dopo 5 secondi
+      setTimeout(() => {
+        errorContainer.remove();
+      }, 5000);
+    }
+    
+    // Carica i dati quando la pagina è pronta
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Ottieni i dati dal database.json
+      const leaderboardData = await fetchUserData();
+      
+      // Popola le classifiche con i dati reali
+      populateLeaderboard('sweets-top10', leaderboardData.sweets, ' 🍬');
+      populateLeaderboard('messages-top10', leaderboardData.messages, ' 💬');
+      populateLeaderboard('blasphemy-top10', leaderboardData.blasphemy, ' 🤬');
+      
+      // Aggiorna i podi con i dati reali
+      updatePodiums(leaderboardData);
+    });
+    
+
     // Inizializzazione delle particelle di sfondo
     document.addEventListener('DOMContentLoaded', function() {
       // Configurazione particles.js
