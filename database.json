@@ -573,7 +573,7 @@
       ]
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 2282,
+      "messaggi": 2283,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -604,7 +604,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 35396,
+      "exp": 35401,
       "limit": 515,
       "money": null,
       "msg": {},
@@ -1361,7 +1361,7 @@
       ]
     },
     "120363329245024816@g.us": {
-      "messaggi": 1846,
+      "messaggi": 1847,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -1392,7 +1392,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 9984,
+      "exp": 9987,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -3603,7 +3603,7 @@
       "warnReasons": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 7916,
+      "messaggi": 7917,
       "muto": false,
       "expired": 0,
       "blasphemy": 31,
@@ -3634,7 +3634,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 99814,
+      "exp": 99818,
       "limit": 10875,
       "money": null,
       "msg": {},
@@ -38153,7 +38153,7 @@
       "warnReasons": []
     },
     "393494332788@s.whatsapp.net": {
-      "messaggi": 15,
+      "messaggi": 16,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -38187,13 +38187,25 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 163,
+      "exp": 172,
       "limit": 20,
       "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
-      "warnReasons": []
+      "warnReasons": [],
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "spammer": 0,
+      "credito": 0,
+      "uova": 0,
+      "scudo": 0,
+      "serpente": false,
+      "piccione": false,
+      "pesce": false,
+      "riccio": false,
+      "scoiattolo": false,
+      "polpo": false
     },
     "393517075715@s.whatsapp.net": {
       "messaggi": 4,
@@ -175151,7 +175163,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 317725,
+      "messaggi": 317727,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -175408,7 +175420,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 3938,
+      "messaggi": 3939,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -175444,7 +175456,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 30696,
+      "messaggi": 30697,
       "expired": 0,
       "blasphemy": 0,
       "battle": {
