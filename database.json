@@ -3603,7 +3603,7 @@
       "warnReasons": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 9448,
+      "messaggi": 9450,
       "muto": false,
       "expired": 0,
       "blasphemy": 35,
@@ -3634,7 +3634,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 9613,
+      "exp": 9731,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -132327,7 +132327,7 @@
       ]
     },
     "393280627125@s.whatsapp.net": {
-      "messaggi": 621,
+      "messaggi": 626,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -132349,7 +132349,12 @@
       "antispam": 0,
       "antispamlastclaim": 0,
       "spammer": 0,
-      "bustapaga": 0,
+      "bustapaga": {
+        "postino": {
+          "esperienza": 1,
+          "bonus": 0
+        }
+      },
       "credito": 110724,
       "pozione_minore": 0,
       "pozione_maggiore": 3,
@@ -132373,15 +132378,15 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 1,
-      "exp": 11810,
-      "limit": 0,
+      "exp": 11933,
+      "limit": 50,
       "money": null,
       "msg": {},
       "premiumDate": -1,
       "warnReasons": [],
       "cooldowns": {},
       "ultimoLavoro": {
-        "postino": 1745992735759
+        "postino": 1746072656089
       },
       "jobCooldown": 1745996322312,
       "lastScassa": 1745992898679
@@ -178551,7 +178556,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 324843,
+      "messaggi": 324847,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -178610,7 +178615,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 42100,
+      "messaggi": 42103,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -182835,10 +182840,10 @@
       "lastSuccess": 1742857391435
     },
     "rpg-work.js": {
-      "total": 1903,
-      "success": 1866,
-      "last": 1746053703613,
-      "lastSuccess": 1746053703613
+      "total": 1904,
+      "success": 1867,
+      "last": 1746072656555,
+      "lastSuccess": 1746072656555
     },
     "admin-deletesession.js": {
       "total": 97,
@@ -183015,10 +183020,10 @@
       "lastSuccess": 1746053703163
     },
     "risposta-buongiorno.js": {
-      "total": 4990,
-      "success": 4990,
-      "last": 1746046987971,
-      "lastSuccess": 1746046987971
+      "total": 4992,
+      "success": 4992,
+      "last": 1746072604427,
+      "lastSuccess": 1746072604427
     },
     "gp-setbye.js": {
       "total": 6,
@@ -183873,10 +183878,10 @@
       "lastSuccess": 1745658748756
     },
     "audio-tutti.js": {
-      "total": 5166,
-      "success": 5166,
-      "last": 1746060727345,
-      "lastSuccess": 1746060727345
+      "total": 5167,
+      "success": 5167,
+      "last": 1746072656556,
+      "lastSuccess": 1746072656556
     },
     "tool-traduci.js": {
       "total": 27,
