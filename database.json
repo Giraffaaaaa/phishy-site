@@ -181,7 +181,7 @@
       ]
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 16832,
+      "messaggi": 16834,
       "muto": false,
       "expired": 0,
       "blasphemy": 81,
@@ -239,7 +239,7 @@
         "muratore": 1743180649919,
         "cameriere": 1743375444483
       },
-      "exp": 969890,
+      "exp": 969896,
       "level": 84,
       "jobCooldown": 1745790856866,
       "ultimoLavoro": {
@@ -3603,7 +3603,7 @@
       "warnReasons": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 9447,
+      "messaggi": 9448,
       "muto": false,
       "expired": 0,
       "blasphemy": 35,
@@ -3634,7 +3634,7 @@
       "gatto": false,
       "coniglio": false,
       "drago": false,
-      "exp": 9604,
+      "exp": 9613,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -98511,7 +98511,7 @@
       "warnReasons": []
     },
     "393770447951@s.whatsapp.net": {
-      "messaggi": 320,
+      "messaggi": 321,
       "muto": false,
       "expired": 0,
       "blasphemy": 11,
@@ -98555,7 +98555,7 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 4747,
+      "exp": 4757,
       "limit": 40,
       "money": null,
       "msg": {},
@@ -174968,7 +174968,7 @@
       "premiumDate": -1
     },
     "393295996739@s.whatsapp.net": {
-      "messaggi": 319,
+      "messaggi": 321,
       "muto": false,
       "expired": 0,
       "blasphemy": 11,
@@ -175014,7 +175014,7 @@
       "scoiattolo": false,
       "polpo": false,
       "uova": 0,
-      "exp": 4153,
+      "exp": 4220,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -178551,7 +178551,7 @@
       "antiArab": true,
       "modoadmin": false,
       "antiPorno": true,
-      "messaggi": 324837,
+      "messaggi": 324843,
       "expired": 0,
       "blasphemy": 0,
       "autolevelup": false,
@@ -182823,10 +182823,10 @@
   },
   "stats": {
     "menzione-insulti-random.js": {
-      "total": 323,
-      "success": 323,
-      "last": 1746055401485,
-      "lastSuccess": 1746055401485
+      "total": 324,
+      "success": 324,
+      "last": 1746065967333,
+      "lastSuccess": 1746065967333
     },
     "rpg-vendi.js": {
       "total": 11,
