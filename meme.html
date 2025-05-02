@@ -12,321 +12,149 @@
             --color-yellow: #FFD700;
             --color-dark: #333;
             --color-light: #f8f9fa;
-            --color-bg: #f9f9f9;
-            --color-card: #ffffff;
-            --color-hover: #e9e9e9;
-            --color-text-secondary: #606060;
-            --color-border: #e0e0e0;
-            --header-height: 60px;
-            --sidebar-width: 240px;
         }
         
         * {
             box-sizing: border-box;
-            transition: all 0.2s ease;
-            margin: 0;
-            padding: 0;
+            transition: all 0.3s ease;
         }
         
         body {
-            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--color-bg);
+            background-color: #f5f5f5;
             color: var(--color-dark);
             overflow-x: hidden;
         }
         
         .container {
-            width: 100%;
-            max-width: 1600px;
+            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 16px;
+            padding: 20px;
         }
         
-        /* Header styles - YouTube inspired */
+        /* Header styles */
         header {
-            background-color: white;
-            color: var(--color-dark);
-            padding: 0;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-            position: fixed;
+            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            height: var(--header-height);
-            z-index: 1000;
+            z-index: 100;
         }
         
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 100%;
-            padding: 0 16px;
-        }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .menu-toggle {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            color: var(--color-dark);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-        
-        .menu-toggle:hover {
-            background-color: var(--color-hover);
         }
         
         .logo {
             text-decoration: none;
-            color: var(--color-dark);
-            font-size: 22px;
+            color: white;
+            font-size: 24px;
             font-weight: bold;
             display: flex;
             align-items: center;
         }
         
         .logo span {
-            background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+            background: linear-gradient(to right, var(--color-yellow), var(--color-green));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             padding: 0 5px;
         }
         
-        .search-container {
-            flex: 1;
-            max-width: 640px;
-            margin: 0 auto;
+        nav {
             display: flex;
-            align-items: center;
-        }
-        
-        .search-bar {
-            display: flex;
-            width: 100%;
-            position: relative;
-        }
-        
-        .search-input {
-            flex: 1;
-            padding: 10px 16px;
-            border: 1px solid var(--color-border);
-            border-radius: 24px 0 0 24px;
-            font-size: 16px;
-            width: 100%;
-            outline: none;
-        }
-        
-        .search-input:focus {
-            border-color: var(--color-blue);
-        }
-        
-        .search-button {
-            background-color: #f0f0f0;
-            border: 1px solid var(--color-border);
-            border-left: none;
-            border-radius: 0 24px 24px 0;
-            padding: 0 20px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .search-button:hover {
-            background-color: #e6e6e6;
-        }
-        
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .action-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-            color: var(--color-dark);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .action-button:hover {
-            background-color: var(--color-hover);
-        }
-        
-        .profile-avatar {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        
-        /* Main layout */
-        .page-layout {
-            display: flex;
-            margin-top: var(--header-height);
-            position: relative;
-        }
-        
-        /* Sidebar - YouTube inspired */
-        .sidebar {
-            width: var(--sidebar-width);
-            background-color: white;
-            position: fixed;
-            top: var(--header-height);
-            left: 0;
-            bottom: 0;
-            overflow-y: auto;
-            z-index: 100;
-            padding: 12px 0;
-            border-right: 1px solid var(--color-border);
-        }
-        
-        .sidebar-content {
-            padding: 0 8px;
-        }
-        
-        .sidebar-menu a {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding: 12px 16px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: var(--color-dark);
-            font-size: 14px;
-            margin-bottom: 4px;
-        }
-        
-        .sidebar-menu a:hover {
-            background-color: var(--color-hover);
-        }
-        
-        .sidebar-menu a.active {
-            background-color: #e5e5e5;
-            font-weight: 500;
-        }
-        
-        .sidebar-icon {
-            font-size: 20px;
-            width: 24px;
-            text-align: center;
-        }
-        
-        .sidebar-section {
-            padding: 12px 8px;
-            border-top: 1px solid var(--color-border);
-            margin-top: 12px;
-        }
-        
-        .sidebar-heading {
-            padding: 8px 16px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        /* Main content */
-        .main-content {
-            flex: 1;
-            margin-left: var(--sidebar-width);
-            padding: 24px 16px;
-        }
-        
-        .page-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid var(--color-border);
-        }
-        
-        /* Video grid - YouTube inspired */
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
         
-        /* Video card */
-        .video-card {
-            background: var(--color-card);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        
-        .video-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        .video-thumbnail {
-            position: relative;
-            overflow: hidden;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
-            background-color: #f0f0f0;
-        }
-        
-        .video-thumbnail img,
-        .video-thumbnail video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .video-duration {
-            position: absolute;
-            bottom: 8px;
-            right: 8px;
-            background-color: rgba(0, 0, 0, 0.7);
+        nav a {
             color: white;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 12px;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
             font-weight: 500;
         }
         
-        .video-info {
-            padding: 12px;
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero section */
+        .hero-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background: linear-gradient(to right, rgba(138, 43, 226, 0.1), rgba(103, 183, 209, 0.1));
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Post styles */
+        .meme-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .meme-post {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .meme-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        
+        .post-header {
             display: flex;
-            gap: 12px;
+            align-items: center;
+            margin-bottom: 15px;
         }
         
         .creator-avatar {
-            width: 40px;
-            height: 40px;
-            min-width: 40px;
+            width: 45px;
+            height: 45px;
             background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
             color: white;
             border-radius: 50%;
@@ -334,103 +162,106 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 20px;
+            margin-right: 15px;
         }
         
-        .video-details {
+        .creator-info {
             flex: 1;
         }
         
-        .video-title {
-            font-weight: 600;
-            margin-bottom: 6px;
-            display: -webkit-box;
-            display: box; /* Standard property for compatibility */
-            -webkit-line-clamp: 2;
-            line-clamp: 2; /* Standard property */
-            -webkit-box-orient: vertical;
-            box-orient: vertical; /* Standard property */
-            overflow: hidden;
-            text-overflow: ellipsis; /* Ensures text is truncated with ellipsis */
-        }
-        
         .creator-name {
-            color: var(--color-text-secondary);
-            font-size: 14px;
-            margin-bottom: 4px;
+            font-weight: bold;
+            color: var(--color-dark);
         }
         
-        .video-meta {
+        .post-date {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .post-content {
+            margin-bottom: 20px;
+        }
+        
+        .post-caption {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--color-purple);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: linear-gradient(to right, var(--color-yellow), rgba(255, 215, 0, 0.5));
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Post interaction */
+        .post-actions {
             display: flex;
-            color: var(--color-text-secondary);
-            font-size: 14px;
-            gap: 6px;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
         }
         
-        .meta-separator {
-            margin: 0 2px;
-        }
-        
-        /* Video player */
-        .video-player-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 2000;
+        .like-btn, .download-btn {
             display: flex;
             align-items: center;
-            justify-content: center;
-        }
-        
-        .video-player {
-            width: 80%;
-            max-width: 1000px;
-        }
-        
-        .close-player {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
+            gap: 5px;
             background: none;
             border: none;
-            font-size: 24px;
             cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .like-btn {
+            color: var(--color-purple);
+        }
+        
+        .download-btn {
+            color: var(--color-green);
+        }
+        
+        .like-btn:hover, .download-btn:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        
+        .like-btn.active {
+            color: #ff4757;
+        }
+        
+        .like-count {
+            font-weight: 500;
         }
         
         /* Comments section */
         .comments-section {
-            margin-top: 16px;
-            padding-top: 12px;
-            border-top: 1px solid var(--color-border);
-        }
-        
-        .comments-header {
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 12px;
-            color: var(--color-text-secondary);
-        }
-        
-        .comments-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
         }
         
         .comment {
             display: flex;
-            gap: 12px;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            animation: slideIn 0.5s ease-out;
         }
         
         .comment-avatar {
-            width: 32px;
-            height: 32px;
-            min-width: 32px;
+            width: 35px;
+            height: 35px;
             background: linear-gradient(135deg, var(--color-blue), var(--color-green));
             color: white;
             border-radius: 50%;
@@ -441,248 +272,115 @@
             font-size: 14px;
         }
         
-        .comment-content {
-            flex: 1;
-        }
-        
         .comment-author {
-            font-weight: 500;
-            font-size: 14px;
-            margin-bottom: 2px;
+            font-weight: 600;
+            margin-bottom: 3px;
         }
         
         .comment-text {
-            color: var(--color-dark);
-            font-size: 14px;
-        }
-        
-        /* Like and actions */
-        .video-actions {
-            display: flex;
-            padding: 8px 12px;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid var(--color-border);
-        }
-        
-        .action-group {
-            display: flex;
-            gap: 16px;
-        }
-        
-        .action-btn {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--color-text-secondary);
-            font-size: 14px;
-            padding: 8px;
-            border-radius: 16px;
-        }
-        
-        .action-btn:hover {
-            background-color: var(--color-hover);
-        }
-        
-        .action-btn.like-btn.active {
-            color: var(--color-purple);
-        }
-        
-        .action-icon {
-            font-size: 18px;
+            color: #555;
+            font-size: 0.95rem;
         }
         
         /* Footer */
         footer {
-            margin-top: 40px;
-            padding: 20px 0;
+            background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+            color: white;
+            padding: 30px 0;
+            margin-top: 60px;
             text-align: center;
-            color: var(--color-text-secondary);
-            font-size: 14px;
-            border-top: 1px solid var(--color-border);
-            margin-left: var(--sidebar-width);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
         /* Responsive */
-        @media (max-width: 1200px) {
-            .video-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .sidebar {
-                width: 72px;
-                padding: 8px 0;
-            }
-            
-            .sidebar-text {
-                display: none;
-            }
-            
-            .sidebar-menu a {
-                justify-content: center;
-                padding: 16px 0;
-            }
-            
-            .sidebar-heading {
-                text-align: center;
-                font-size: 12px;
-            }
-            
-            .main-content {
-                margin-left: 72px;
-            }
-            
-            footer {
-                margin-left: 72px;
-            }
-            
-            :root {
-                --sidebar-width: 72px;
-            }
-        }
-        
         @media (max-width: 768px) {
-            .search-container {
-                display: none;
-            }
-            
-            .sidebar {
-                display: none;
-            }
-            
-            .main-content {
-                margin-left: 0;
-            }
-            
-            footer {
-                margin-left: 0;
-            }
-            
-            .video-grid {
+            .meme-container {
                 grid-template-columns: 1fr;
             }
             
-            .header-right {
-                gap: 8px;
+            .mobile-menu-btn {
+                display: block;
             }
             
-            .action-button {
-                width: 32px;
-                height: 32px;
+            nav {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+                flex-direction: column;
+                padding: 20px;
+                transform: translateY(-150%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="header-left">
-                <button class="menu-toggle">☰</button>
+        <div class="container">
+            <div class="header-content">
                 <a href="index.html" class="logo">
-                    <span>Phishy</span>
+                    <span>Phishy - Blog</span>
                 </a>
-            </div>
-            
-            <div class="search-container">
-                <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="Cerca...">
-                    <button class="search-button">🔍</button>
-                </div>
-            </div>
-            
-            <div class="header-right">
-                <button class="action-button">📹</button>
-                <button class="action-button">🔔</button>
-                <div class="profile-avatar">P</div>
+                <button class="mobile-menu-btn">☰</button>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu-comandi.html">Menu dei Comandi</a>
+                    <a href="funzioni-principali.html">Funzioni Principali</a>
+                    <a href="chi-siamo.html">Chi Siamo</a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <div class="page-layout">
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <div class="sidebar-menu">
-                    <a href="index.html" class="active">
-                        <span class="sidebar-icon">🏠</span>
-                        <span class="sidebar-text">Home</span>
-                    </a>
-                    <a href="#">
-                        <span class="sidebar-icon">🔥</span>
-                        <span class="sidebar-text">Tendenze</span>
-                    </a>
-                    <a href="#">
-                        <span class="sidebar-icon">📚</span>
-                        <span class="sidebar-text">Libreria</span>
-                    </a>
-                    <a href="menu-comandi.html">
-                        <span class="sidebar-icon">📋</span>
-                        <span class="sidebar-text">Menu Comandi</span>
-                    </a>
-                    <a href="funzioni-principali.html">
-                        <span class="sidebar-icon">📊</span>
-                        <span class="sidebar-text">Funzioni Principali</span>
-                    </a>
-                    <a href="chi-siamo.html">
-                        <span class="sidebar-icon">👥</span>
-                        <span class="sidebar-text">Chi Siamo</span>
-                    </a>
-                </div>
-                
-                <div class="sidebar-section">
-                    <div class="sidebar-heading">Categorie</div>
-                    <div class="sidebar-menu">
-                        <a href="#">
-                            <span class="sidebar-icon">😂</span>
-                            <span class="sidebar-text">Divertenti</span>
-                        </a>
-                        <a href="#">
-                            <span class="sidebar-icon">🎮</span>
-                            <span class="sidebar-text">Gaming</span>
-                        </a>
-                        <a href="#">
-                            <span class="sidebar-icon">💻</span>
-                            <span class="sidebar-text">Tech</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
+    <div class="container main-content">
+        <div class="hero-section">
+            <h1>I meme di Viridi Celesti</h1>
+            <p>Ogni tanto postiamo meme su cio che ci accade in community, ridiamo delle persone o vogliamo ricprdarsi di cose che non dobbiamo dimmenticare</p>
+        </div>
 
-        <main class="main-content">
-            <h1 class="page-title">I meme di Viridi Celesti</h1>
-            
-            <div id="video-grid" class="video-grid">
-                <!-- I post verranno caricati dinamicamente -->
-            </div>
-        </main>
+        <div id="post-container" class="meme-container">
+            <!-- I post verranno caricati dinamicamente -->
+        </div>
     </div>
-    
+
     <footer>
-        <p>&copy; 2025 Phishy - Blog. Tutti i diritti riservati.</p>
+        <div class="container">
+            <p>&copy; 2025 easter - Blog. Tutti i diritti riservati.</p>
+        </div>
     </footer>
 
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = sidebar.style.display === 'none' || sidebar.style.display === '' ? 'block' : 'none';
-            
-            if (window.innerWidth > 768) {
-                const mainContent = document.querySelector('.main-content');
-                const footer = document.querySelector('footer');
-                
-                if (sidebar.style.display === 'none') {
-                    mainContent.style.marginLeft = '0';
-                    footer.style.marginLeft = '0';
-                } else {
-                    mainContent.style.marginLeft = window.innerWidth > 992 ? '240px' : '72px';
-                    footer.style.marginLeft = window.innerWidth > 992 ? '240px' : '72px';
-                }
-            }
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
         });
 
         // Array dei file video
@@ -759,7 +457,7 @@
             ]
         };
 
-        const grid = document.getElementById('video-grid');
+        const container = document.getElementById('post-container');
         let currentPlayingVideo = null;
 
         // Funzione per generare un numero casuale di like
@@ -767,66 +465,13 @@
             return Math.floor(Math.random() * 50) + 5;
         }
 
-        // Funzione per generare un numero casuale di visualizzazioni
-        function randomViews() {
-            return Math.floor(Math.random() * 10000) + 100;
-        }
-
-        // Funzione per generare una data casuale degli ultimi 30 giorni
-        function randomDate() {
-            const now = new Date();
-            const daysAgo = Math.floor(Math.random() * 30) + 1;
-            now.setDate(now.getDate() - daysAgo);
-            return now;
-        }
-
-        // Formato numero di visualizzazioni
-        function formatViews(views) {
-            if (views >= 1000000) {
-                return (views / 1000000).toFixed(1) + 'M visualizzazioni';
-            } else if (views >= 1000) {
-                return (views / 1000).toFixed(1) + 'K visualizzazioni';
-            } else {
-                return views + ' visualizzazioni';
-            }
-        }
-
-        // Formato data relativa
-        function formatRelativeDate(date) {
-            const now = new Date();
-            const diffTime = Math.abs(now - date);
-            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-            
-            if (diffDays === 0) {
-                return 'Oggi';
-            } else if (diffDays === 1) {
-                return 'Ieri';
-            } else if (diffDays < 7) {
-                return `${diffDays} giorni fa`;
-            } else if (diffDays < 30) {
-                const diffWeeks = Math.floor(diffDays / 7);
-                return `${diffWeeks} ${diffWeeks === 1 ? 'settimana' : 'settimane'} fa`;
-            } else {
-                const diffMonths = Math.floor(diffDays / 30);
-                return `${diffMonths} ${diffMonths === 1 ? 'mese' : 'mesi'} fa`;
-            }
-        }
-
-        // Funzione per formattare la durata del video
-        function formatDuration(seconds) {
-            const mins = Math.floor(seconds / 60);
-            const secs = seconds % 60;
-            return `${mins}:${secs < 10 ? '0' + secs : secs}`;
-        }
-
-        // Aggiunta commenti
-        function addCommentsToCard(cardEl, postIndex) {
+        // Funzione per aggiungere commenti statici all'UI
+        function addStaticCommentsToUI(postIndex, commentsList) {
             const comments = staticComments[postIndex] || [];
-            const commentsList = cardEl.querySelector('.comments-list');
             commentsList.innerHTML = '';
             
             if (comments.length === 0) {
-                commentsList.innerHTML = '<p class="no-comments">Nessun commento ancora</p>';
+                commentsList.innerHTML = '<p>Nessun commento ancora</p>';
                 return;
             }
             
@@ -844,383 +489,117 @@
             });
         }
 
-        // Gestione video
+        // Gestione dei video
         function handleVideoPlay(video) {
+            // Pausa il video precedente se ce n'è uno in riproduzione
             if (currentPlayingVideo && currentPlayingVideo !== video) {
                 currentPlayingVideo.pause();
             }
             currentPlayingVideo = video;
         }
 
-        // Creazione delle card dei video
+        // Creazione dei post
         fileNames.forEach((fileName, index) => {
             const extension = fileName.split('.').pop().toLowerCase();
+            const isImage = ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(extension);
             const isVideo = ['mp4', 'webm', 'ogg'].includes(extension);
             const initialLikes = randomLikes();
-            const views = randomViews();
-            const uploadDate = randomDate();
-            const duration = Math.floor(Math.random() * 180) + 30; // 30-210 secondi
+
+            const postEl = document.createElement('div');
+            postEl.className = 'meme-post';
+            postEl.setAttribute('data-index', index);
+            postEl.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
             
-            const cardEl = document.createElement('div');
-            cardEl.className = 'video-card';
-            cardEl.setAttribute('data-index', index);
-            
-            cardEl.innerHTML = `
-                <div class="video-thumbnail">
-                    ${isVideo ? `
-                    <video poster="posts/thumbnail-${index + 1}.jpg" preload="none">
-                        <source src="posts/${fileName}" type="video/${extension}">
-                    </video>
-                    <span class="video-duration">${formatDuration(duration)}</span>
-                    ` : `
-                    <img src="posts/${fileName}" alt="Post ${index + 1}">
-                    `}
-                </div>
-                <div class="video-info">
+            postEl.innerHTML = `
+                <div class="post-header">
                     <div class="creator-avatar">P</div>
-                    <div class="video-details">
-                        <h3 class="video-title">Post #${index + 1} - Viridi Celesti</h3>
+                    <div class="creator-info">
                         <div class="creator-name">Phishy Admin</div>
-                        <div class="video-meta">
-                            <span>${formatViews(views)}</span>
-                            <span class="meta-separator">•</span>
-                            <span>${formatRelativeDate(uploadDate)}</span>
-                        </div>
+                        <div class="post-date">${new Date().toLocaleDateString('it-IT')}</div>
                     </div>
                 </div>
-                <div class="video-actions">
-                    <div class="action-group">
-                        <button class="action-btn like-btn" data-likes="${initialLikes}">
-                            <span class="action-icon">👍</span>
-                            <span class="like-count">${initialLikes}</span>
-                        </button>
-                        <button class="action-btn dislike-btn">
-                            <span class="action-icon">👎</span>
-                        </button>
+                <div class="post-content">
+                    <div class="badge">
+                        ${isImage ? '📷 Foto' : isVideo ? '🎥 Video' : ''}
                     </div>
-                    <div class="action-group">
-                        ${isVideo ? `
-                        <button class="action-btn download-btn" data-file="posts/${fileName}">
-                            <span class="action-icon">⬇️</span>
-                            <span>Scarica</span>
-                        </button>
-                        ` : ''}
-                        <button class="action-btn share-btn">
-                            <span class="action-icon">↪️</span>
-                            <span>Condividi</span>
-                        </button>
-                    </div>
+                    <div class="post-caption">Post #${index + 1}</div>
+                    ${isImage ? 
+                        `<img src="posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:15px;">` : 
+                        isVideo ? `
+                        <video controls style="width:100%;border-radius:10px;margin-bottom:15px;">
+                            <source src="posts/${fileName}" type="video/${extension}">
+                            Il tuo browser non supporta il tag video.
+                        </video>` : ''}
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" data-likes="${initialLikes}">
+                        <span class="like-icon">❤️</span>
+                        <span class="like-count">${initialLikes}</span>
+                    </button>
+                    ${isVideo ? 
+                        `<button class="download-btn" data-file="posts/${fileName}">
+                            <span>⬇️ Scarica</span>
+                        </button>` : ''}
                 </div>
                 <div class="comments-section">
-                    <div class="comments-header">Commenti (${staticComments[index] ? staticComments[index].length : 0})</div>
+                    <h4>Commenti</h4>
                     <div class="comments-list"></div>
                 </div>
             `;
             
-            grid.appendChild(cardEl);
+            container.appendChild(postEl);
             
-            // Aggiunta commenti
-            addCommentsToCard(cardEl, index);
+            // Aggiungi commenti statici
+            const commentsList = postEl.querySelector('.comments-list');
+            addStaticCommentsToUI(index, commentsList);
             
-            // Gestione riproduzione video
-            const thumbnail = cardEl.querySelector('.video-thumbnail');
-            const video = cardEl.querySelector('video');
-            
-            if (video) {
-    
-
-
-thumbnail.addEventListener('click', function() {
-    if (video.paused) {
-        // Carica il video solo quando viene cliccato
-        video.load();
-        video.play();
-        handleVideoPlay(video);
-    } else {
-        video.pause();
-    }
-});
-
-video.addEventListener('play', function() {
-    // Aggiorna l'aspetto quando il video inizia a riprodursi
-    thumbnail.classList.add('playing');
-});
-
-video.addEventListener('pause', function() {
-    // Ripristina l'aspetto quando il video è in pausa
-    thumbnail.classList.remove('playing');
-});
-
-// Assicurati che il video si fermi quando scorre fuori dalla vista
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting && video === currentPlayingVideo) {
-            video.pause();
-        }
-    });
-}, { threshold: 0.2 });
-
-observer.observe(cardEl);
-}
-
-// Gestione dei pulsanti di like
-const likeBtn = cardEl.querySelector('.like-btn');
-if (likeBtn) {
-    likeBtn.addEventListener('click', function() {
-        const likeCount = likeBtn.querySelector('.like-count');
-        let currentLikes = parseInt(likeBtn.getAttribute('data-likes'));
-        
-        if (likeBtn.classList.contains('active')) {
-            // Toglie il like
-            currentLikes--;
-            likeBtn.classList.remove('active');
-        } else {
-            // Aggiunge il like
-            currentLikes++;
-            likeBtn.classList.add('active');
-            
-            // Se c'era un dislike, lo rimuove
-            const dislikeBtn = cardEl.querySelector('.dislike-btn');
-            if (dislikeBtn.classList.contains('active')) {
-                dislikeBtn.classList.remove('active');
-            }
-        }
-        
-        likeBtn.setAttribute('data-likes', currentLikes);
-        likeCount.textContent = currentLikes;
-    });
-}
-
-// Gestione dei pulsanti di dislike
-const dislikeBtn = cardEl.querySelector('.dislike-btn');
-if (dislikeBtn) {
-    dislikeBtn.addEventListener('click', function() {
-        if (dislikeBtn.classList.contains('active')) {
-            // Toglie il dislike
-            dislikeBtn.classList.remove('active');
-        } else {
-            // Aggiunge il dislike
-            dislikeBtn.classList.add('active');
-            
-            // Se c'era un like, lo rimuove
-            const likeBtn = cardEl.querySelector('.like-btn');
-            if (likeBtn.classList.contains('active')) {
-                const likeCount = likeBtn.querySelector('.like-count');
-                let currentLikes = parseInt(likeBtn.getAttribute('data-likes'));
-                currentLikes--;
-                likeBtn.setAttribute('data-likes', currentLikes);
-                likeCount.textContent = currentLikes;
-                likeBtn.classList.remove('active');
-            }
-        }
-    });
-}
-
-// Gestione pulsante download
-const downloadBtn = cardEl.querySelector('.download-btn');
-if (downloadBtn) {
-    downloadBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const fileUrl = downloadBtn.getAttribute('data-file');
-        const fileName = fileUrl.split('/').pop();
-        
-        // Crea un elemento a temporaneo per il download
-        const downloadLink = document.createElement('a');
-        downloadLink.href = fileUrl;
-        downloadLink.download = fileName;
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-    });
-}
-
-// Gestione pulsante condivisione
-const shareBtn = cardEl.querySelector('.share-btn');
-if (shareBtn) {
-    shareBtn.addEventListener('click', function() {
-        // Crea l'URL di condivisione
-        const shareUrl = window.location.origin + window.location.pathname + '?post=' + (index + 1);
-        
-        // Controlla se l'API Web Share è supportata
-        if (navigator.share) {
-            navigator.share({
-                title: `Post #${index + 1} - Viridi Celesti`,
-                text: 'Guarda questo post interessante!',
-                url: shareUrl,
-            })
-            .catch((error) => {
-                console.log('Errore nella condivisione:', error);
-                // Fallback per la copia manuale dell'URL
-                copyToClipboard(shareUrl);
-            });
-        } else {
-            // Fallback per la copia manuale dell'URL
-            copyToClipboard(shareUrl);
-        }
-    });
-}
-});
-
-// Funzione per copiare il testo negli appunti
-function copyToClipboard(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.position = 'fixed';
-    textArea.style.left = '-999999px';
-    textArea.style.top = '-999999px';
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    
-    try {
-        const successful = document.execCommand('copy');
-        const message = successful ? 'Link copiato negli appunti!' : 'Impossibile copiare il link.';
-        showToast(message);
-    } catch (err) {
-        console.error('Errore durante la copia:', err);
-        showToast('Impossibile copiare il link.');
-    }
-    
-    document.body.removeChild(textArea);
-}
-
-// Funzione per mostrare un toast di notifica
-function showToast(message) {
-    // Crea un elemento toast se non esiste già
-    let toast = document.getElementById('toast-notification');
-    if (!toast) {
-        toast = document.createElement('div');
-        toast.id = 'toast-notification';
-        toast.style.position = 'fixed';
-        toast.style.bottom = '20px';
-        toast.style.left = '50%';
-        toast.style.transform = 'translateX(-50%)';
-        toast.style.padding = '12px 24px';
-        toast.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        toast.style.color = 'white';
-        toast.style.borderRadius = '8px';
-        toast.style.zIndex = '2000';
-        toast.style.transition = 'opacity 0.3s ease-in-out';
-        document.body.appendChild(toast);
-    }
-    
-    // Imposta il messaggio e mostra il toast
-    toast.textContent = message;
-    toast.style.opacity = '1';
-    
-    // Nascondi il toast dopo 3 secondi
-    setTimeout(() => {
-        toast.style.opacity = '0';
-    }, 3000);
-}
-
-// Gestione parametri dell'URL per aprire direttamente un post specifico
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('post');
-    
-    if (postId && postId > 0 && postId <= fileNames.length) {
-        const index = postId - 1;
-        const cardEl = document.querySelector(`.video-card[data-index="${index}"]`);
-        
-        if (cardEl) {
-            // Scorri fino al post e riproduci il video (se presente)
-            setTimeout(() => {
-                cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Gestione del pulsante like
+            const likeBtn = postEl.querySelector('.like-btn');
+            likeBtn.addEventListener('click', function() {
+                let likes = parseInt(this.getAttribute('data-likes'));
                 
-                // Attendi lo scrolling e poi avvia il video
-                setTimeout(() => {
-                    const video = cardEl.querySelector('video');
-                    if (video) {
-                        video.load();
-                        video.play();
-                        handleVideoPlay(video);
-                    }
-                }, 1000);
-            }, 500);
-        }
-    }
-});
-
-// Funzionalità di ricerca
-const searchInput = document.querySelector('.search-input');
-const searchButton = document.querySelector('.search-button');
-
-function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    
-    if (searchTerm.length > 0) {
-        // Filtra le card in base al termine di ricerca
-        const cards = document.querySelectorAll('.video-card');
-        let matchCount = 0;
-        
-        cards.forEach(card => {
-            const title = card.querySelector('.video-title').textContent.toLowerCase();
-            const creator = card.querySelector('.creator-name').textContent.toLowerCase();
+                if (this.classList.contains('active')) {
+                    // Togli il like
+                    likes--;
+                    this.classList.remove('active');
+                    this.querySelector('.like-icon').textContent = '❤️';
+                } else {
+                    // Aggiungi il like
+                    likes++;
+                    this.classList.add('active');
+                    this.querySelector('.like-icon').textContent = '❤️';
+                    this.style.animation = 'pulse 0.5s';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 500);
+                }
+                
+                this.setAttribute('data-likes', likes);
+                this.querySelector('.like-count').textContent = likes;
+            });
             
-            if (title.includes(searchTerm) || creator.includes(searchTerm)) {
-                card.style.display = 'block';
-                matchCount++;
-            } else {
-                card.style.display = 'none';
+            // Gestione pulsante download
+            const downloadBtn = postEl.querySelector('.download-btn');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function() {
+                    const fileUrl = this.getAttribute('data-file');
+                    const a = document.createElement('a');
+                    a.href = fileUrl;
+                    a.download = fileName;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                });
+            }
+            
+            // Gestione dei video
+            const video = postEl.querySelector('video');
+            if (video) {
+                video.addEventListener('play', function() {
+                    handleVideoPlay(this);
+                });
             }
         });
-        
-        // Mostra un messaggio se non ci sono risultati
-        let noResultsMsg = document.getElementById('no-results-message');
-        if (matchCount === 0) {
-            if (!noResultsMsg) {
-                noResultsMsg = document.createElement('div');
-                noResultsMsg.id = 'no-results-message';
-                noResultsMsg.style.textAlign = 'center';
-                noResultsMsg.style.padding = '20px';
-                noResultsMsg.style.color = 'var(--color-text-secondary)';
-                noResultsMsg.textContent = 'Nessun risultato trovato per "' + searchTerm + '"';
-                grid.appendChild(noResultsMsg);
-            } else {
-                noResultsMsg.textContent = 'Nessun risultato trovato per "' + searchTerm + '"';
-                noResultsMsg.style.display = 'block';
-            }
-        } else if (noResultsMsg) {
-            noResultsMsg.style.display = 'none';
-        }
-    } else {
-        // Se la ricerca è vuota, mostra tutte le card
-        const cards = document.querySelectorAll('.video-card');
-        cards.forEach(card => {
-            card.style.display = 'block';
-        });
-        
-        // Nascondi il messaggio "nessun risultato"
-        const noResultsMsg = document.getElementById('no-results-message');
-        if (noResultsMsg) {
-            noResultsMsg.style.display = 'none';
-        }
-    }
-}
-
-// Eventi di ricerca
-if (searchButton) {
-    searchButton.addEventListener('click', performSearch);
-}
-
-if (searchInput) {
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-}
-
-// Inizializza la modalità dark/light in base alle preferenze dell'utente
-function initThemeMode() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('theme');
-    
-    if (savedTheme === 'dark' || (savedTheme !== 'light' && prefersDark)) {
-        document.body.classList.add('dark-theme');
-    }
-}
-
-// Chiama l'inizializzazione del tema
-initThemeMode();
+    </script>
+</body>
+</html>
