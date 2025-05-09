@@ -524,10 +524,10 @@
                     </div>
                     <div class="post-caption">Post #${index + 1}</div>
                     ${isImage ? 
-                        `<img src="posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:15px;">` : 
+                        `<img src="./posts/${fileName}" alt="Post ${index + 1}" style="width:100%;border-radius:10px;margin-bottom:15px;">` : 
                         isVideo ? `
                         <video controls style="width:100%;border-radius:10px;margin-bottom:15px;">
-                            <source src="posts/${fileName}" type="video/${extension}">
+                            <source src="./posts/${fileName}" type="video/${extension}">
                             Il tuo browser non supporta il tag video.
                         </video>` : ''}
                 </div>
@@ -537,7 +537,7 @@
                         <span class="like-count">${initialLikes}</span>
                     </button>
                     ${isVideo ? 
-                        `<button class="download-btn" data-file="posts/${fileName}">
+                        `<button class="download-btn" data-file="./posts/${fileName}">
                             <span>⬇️ Scarica</span>
                         </button>` : ''}
                 </div>
