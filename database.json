@@ -147,7 +147,7 @@
       "rejoins": 0
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 2153,
+      "messaggi": 2161,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -182,7 +182,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 4112,
+      "exp": 4229,
       "limit": 32,
       "money": null,
       "msg": {},
@@ -2395,7 +2395,47 @@
     },
     "393279921965@s.whatsapp.net": {
       "firstJoin": 1748181764881,
-      "rejoins": 0
+      "rejoins": 0,
+      "messaggi": 1,
+      "blasphemy": 0,
+      "msg": {},
+      "exp": 56,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "joincount": 0,
+      "limit": 20,
+      "credito": 0,
+      "premium": false,
+      "premiumDate": -1,
+      "tprem": 0,
+      "premiumTime": 0,
+      "name": ".",
+      "muto": false,
+      "sposato": false,
+      "partner": "",
+      "bacini": 0,
+      "health": 100,
+      "role": "*NOVIZIO(A)",
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "cavallo": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lavoro": "disoccupato",
+      "lega_io": false,
+      "money": null
     },
     "393917992109@s.whatsapp.net": {
       "messaggi": 1,
@@ -9322,7 +9362,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 9460,
+      "messaggi": 9464,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -9361,7 +9401,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 45,
+      "messaggi": 46,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -9518,7 +9558,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 143,
+      "messaggi": 147,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -10454,10 +10494,10 @@
       "lastSuccess": 1748201807522
     },
     "rispsota-roma.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1748208636273,
-      "lastSuccess": 1748208636273
+      "total": 16,
+      "success": 16,
+      "last": 1748216989785,
+      "lastSuccess": 1748216989785
     },
     "info-owner.js": {
       "total": 2,
@@ -10484,16 +10524,16 @@
       "lastSuccess": 1748205705320
     },
     "play.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1748191147157,
-      "lastSuccess": 1748191147157
+      "total": 4,
+      "success": 4,
+      "last": 1748216939688,
+      "lastSuccess": 1748216939688
     },
     "aggiungi-caramelle.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1748191115023,
-      "lastSuccess": 1748191115023
+      "total": 3,
+      "success": 3,
+      "last": 1748216915235,
+      "lastSuccess": 1748216915235
     },
     "fun-lega.js": {
       "total": 18,
