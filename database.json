@@ -8388,7 +8388,7 @@
       "cavallo": false
     },
     "54993281380551@lid": {
-      "messaggi": 3,
+      "messaggi": 4,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -8424,7 +8424,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 10,
+      "exp": 19,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -9869,7 +9869,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 37,
+      "messaggi": 38,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
