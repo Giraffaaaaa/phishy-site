@@ -4912,7 +4912,7 @@
       "cavallo": false
     },
     "393280716846@s.whatsapp.net": {
-      "messaggi": 304,
+      "messaggi": 305,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -4948,7 +4948,7 @@
       "lega_vittime": [],
       "lega_io": true,
       "lavoro": "disoccupato",
-      "exp": 4723,
+      "exp": 4731,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -5323,7 +5323,7 @@
       "money": null
     },
     "393331728466@s.whatsapp.net": {
-      "messaggi": 336,
+      "messaggi": 337,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -5359,7 +5359,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 5721,
+      "exp": 5775,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -21375,6 +21375,48 @@
       "exp": null,
       "limit": null,
       "money": null
+    },
+    "393271458415@s.whatsapp.net": {
+      "messaggi": 1,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 327 145 8415",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "exp": null,
+      "limit": null,
+      "money": null
     }
   },
   "chats": {
@@ -21410,7 +21452,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 32715,
+      "messaggi": 32718,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -22589,10 +22631,10 @@
       "lastSuccess": 1748419096223
     },
     "risposta-amo.js": {
-      "total": 580,
-      "success": 580,
-      "last": 1748421028649,
-      "lastSuccess": 1748421028649
+      "total": 581,
+      "success": 581,
+      "last": 1748422536977,
+      "lastSuccess": 1748422536977
     },
     "tools-rivela.js": {
       "total": 1101,
