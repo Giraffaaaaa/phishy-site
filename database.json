@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 7198,
+      "messaggi": 7200,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -202,7 +202,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": false,
-      "exp": 6213,
+      "exp": 6222,
       "limit": 32,
       "money": null,
       "msg": {},
@@ -8005,7 +8005,7 @@
       "money": null
     },
     "393791910485@s.whatsapp.net": {
-      "messaggi": 350,
+      "messaggi": 353,
       "muto": false,
       "expired": 0,
       "blasphemy": 4,
@@ -8041,7 +8041,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 5471,
+      "exp": 5530,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -19169,7 +19169,7 @@
       "cavallo": false
     },
     "393883207311@s.whatsapp.net": {
-      "messaggi": 43,
+      "messaggi": 49,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -19206,7 +19206,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 625,
+      "exp": 668,
       "limit": 20,
       "money": null,
       "firstJoin": 1748372402768,
@@ -20905,7 +20905,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 32468,
+      "messaggi": 32472,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -20944,7 +20944,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 199,
+      "messaggi": 200,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -21179,7 +21179,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 642,
+      "messaggi": 648,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -22150,10 +22150,10 @@
       "lastSuccess": 1748373632537
     },
     "audio-tutti.js": {
-      "total": 541,
-      "success": 541,
-      "last": 1748382643418,
-      "lastSuccess": 1748382643418
+      "total": 542,
+      "success": 542,
+      "last": 1748406739439,
+      "lastSuccess": 1748406739439
     },
     "menzione-insulti-random.js": {
       "total": 391,
