@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 8108,
+      "messaggi": 8112,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -10576,7 +10576,7 @@
       "money": null
     },
     "393791298333@s.whatsapp.net": {
-      "messaggi": 26,
+      "messaggi": 28,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -10612,13 +10612,23 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 370,
+      "exp": 477,
       "limit": 20,
       "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
-      "slotLimit": 5
+      "slotLimit": 5,
+      "bustapaga": {
+        "disoccupato": {
+          "esperienza": 1,
+          "bonus": 0
+        }
+      },
+      "cooldowns": {},
+      "ultimoLavoro": {
+        "disoccupato": 1748484002584
+      }
     },
     "393277341640@s.whatsapp.net": {
       "firstJoin": 1748255413519,
@@ -26150,7 +26160,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1298,
+      "messaggi": 1302,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -26307,7 +26317,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 722,
+      "messaggi": 724,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -27282,6 +27292,43 @@
       "eliminati": 0,
       "expired": 0,
       "blasphemy": 0
+    },
+    "120363401341820299@g.us": {
+      "name": {},
+      "isBanned": false,
+      "welcome": true,
+      "detect": true,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "sBenvenuto": "",
+      "sBentornato": "",
+      "delete": false,
+      "modohorny": false,
+      "gpt": true,
+      "bestemmiometro": true,
+      "antiporno": true,
+      "antielimina": false,
+      "audios": false,
+      "antiLinkfast": true,
+      "antiLink": true,
+      "antiLink2": false,
+      "antilinkbase": false,
+      "antitiktokbase": false,
+      "antiinsta": true,
+      "antitiktok": true,
+      "antiviewonce": false,
+      "antiToxic": false,
+      "antiTraba": true,
+      "antiArab": true,
+      "modoadmin": false,
+      "talk": true,
+      "antiPorno": true,
+      "messaggi": 0,
+      "antispam": false,
+      "antivoip": true,
+      "eliminati": 0
     }
   },
   "stats": {
@@ -27316,10 +27363,10 @@
       "lastSuccess": 1748469880789
     },
     "rpg-work.js": {
-      "total": 99,
-      "success": 99,
-      "last": 1748475716580,
-      "lastSuccess": 1748475716580
+      "total": 100,
+      "success": 100,
+      "last": 1748484005067,
+      "lastSuccess": 1748484005067
     },
     "enable.js": {
       "total": 28,
@@ -27436,10 +27483,10 @@
       "lastSuccess": 1748263819731
     },
     "rpg-tesoro.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1748264488676,
-      "lastSuccess": 1748264488676
+      "total": 4,
+      "success": 4,
+      "last": 1748484011172,
+      "lastSuccess": 1748484011172
     },
     "ruota.js": {
       "total": 26,
