@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 8129,
+      "messaggi": 8136,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -2923,7 +2923,7 @@
       "lega_lista": []
     },
     "393701600807@s.whatsapp.net": {
-      "messaggi": 447,
+      "messaggi": 451,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -2959,7 +2959,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 7215,
+      "exp": 7340,
       "limit": 20,
       "money": null,
       "firstJoin": 1748182811707,
@@ -5368,7 +5368,7 @@
       "money": null
     },
     "393331728466@s.whatsapp.net": {
-      "messaggi": 501,
+      "messaggi": 503,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -5404,7 +5404,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 6939,
+      "exp": 7000,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -17831,7 +17831,7 @@
       "cavallo": false
     },
     "393518412893@s.whatsapp.net": {
-      "messaggi": 143,
+      "messaggi": 152,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -17868,7 +17868,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2373,
+      "exp": 2486,
       "limit": 200,
       "money": null,
       "firstJoin": 1748350643621,
@@ -19014,7 +19014,7 @@
       "cavallo": false
     },
     "393756065357@s.whatsapp.net": {
-      "messaggi": 8,
+      "messaggi": 9,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -19051,7 +19051,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 103,
+      "exp": 160,
       "limit": 20,
       "money": null,
       "firstJoin": 1748366015054,
@@ -19155,7 +19155,7 @@
       "cavallo": false
     },
     "393703508375@s.whatsapp.net": {
-      "messaggi": 70,
+      "messaggi": 73,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -19192,7 +19192,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 898,
+      "exp": 970,
       "limit": 20,
       "money": null,
       "firstJoin": 1748370501515,
@@ -22262,7 +22262,7 @@
       "money": null
     },
     "393204726945@s.whatsapp.net": {
-      "messaggi": 188,
+      "messaggi": 192,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -22299,7 +22299,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2594,
+      "exp": 2662,
       "limit": 20,
       "money": null,
       "firstJoin": 1748432441970,
@@ -24161,7 +24161,7 @@
       "money": null
     },
     "393773828612@s.whatsapp.net": {
-      "messaggi": 7,
+      "messaggi": 8,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -24198,7 +24198,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 185,
+      "exp": 236,
       "limit": 20,
       "money": null,
       "firstJoin": 1748460719916,
@@ -26298,7 +26298,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 38076,
+      "messaggi": 38107,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -27588,10 +27588,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 2281,
-      "success": 2281,
-      "last": 1748494368154,
-      "lastSuccess": 1748494368154
+      "total": 2284,
+      "success": 2284,
+      "last": 1748496099564,
+      "lastSuccess": 1748496099564
     },
     "risposta-amo.js": {
       "total": 613,
@@ -27648,10 +27648,10 @@
       "lastSuccess": 1748469973623
     },
     "risposta-buongiorno.js": {
-      "total": 233,
-      "success": 233,
-      "last": 1748495331542,
-      "lastSuccess": 1748495331542
+      "total": 238,
+      "success": 238,
+      "last": 1748497165303,
+      "lastSuccess": 1748497165303
     },
     "rpg-levelup.js": {
       "total": 31,
