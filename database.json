@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 9207,
+      "messaggi": 9209,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -214,7 +214,8 @@
       "hidetag_day": "",
       "slotLimit": 0,
       "firstJoin": 1748434342780,
-      "rejoins": 6
+      "rejoins": 6,
+      "stickerCount": 0
     },
     "393311431437@s.whatsapp.net": {
       "messaggi": 2067,
@@ -30625,7 +30626,7 @@
       "money": null
     },
     "393297762840@s.whatsapp.net": {
-      "messaggi": 5,
+      "messaggi": 8,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -30662,14 +30663,15 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 14,
+      "exp": 29,
       "limit": 20,
       "money": null,
       "firstJoin": 1748561820445,
       "rejoins": 1,
       "msg": {},
       "premiumDate": -1,
-      "cavallo": false
+      "cavallo": false,
+      "stickerCount": 0
     },
     "393773525186@s.whatsapp.net": {
       "messaggi": 1,
@@ -30747,7 +30749,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 43263,
+      "messaggi": 43265,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -30825,7 +30827,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 725,
+      "messaggi": 726,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -30943,7 +30945,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1242,
+      "messaggi": 1244,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
