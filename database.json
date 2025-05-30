@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 9204,
+      "messaggi": 9206,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -202,7 +202,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": false,
-      "exp": 64,
+      "exp": 69,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -782,7 +782,7 @@
       "hidetag_day": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 2321,
+      "messaggi": 2326,
       "muto": false,
       "expired": 0,
       "blasphemy": 13,
@@ -817,7 +817,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 46556,
+      "exp": 46675,
       "limit": 2549,
       "money": null,
       "msg": {},
@@ -2868,7 +2868,7 @@
       "slotLimit": 5
     },
     "393207991819@s.whatsapp.net": {
-      "messaggi": 864,
+      "messaggi": 866,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -2904,7 +2904,7 @@
       "lega_vittime": [],
       "lega_io": true,
       "lavoro": "muratore",
-      "exp": 12572,
+      "exp": 12585,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -21019,7 +21019,7 @@
       "money": null
     },
     "6283867521792@s.whatsapp.net": {
-      "messaggi": 64,
+      "messaggi": 72,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -21056,7 +21056,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2014,
+      "exp": 2063,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -30705,7 +30705,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 43259,
+      "messaggi": 43262,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -30822,7 +30822,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1437,
+      "messaggi": 1441,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -31951,7 +31951,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 97,
+      "messaggi": 107,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -32607,10 +32607,10 @@
       "lastSuccess": 1748505297924
     },
     "sticker-sticker.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1748520887311,
-      "lastSuccess": 1748520887311
+      "total": 10,
+      "success": 10,
+      "last": 1748562040638,
+      "lastSuccess": 1748562040638
     },
     "risposta-aiuto.js": {
       "total": 17,
@@ -32787,10 +32787,10 @@
       "lastSuccess": 1748554550546
     },
     "gp-promuovi.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1748551183183,
-      "lastSuccess": 1748551183183
+      "total": 13,
+      "success": 13,
+      "last": 1748562047029,
+      "lastSuccess": 1748562047029
     },
     "unban.js": {
       "total": 2,
