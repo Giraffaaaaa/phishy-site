@@ -167,7 +167,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 9213,
+      "messaggi": 9219,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -784,7 +784,7 @@
       "hidetag_day": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 2329,
+      "messaggi": 2335,
       "muto": false,
       "expired": 0,
       "blasphemy": 13,
@@ -819,7 +819,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 46740,
+      "exp": 47069,
       "limit": 2549,
       "money": null,
       "msg": {},
@@ -30765,6 +30765,49 @@
       "exp": null,
       "limit": null,
       "money": null
+    },
+    "393501174123@s.whatsapp.net": {
+      "messaggi": 1,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 350 117 4123",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "exp": null,
+      "limit": null,
+      "money": null
     }
   },
   "chats": {
@@ -30800,7 +30843,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 43274,
+      "messaggi": 43275,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -32046,7 +32089,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 111,
+      "messaggi": 123,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -32994,6 +33037,18 @@
       "success": 2,
       "last": 1748564308780,
       "lastSuccess": 1748564308780
+    },
+    "tools-cerca-voip.js": {
+      "total": 6,
+      "success": 6,
+      "last": 1748570791213,
+      "lastSuccess": 1748570791213
+    },
+    "s_sistema.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1748570859995,
+      "lastSuccess": 1748570859995
     }
   },
   "msgs": {},
