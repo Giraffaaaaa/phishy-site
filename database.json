@@ -784,7 +784,7 @@
       "hidetag_day": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 2348,
+      "messaggi": 2357,
       "muto": false,
       "expired": 0,
       "blasphemy": 13,
@@ -819,9 +819,9 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 47686,
+      "exp": 47834,
       "limit": 2549,
-      "money": 0,
+      "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -21022,7 +21022,7 @@
       "money": null
     },
     "6283867521792@s.whatsapp.net": {
-      "messaggi": 75,
+      "messaggi": 80,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -21059,7 +21059,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2084,
+      "exp": 2258,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -21113,7 +21113,7 @@
       "cavallo": false
     },
     "393291261099@s.whatsapp.net": {
-      "messaggi": 34,
+      "messaggi": 91,
       "muto": false,
       "expired": 0,
       "blasphemy": 4,
@@ -21150,12 +21150,13 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 336,
+      "exp": 700,
       "limit": 20,
       "money": null,
       "msg": {},
       "premiumDate": -1,
-      "cavallo": false
+      "cavallo": false,
+      "stickerCount": 0
     },
     "38761082248@s.whatsapp.net": {
       "messaggi": 1,
@@ -30855,7 +30856,7 @@
       "cavallo": false
     },
     "251716235988:65@s.whatsapp.net": {
-      "messaggi": 5,
+      "messaggi": 12,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -30893,7 +30894,7 @@
       "lavoro": "disoccupato",
       "slotLimit": 5,
       "stickerCount": 0,
-      "exp": 129,
+      "exp": 162,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -30934,7 +30935,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 43275,
+      "messaggi": 43345,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -32180,7 +32181,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 160,
+      "messaggi": 168,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -32411,10 +32412,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 2601,
-      "success": 2601,
-      "last": 1748559381289,
-      "lastSuccess": 1748559381289
+      "total": 2603,
+      "success": 2603,
+      "last": 1748575488747,
+      "lastSuccess": 1748575488747
     },
     "risposta-amo.js": {
       "total": 665,
@@ -32447,10 +32448,10 @@
       "lastSuccess": 1748561931712
     },
     "enable.js": {
-      "total": 29,
-      "success": 28,
-      "last": 1748533887975,
-      "lastSuccess": 1748533887975
+      "total": 30,
+      "success": 29,
+      "last": 1748575611832,
+      "lastSuccess": 1748575611832
     },
     "risposta-dai.js": {
       "total": 206,
@@ -32777,16 +32778,16 @@
       "lastSuccess": 1748522503791
     },
     "antilink.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1748524636374,
-      "lastSuccess": 1748524636374
+      "total": 18,
+      "success": 18,
+      "last": 1748575454795,
+      "lastSuccess": 1748575454795
     },
     "kick-global.js": {
-      "total": 46,
-      "success": 44,
-      "last": 1748557752017,
-      "lastSuccess": 1748557752017
+      "total": 48,
+      "success": 46,
+      "last": 1748575614518,
+      "lastSuccess": 1748575614518
     },
     "risposta-minaccia.js": {
       "total": 8,
@@ -33095,10 +33096,10 @@
       "lastSuccess": 1748426898830
     },
     "info-ping.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1748524867221,
-      "lastSuccess": 1748524867221
+      "total": 5,
+      "success": 5,
+      "last": 1748575639334,
+      "lastSuccess": 1748575639334
     },
     "gp-setbye.js": {
       "total": 2,
@@ -33205,7 +33206,7 @@
     "251716235988:65@s.whatsapp.net": {
       "self": true,
       "autoread": false,
-      "restrict": false,
+      "restrict": true,
       "antiCall": true,
       "antiPrivate": false,
       "jadibot": true
