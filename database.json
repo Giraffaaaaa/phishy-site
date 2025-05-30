@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 10161,
+      "messaggi": 10225,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 14466,
+      "exp": 15239,
       "limit": 13,
       "money": null,
       "msg": {},
@@ -228,7 +228,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748641377837,
+      "lastSpamTime": 1748642259589,
       "lastWarnTime": 1748634422670,
       "warnReasons": [
         {
@@ -400,7 +400,7 @@
       "oldWarnReasons": []
     },
     "393519955611@s.whatsapp.net": {
-      "messaggi": 270,
+      "messaggi": 271,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -435,7 +435,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 4197,
+      "exp": 4198,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -605,7 +605,7 @@
       "money": null
     },
     "120363329245024816@g.us": {
-      "messaggi": 272,
+      "messaggi": 275,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -640,7 +640,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 1519,
+      "exp": 1538,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -701,7 +701,7 @@
       "rejoins": 0
     },
     "393206045496@s.whatsapp.net": {
-      "messaggi": 874,
+      "messaggi": 877,
       "muto": false,
       "expired": 0,
       "blasphemy": 64,
@@ -738,8 +738,8 @@
         "393791281577@s.whatsapp.net"
       ],
       "lega_io": false,
-      "exp": 19226,
-      "limit": 93,
+      "exp": 19294,
+      "limit": 200,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -751,14 +751,14 @@
           "bonus": 0
         },
         "postino": {
-          "esperienza": 39,
+          "esperienza": 40,
           "bonus": 0
         }
       },
       "cooldowns": {},
       "ultimoLavoro": {
         "badante": 1748264179612,
-        "postino": 1748617635474
+        "postino": 1748641549266
       },
       "jobCooldown": 1748267868537,
       "lavoro": "postino",
@@ -786,7 +786,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748628593597,
+      "lastSpamTime": 1748641549264,
       "lastWarnTime": 0
     },
     "393336614013@s.whatsapp.net": {
@@ -837,7 +837,7 @@
       "slotLimit": 5
     },
     "393892424440@s.whatsapp.net": {
-      "messaggi": 552,
+      "messaggi": 559,
       "muto": false,
       "expired": 0,
       "blasphemy": 14,
@@ -872,7 +872,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 8336,
+      "exp": 8384,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -888,13 +888,13 @@
       "antiBan": 0,
       "message": 0,
       "photoVideoCount": 0,
-      "textCount": 2,
-      "lastSpamTime": 1748637974678,
+      "textCount": 1,
+      "lastSpamTime": 1748641475759,
       "lastWarnTime": 0,
       "warnReasons": []
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 2607,
+      "messaggi": 2633,
       "muto": false,
       "expired": 0,
       "blasphemy": 14,
@@ -929,7 +929,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 53871,
+      "exp": 54660,
       "limit": 76,
       "money": null,
       "msg": {},
@@ -965,13 +965,13 @@
       "pozionemaggiore": null,
       "pozioneminore": 2,
       "stocks": {},
-      "stickerCount": 1,
+      "stickerCount": 0,
       "scudo": 3,
       "antiBan": 2,
       "message": 0,
       "photoVideoCount": 0,
-      "textCount": 0,
-      "lastSpamTime": 1748638938071,
+      "textCount": 2,
+      "lastSpamTime": 1748642270037,
       "lastWarnTime": 1748623026744,
       "warnReasons": [
         {
@@ -2462,7 +2462,7 @@
       "money": null
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 1212,
+      "messaggi": 1217,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -2498,7 +2498,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 20578,
+      "exp": 20763,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -3084,7 +3084,7 @@
       "slotLimit": 5
     },
     "393207991819@s.whatsapp.net": {
-      "messaggi": 1065,
+      "messaggi": 1079,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -3120,7 +3120,7 @@
       "lega_vittime": [],
       "lega_io": true,
       "lavoro": "postino",
-      "exp": 16012,
+      "exp": 16253,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -3156,12 +3156,12 @@
       "rejoins": 0,
       "hidetag_limit": 0,
       "hidetag_day": "",
-      "stickerCount": 0,
+      "stickerCount": 1,
       "antiBan": 1,
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 0,
-      "lastSpamTime": 1748641224555,
+      "lastSpamTime": 1748641614245,
       "lastWarnTime": 1748631056818
     },
     "393701600807@s.whatsapp.net": {
@@ -4592,7 +4592,7 @@
       "slotLimit": 5
     },
     "393519226971@s.whatsapp.net": {
-      "messaggi": 182,
+      "messaggi": 194,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -4628,7 +4628,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 3409,
+      "exp": 3894,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -4640,7 +4640,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748636526039,
+      "lastSpamTime": 1748642161040,
       "lastWarnTime": 0,
       "warnReasons": []
     },
@@ -5001,7 +5001,7 @@
       "money": null
     },
     "393455272784@s.whatsapp.net": {
-      "messaggi": 7,
+      "messaggi": 8,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -5037,7 +5037,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 26,
+      "exp": 34,
       "limit": 20,
       "money": null,
       "firstJoin": 1748190016148,
@@ -5045,7 +5045,15 @@
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
-      "slotLimit": 5
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "photoVideoCount": 0,
+      "textCount": 0,
+      "lastSpamTime": 1748642208168,
+      "lastWarnTime": 0,
+      "warnReasons": []
     },
     "393519732926@s.whatsapp.net": {
       "messaggi": 2,
@@ -7791,7 +7799,7 @@
       "cavallo": false
     },
     "393333335654@s.whatsapp.net": {
-      "messaggi": 575,
+      "messaggi": 591,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -7827,7 +7835,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 9830,
+      "exp": 10010,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -7841,7 +7849,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748639730201,
+      "lastSpamTime": 1748642259400,
       "lastWarnTime": 0,
       "warnReasons": []
     },
@@ -8828,7 +8836,7 @@
       "money": null
     },
     "393276803088@s.whatsapp.net": {
-      "messaggi": 261,
+      "messaggi": 265,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -8864,7 +8872,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 3198,
+      "exp": 3215,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -8877,7 +8885,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748638699504,
+      "lastSpamTime": 1748641756881,
       "lastWarnTime": 0,
       "warnReasons": []
     },
@@ -11005,7 +11013,7 @@
       "money": null
     },
     "393791298333@s.whatsapp.net": {
-      "messaggi": 35,
+      "messaggi": 37,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -11041,7 +11049,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 519,
+      "exp": 536,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -16116,14 +16124,14 @@
       "cavallo": false
     },
     "393519102350@s.whatsapp.net": {
-      "messaggi": 73,
+      "messaggi": 81,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
-      "warn": 2,
+      "warn": 0,
       "warn_blasphemy": 0,
       "bacini": 0,
       "name": "+39 351 910 2350",
@@ -16153,7 +16161,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 1442,
+      "exp": 1546,
       "limit": 20,
       "money": null,
       "firstJoin": 1748290578007,
@@ -16161,14 +16169,15 @@
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
-      "stickerCount": 0,
+      "stickerCount": 1,
       "antiBan": 2,
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748641377641,
+      "lastSpamTime": 1748641706990,
       "lastWarnTime": 1748638841907,
-      "warnReasons": [
+      "warnReasons": [],
+      "oldWarnReasons": [
         {
           "reason": "Spam rilevato: hai superato i limiti consentiti.",
           "date": "2025-05-30T20:59:21.880Z",
@@ -16180,6 +16189,12 @@
           "date": "2025-05-30T21:00:41.907Z",
           "displayDate": "30/05/2025, 23:00:41",
           "admin": "251716235988@s.whatsapp.net"
+        },
+        {
+          "reason": "non mandare stickers strani",
+          "date": "2025-05-30T21:48:38.517Z",
+          "displayDate": "30/05/2025, 23:48",
+          "admin": "393534409026@s.whatsapp.net"
         }
       ]
     },
@@ -16379,7 +16394,7 @@
       "money": null
     },
     "393335730535@s.whatsapp.net": {
-      "messaggi": 207,
+      "messaggi": 216,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -16416,7 +16431,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 3135,
+      "exp": 3176,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -26078,7 +26093,7 @@
       "warnReasons": []
     },
     "393429436855@s.whatsapp.net": {
-      "messaggi": 92,
+      "messaggi": 98,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -26115,7 +26130,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 1114,
+      "exp": 1183,
       "limit": 20,
       "money": null,
       "firstJoin": 1748465981597,
@@ -26127,8 +26142,8 @@
       "antiBan": 0,
       "message": 0,
       "photoVideoCount": 0,
-      "textCount": 4,
-      "lastSpamTime": 1748640768472,
+      "textCount": 0,
+      "lastSpamTime": 1748642046999,
       "lastWarnTime": 0,
       "warnReasons": []
     },
@@ -33137,7 +33152,7 @@
       "money": null
     },
     "393773873941@s.whatsapp.net": {
-      "messaggi": 14,
+      "messaggi": 18,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -33182,7 +33197,7 @@
       "lastSpamTime": 1748638038089,
       "lastWarnTime": 0,
       "warnReasons": [],
-      "exp": 73,
+      "exp": 96,
       "limit": 20,
       "money": null,
       "firstJoin": 1748616945613,
@@ -34040,7 +34055,7 @@
       "money": null
     },
     "393279382837@s.whatsapp.net": {
-      "messaggi": 46,
+      "messaggi": 47,
       "muto": false,
       "expired": 0,
       "blasphemy": 4,
@@ -34082,14 +34097,14 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748641366903,
+      "lastSpamTime": 1748641560982,
       "lastWarnTime": 0,
       "warnReasons": [],
-      "exp": 921,
+      "exp": 926,
       "limit": 20,
       "money": null,
       "firstJoin": 1748633951262,
-      "rejoins": 1,
+      "rejoins": 3,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false
@@ -34467,7 +34482,7 @@
       "money": null
     },
     "393513489198@s.whatsapp.net": {
-      "messaggi": 8,
+      "messaggi": 9,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -34512,10 +34527,233 @@
       "lastSpamTime": 1748640002191,
       "lastWarnTime": 0,
       "warnReasons": [],
-      "exp": 91,
+      "exp": 97,
       "limit": 20,
       "money": null,
       "firstJoin": 1748639494306,
+      "rejoins": 1,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
+    },
+    "393519607438@s.whatsapp.net": {
+      "messaggi": 39,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 351 960 7438",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "photoVideoCount": 0,
+      "textCount": 1,
+      "lastSpamTime": 1748642266919,
+      "lastWarnTime": 0,
+      "warnReasons": [],
+      "exp": 567,
+      "limit": 20,
+      "money": null,
+      "firstJoin": 1748641529957,
+      "rejoins": 0,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
+    },
+    "393426224222@s.whatsapp.net": {
+      "messaggi": 38,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 342 622 4222",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 1,
+      "antiBan": 0,
+      "message": 0,
+      "photoVideoCount": 0,
+      "textCount": 1,
+      "lastSpamTime": 1748642260346,
+      "lastWarnTime": 0,
+      "warnReasons": [],
+      "exp": 550,
+      "limit": 20,
+      "money": null,
+      "firstJoin": 1748641600021,
+      "rejoins": 0,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
+    },
+    "393389098290@s.whatsapp.net": {
+      "messaggi": 11,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 1,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 338 909 8290",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "photoVideoCount": 0,
+      "textCount": 1,
+      "lastSpamTime": 1748642187459,
+      "lastWarnTime": 0,
+      "warnReasons": [
+        {
+          "reason": "non si scrive in privato",
+          "date": "2025-05-30T21:57:39.401Z",
+          "displayDate": "30/05/2025, 23:57",
+          "admin": "393333335654@s.whatsapp.net"
+        }
+      ],
+      "exp": 161,
+      "limit": 20,
+      "money": null,
+      "firstJoin": 1748641849882,
+      "rejoins": 0,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false,
+      "oldWarnReasons": []
+    },
+    "393770963570@s.whatsapp.net": {
+      "messaggi": 10,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 377 096 3570",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RATTO DELLA FOGNA III* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "exp": 54,
+      "limit": 20,
+      "money": null,
+      "firstJoin": 1748642443912,
       "rejoins": 0,
       "msg": {},
       "premiumDate": -1,
@@ -34552,11 +34790,11 @@
       "antiToxic": false,
       "antiTraba": true,
       "antiArab": false,
-      "modoadmin": false,
+      "modoadmin": true,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 46964,
-      "antispam": true,
+      "messaggi": 47223,
+      "antispam": false,
       "antivoip": true,
       "eliminati": 0,
       "expired": 0,
@@ -34633,7 +34871,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 801,
+      "messaggi": 808,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -34672,7 +34910,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1674,
+      "messaggi": 1679,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -34712,7 +34950,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1193,
+      "messaggi": 1202,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -34751,7 +34989,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1255,
+      "messaggi": 1260,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -36180,22 +36418,22 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 2801,
-      "success": 2801,
-      "last": 1748639984586,
-      "lastSuccess": 1748639984586
+      "total": 2816,
+      "success": 2816,
+      "last": 1748642801329,
+      "lastSuccess": 1748642801329
     },
     "risposta-amo.js": {
-      "total": 684,
-      "success": 684,
-      "last": 1748636602638,
-      "lastSuccess": 1748636602638
+      "total": 692,
+      "success": 692,
+      "last": 1748642742069,
+      "lastSuccess": 1748642742069
     },
     "tools-rivela.js": {
-      "total": 1564,
-      "success": 113,
-      "last": 1748640718145,
-      "lastSuccess": 1748640718145
+      "total": 1578,
+      "success": 119,
+      "last": 1748642707466,
+      "lastSuccess": 1748642707466
     },
     "risposta-napoli.js": {
       "total": 76,
@@ -36210,16 +36448,16 @@
       "lastSuccess": 1748622902528
     },
     "rpg-work.js": {
-      "total": 123,
-      "success": 123,
-      "last": 1748620754328,
-      "lastSuccess": 1748620754328
+      "total": 124,
+      "success": 124,
+      "last": 1748641549776,
+      "lastSuccess": 1748641549776
     },
     "enable.js": {
-      "total": 41,
-      "success": 40,
-      "last": 1748622309132,
-      "lastSuccess": 1748622309132
+      "total": 43,
+      "success": 42,
+      "last": 1748642366764,
+      "lastSuccess": 1748642366764
     },
     "risposta-dai.js": {
       "total": 244,
@@ -36228,10 +36466,10 @@
       "lastSuccess": 1748641377838
     },
     "game-mate-risposte.js": {
-      "total": 100,
-      "success": 100,
-      "last": 1748637204356,
-      "lastSuccess": 1748637204356
+      "total": 101,
+      "success": 101,
+      "last": 1748642511358,
+      "lastSuccess": 1748642511358
     },
     "rpg-profilo.js": {
       "total": 40,
@@ -36252,16 +36490,16 @@
       "lastSuccess": 1748620770028
     },
     "audio-tutti.js": {
-      "total": 757,
-      "success": 757,
-      "last": 1748639982548,
-      "lastSuccess": 1748639982548
+      "total": 762,
+      "success": 762,
+      "last": 1748642488740,
+      "lastSuccess": 1748642488740
     },
     "menzione-insulti-random.js": {
-      "total": 559,
-      "success": 559,
-      "last": 1748641279632,
-      "lastSuccess": 1748641279632
+      "total": 562,
+      "success": 562,
+      "last": 1748642383097,
+      "lastSuccess": 1748642383097
     },
     "rpg-buy|compra|shop.js": {
       "total": 36,
@@ -36318,10 +36556,10 @@
       "lastSuccess": 1748620765367
     },
     "sticker-dance.js": {
-      "total": 47,
-      "success": 47,
-      "last": 1748639852760,
-      "lastSuccess": 1748639852760
+      "total": 48,
+      "success": 48,
+      "last": 1748642186464,
+      "lastSuccess": 1748642186464
     },
     "level.js": {
       "total": 3,
@@ -36372,10 +36610,10 @@
       "lastSuccess": 1748555169635
     },
     "sticker-pat.js": {
-      "total": 210,
-      "success": 210,
-      "last": 1748637073172,
-      "lastSuccess": 1748637073172
+      "total": 212,
+      "success": 212,
+      "last": 1748642363394,
+      "lastSuccess": 1748642363394
     },
     "calcolatrice.js": {
       "total": 12,
@@ -36408,10 +36646,10 @@
       "lastSuccess": 1748271254352
     },
     "risposta-buonasera.js": {
-      "total": 102,
-      "success": 102,
-      "last": 1748636564385,
-      "lastSuccess": 1748636564385
+      "total": 104,
+      "success": 104,
+      "last": 1748641903263,
+      "lastSuccess": 1748641903263
     },
     "risposta-come.js": {
       "total": 287,
@@ -36432,10 +36670,10 @@
       "lastSuccess": 1748275813840
     },
     "avvertimenti-all.js": {
-      "total": 96,
-      "success": 96,
-      "last": 1748637329515,
-      "lastSuccess": 1748637329515
+      "total": 98,
+      "success": 98,
+      "last": 1748642259589,
+      "lastSuccess": 1748642259589
     },
     "gp-Zizzania.js": {
       "total": 26,
@@ -36450,10 +36688,10 @@
       "lastSuccess": 1748447549939
     },
     "rispsota-roma.js": {
-      "total": 58,
-      "success": 58,
-      "last": 1748637964716,
-      "lastSuccess": 1748637964716
+      "total": 59,
+      "success": 59,
+      "last": 1748641904703,
+      "lastSuccess": 1748641904703
     },
     "info-owner.js": {
       "total": 3,
@@ -36648,10 +36886,10 @@
       "lastSuccess": 1748558939563
     },
     "gp-hidetag.js": {
-      "total": 29,
-      "success": 29,
-      "last": 1748636197942,
-      "lastSuccess": 1748636197942
+      "total": 30,
+      "success": 30,
+      "last": 1748642476748,
+      "lastSuccess": 1748642476748
     },
     "tools-gender.js": {
       "total": 5,
@@ -36738,10 +36976,10 @@
       "lastSuccess": 1748463616710
     },
     "risposta-segreto.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1748266922876,
-      "lastSuccess": 1748266922876
+      "total": 3,
+      "success": 3,
+      "last": 1748642367622,
+      "lastSuccess": 1748642367622
     },
     "owner-azzera-messaggi.js": {
       "total": 2,
@@ -36786,10 +37024,10 @@
       "lastSuccess": 1748545676714
     },
     "tools-ai--img.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1748536434783,
-      "lastSuccess": 1748536434783
+      "total": 19,
+      "success": 19,
+      "last": 1748642416026,
+      "lastSuccess": 1748642416026
     },
     "rpg-wallet.js": {
       "total": 5,
