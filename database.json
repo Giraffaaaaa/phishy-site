@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 90059,
+      "messaggi": 90060,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 439703,
+      "exp": 439710,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -623,7 +623,7 @@
       "money": null
     },
     "120363329245024816@g.us": {
-      "messaggi": 305,
+      "messaggi": 306,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -658,7 +658,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 1698,
+      "exp": 1708,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -719,7 +719,7 @@
       "rejoins": 0
     },
     "393206045496@s.whatsapp.net": {
-      "messaggi": 1034,
+      "messaggi": 1035,
       "muto": false,
       "expired": 0,
       "blasphemy": 71,
@@ -756,7 +756,7 @@
         "393791281577@s.whatsapp.net"
       ],
       "lega_io": false,
-      "exp": 22858,
+      "exp": 22860,
       "limit": 302,
       "money": null,
       "msg": {},
@@ -37764,7 +37764,9 @@
       "message": 0,
       "exp": null,
       "limit": null,
-      "money": null
+      "money": null,
+      "firstJoin": 1748740736967,
+      "rejoins": 0
     }
   },
   "chats": {
@@ -37800,7 +37802,7 @@
       "modoadmin": true,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 52397,
+      "messaggi": 52399,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -37878,7 +37880,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 872,
+      "messaggi": 873,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
