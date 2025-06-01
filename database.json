@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 90060,
+      "messaggi": 90061,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 439710,
+      "exp": 439713,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -1845,7 +1845,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 436,
+      "messaggi": 447,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1881,7 +1881,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 10538,
+      "exp": 10600,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2478,7 +2478,7 @@
       "money": null
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 1435,
+      "messaggi": 1445,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -2514,7 +2514,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 24244,
+      "exp": 24285,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2576,10 +2576,10 @@
       "cavallo": false
     },
     "393273270466@s.whatsapp.net": {
-      "messaggi": 436,
+      "messaggi": 439,
       "muto": false,
       "expired": 0,
-      "blasphemy": 17,
+      "blasphemy": 18,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -2635,7 +2635,7 @@
         "muratore": 1748522123710,
         "postino": 1748696714817
       },
-      "exp": 6531,
+      "exp": 6548,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -37847,7 +37847,7 @@
       "modoadmin": true,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 52412,
+      "messaggi": 52437,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -39897,10 +39897,10 @@
       "lastSuccess": 1748732051939
     },
     "risposta-come.js": {
-      "total": 328,
-      "success": 328,
-      "last": 1748731469300,
-      "lastSuccess": 1748731469300
+      "total": 329,
+      "success": 329,
+      "last": 1748750593707,
+      "lastSuccess": 1748750593707
     },
     "fun-sega.js": {
       "total": 16,
