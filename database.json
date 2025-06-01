@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 90061,
+      "messaggi": 90066,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 439713,
+      "exp": 439794,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2478,7 +2478,7 @@
       "money": null
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 1445,
+      "messaggi": 1447,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -2514,7 +2514,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 24285,
+      "exp": 24291,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -11793,7 +11793,7 @@
       "money": null
     },
     "639093971531@s.whatsapp.net": {
-      "messaggi": 147,
+      "messaggi": 156,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -11829,7 +11829,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 2341,
+      "exp": 2596,
       "limit": 20,
       "money": null,
       "slotLimit": 5,
@@ -37847,7 +37847,7 @@
       "modoadmin": true,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 52437,
+      "messaggi": 52442,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -38004,7 +38004,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1720,
+      "messaggi": 1730,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -39544,10 +39544,12 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1,
+      "messaggi": 2,
       "antispam": false,
       "antivoip": true,
-      "eliminati": 0
+      "eliminati": 0,
+      "expired": 0,
+      "blasphemy": 0
     },
     "393207991819@s.whatsapp.net": {
       "name": "bobo",
@@ -39675,10 +39677,10 @@
       "lastSuccess": 1748731513357
     },
     "tools-rivela.js": {
-      "total": 1792,
-      "success": 238,
-      "last": 1748736202992,
-      "lastSuccess": 1748736202992
+      "total": 1794,
+      "success": 239,
+      "last": 1748752826106,
+      "lastSuccess": 1748751946831
     },
     "risposta-napoli.js": {
       "total": 80,
@@ -39723,10 +39725,10 @@
       "lastSuccess": 1748733550109
     },
     "risposta-buongiorno.js": {
-      "total": 415,
-      "success": 415,
-      "last": 1748704241046,
-      "lastSuccess": 1748704241046
+      "total": 417,
+      "success": 417,
+      "last": 1748751946825,
+      "lastSuccess": 1748751946825
     },
     "rpg-levelup.js": {
       "total": 42,
@@ -40137,10 +40139,10 @@
       "lastSuccess": 1748727018094
     },
     "tools-gender.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1748426667441,
-      "lastSuccess": 1748426667441
+      "total": 6,
+      "success": 6,
+      "last": 1748752805442,
+      "lastSuccess": 1748752805442
     },
     "gp-simula.js": {
       "total": 25,
