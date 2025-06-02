@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 91115,
+      "messaggi": 91116,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 4370,
+      "exp": 4377,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2000,7 +2000,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 2531,
+      "messaggi": 2533,
       "muto": false,
       "expired": 0,
       "blasphemy": 82,
@@ -2038,7 +2038,7 @@
       ],
       "lega_io": true,
       "lavoro": "disoccupato",
-      "exp": 31445,
+      "exp": 31459,
       "limit": 200,
       "money": null,
       "msg": {},
@@ -4322,7 +4322,7 @@
       "lastWarnTime": 1748706614809
     },
     "393518732099@s.whatsapp.net": {
-      "messaggi": 385,
+      "messaggi": 387,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -4358,7 +4358,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 5995,
+      "exp": 6008,
       "limit": 20,
       "money": null,
       "firstJoin": 1748187192949,
@@ -41637,7 +41637,7 @@
       "cavallo": false
     },
     "393476111299@s.whatsapp.net": {
-      "messaggi": 160,
+      "messaggi": 166,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -41677,7 +41677,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 3804,
+      "exp": 3939,
       "limit": 20,
       "money": null,
       "firstJoin": 1748824171883,
@@ -42123,7 +42123,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 58717,
+      "messaggi": 58728,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -43982,16 +43982,16 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 3471,
-      "success": 3471,
-      "last": 1748830470975,
-      "lastSuccess": 1748830470975
+      "total": 3472,
+      "success": 3472,
+      "last": 1748831545691,
+      "lastSuccess": 1748831545691
     },
     "risposta-amo.js": {
-      "total": 815,
-      "success": 815,
-      "last": 1748830176265,
-      "lastSuccess": 1748830176265
+      "total": 816,
+      "success": 816,
+      "last": 1748831233607,
+      "lastSuccess": 1748831233607
     },
     "tools-rivela.js": {
       "total": 2072,
