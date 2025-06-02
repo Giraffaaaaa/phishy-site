@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 91117,
+      "messaggi": 91120,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 4382,
+      "exp": 4396,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2000,10 +2000,10 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 2534,
+      "messaggi": 2540,
       "muto": false,
       "expired": 0,
-      "blasphemy": 82,
+      "blasphemy": 83,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -2038,7 +2038,7 @@
       ],
       "lega_io": true,
       "lavoro": "disoccupato",
-      "exp": 31465,
+      "exp": 31490,
       "limit": 200,
       "money": null,
       "msg": {},
@@ -5348,7 +5348,7 @@
       "cavallo": false
     },
     "393280716846@s.whatsapp.net": {
-      "messaggi": 950,
+      "messaggi": 957,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
@@ -5386,7 +5386,7 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 11888,
+      "exp": 11931,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -29250,7 +29250,7 @@
       "money": null
     },
     "5212293410472@s.whatsapp.net": {
-      "messaggi": 1,
+      "messaggi": 2,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -29287,9 +29287,15 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": null,
-      "limit": null,
-      "money": null
+      "exp": 7,
+      "limit": 20,
+      "money": null,
+      "msg": {},
+      "premiumDate": -1,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "cavallo": false
     },
     "120363391446013555@newsletter": {
       "messaggi": 2,
@@ -42123,7 +42129,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 58731,
+      "messaggi": 58747,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -42280,7 +42286,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2343,
+      "messaggi": 2344,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
