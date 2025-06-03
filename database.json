@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 92195,
+      "messaggi": 92197,
       "muto": false,
       "expired": 0,
       "blasphemy": 15,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 22224,
+      "exp": 22338,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -228,7 +228,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748918024623,
+      "lastSpamTime": 1748921416427,
       "lastWarnTime": 1748828914288,
       "warnReasons": [],
       "oldWarnReasons": [
@@ -1861,7 +1861,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 705,
+      "messaggi": 707,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1897,7 +1897,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 15089,
+      "exp": 15199,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -1909,7 +1909,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748892473772,
+      "lastSpamTime": 1748921415363,
       "lastWarnTime": 0,
       "warnReasons": [],
       "birthday": "27/02/2007"
@@ -45262,7 +45262,7 @@
       "birthday": "27/10/2011"
     },
     "393533824950@s.whatsapp.net": {
-      "messaggi": 27,
+      "messaggi": 29,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -45302,7 +45302,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 245,
+      "exp": 261,
       "limit": 20,
       "money": null,
       "firstJoin": 1748918478839,
@@ -45350,7 +45350,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 64330,
+      "messaggi": 64334,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -45624,7 +45624,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2024,
+      "messaggi": 2026,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -47308,10 +47308,10 @@
       "lastSuccess": 1748918797870
     },
     "risposta-buongiorno.js": {
-      "total": 578,
-      "success": 578,
-      "last": 1748913356470,
-      "lastSuccess": 1748913356470
+      "total": 582,
+      "success": 582,
+      "last": 1748921416430,
+      "lastSuccess": 1748921416430
     },
     "rpg-levelup.js": {
       "total": 42,
