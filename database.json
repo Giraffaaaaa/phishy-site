@@ -175,7 +175,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 94857,
+      "messaggi": 94859,
       "muto": false,
       "expired": 0,
       "blasphemy": 27,
@@ -210,7 +210,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 64120,
+      "exp": 64225,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -1894,7 +1894,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 910,
+      "messaggi": 912,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1930,7 +1930,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 19767,
+      "exp": 19878,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -1942,7 +1942,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1748993042385,
+      "lastSpamTime": 1749094109135,
       "lastWarnTime": 0,
       "warnReasons": [],
       "birthday": "27/02/2007"
@@ -53504,7 +53504,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 79542,
+      "messaggi": 79544,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -53778,7 +53778,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2510,
+      "messaggi": 2512,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -55538,10 +55538,10 @@
       "lastSuccess": 1748918797870
     },
     "risposta-buongiorno.js": {
-      "total": 809,
-      "success": 809,
-      "last": 1749080172293,
-      "lastSuccess": 1749080172293
+      "total": 813,
+      "success": 813,
+      "last": 1749094110299,
+      "lastSuccess": 1749094110299
     },
     "rpg-levelup.js": {
       "total": 42,
