@@ -176,7 +176,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 96693,
+      "messaggi": 96698,
       "muto": false,
       "expired": 0,
       "blasphemy": 35,
@@ -211,7 +211,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 90852,
+      "exp": 90877,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -939,7 +939,7 @@
       "warnReasons": []
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 4500,
+      "messaggi": 4501,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -976,7 +976,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 20156,
+      "exp": 20207,
       "limit": 727,
       "money": null,
       "msg": {},
@@ -25081,7 +25081,7 @@
       "warnReasons": []
     },
     "393791966912@s.whatsapp.net": {
-      "messaggi": 55,
+      "messaggi": 56,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -25118,7 +25118,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 679,
+      "exp": 686,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -55027,7 +55027,7 @@
       "money": null
     },
     "393899922953@s.whatsapp.net": {
-      "messaggi": 1,
+      "messaggi": 2,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -55067,9 +55067,14 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": null,
-      "limit": null,
-      "money": null
+      "exp": 1,
+      "limit": 20,
+      "money": null,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false,
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393500425190@s.whatsapp.net": {
       "messaggi": 6,
@@ -58028,6 +58033,53 @@
       "exp": null,
       "limit": null,
       "money": null
+    },
+    "18299156355@s.whatsapp.net": {
+      "messaggi": 1,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+1 829-915-6355",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RANDOM SU VIRIDI V* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotLimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "flamePass": 0,
+      "flamePassScadenza": "",
+      "exp": null,
+      "limit": null,
+      "money": null
     }
   },
   "chats": {
@@ -58063,7 +58115,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 87963,
+      "messaggi": 87967,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58231,7 +58283,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 3048,
+      "messaggi": 3049,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58387,7 +58439,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 78715,
+      "messaggi": 78719,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -60871,10 +60923,10 @@
       "lastSuccess": 1749054233313
     },
     "tools-sito.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1749174154984,
-      "lastSuccess": 1749174154984
+      "total": 4,
+      "success": 4,
+      "last": 1749175294995,
+      "lastSuccess": 1749175294995
     },
     "rpg-transferisci.js": {
       "total": 6,
