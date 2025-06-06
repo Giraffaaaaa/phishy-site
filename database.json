@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 97693,
+      "messaggi": 97695,
       "muto": false,
       "expired": 0,
       "blasphemy": 41,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 104187,
+      "exp": 104246,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -888,7 +888,7 @@
       "slotLimit": 5
     },
     "393892424440@s.whatsapp.net": {
-      "messaggi": 1623,
+      "messaggi": 1625,
       "muto": false,
       "expired": 0,
       "blasphemy": 27,
@@ -923,7 +923,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 22431,
+      "exp": 22442,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -2125,7 +2125,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 3931,
+      "messaggi": 3932,
       "muto": false,
       "expired": 0,
       "blasphemy": 113,
@@ -2164,7 +2164,7 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 55528,
+      "exp": 55585,
       "limit": 221,
       "money": null,
       "msg": {},
@@ -17124,7 +17124,7 @@
       "money": null
     },
     "393335730535@s.whatsapp.net": {
-      "messaggi": 475,
+      "messaggi": 476,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -17161,7 +17161,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 7679,
+      "exp": 7737,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -18849,7 +18849,7 @@
       "warnReasons": []
     },
     "393517041773@s.whatsapp.net": {
-      "messaggi": 138,
+      "messaggi": 140,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -18886,7 +18886,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 1988,
+      "exp": 1995,
       "limit": 20,
       "money": null,
       "firstJoin": 1748346949533,
@@ -48018,10 +48018,10 @@
       "rejoins": 0
     },
     "393755682923@s.whatsapp.net": {
-      "messaggi": 1646,
+      "messaggi": 1650,
       "muto": false,
       "expired": 0,
-      "blasphemy": 37,
+      "blasphemy": 38,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -48058,7 +48058,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 29218,
+      "exp": 29281,
       "limit": 11,
       "money": null,
       "firstJoin": 1748975812163,
@@ -60072,7 +60072,7 @@
       "cavallo": false
     },
     "393455810912@s.whatsapp.net": {
-      "messaggi": 4,
+      "messaggi": 5,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -60114,7 +60114,7 @@
       "message": 0,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "exp": 25,
+      "exp": 27,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -60296,7 +60296,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 91037,
+      "messaggi": 91046,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -60503,7 +60503,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1736,
+      "messaggi": 1739,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -62425,7 +62425,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 101,
+      "messaggi": 102,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -62495,10 +62495,10 @@
       "lastSuccess": 1749194561318
     },
     "risposta-buongiorno.js": {
-      "total": 1037,
-      "success": 1037,
-      "last": 1749235716025,
-      "lastSuccess": 1749235716025
+      "total": 1039,
+      "success": 1039,
+      "last": 1749235926482,
+      "lastSuccess": 1749235926482
     },
     "rpg-levelup.js": {
       "total": 50,
@@ -62513,10 +62513,10 @@
       "lastSuccess": 1749235072850
     },
     "menzione-insulti-random.js": {
-      "total": 1106,
-      "success": 1106,
-      "last": 1749235889554,
-      "lastSuccess": 1749235889554
+      "total": 1108,
+      "success": 1108,
+      "last": 1749235975818,
+      "lastSuccess": 1749235975818
     },
     "rpg-buy|compra|shop.js": {
       "total": 76,
