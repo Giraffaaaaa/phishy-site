@@ -1940,7 +1940,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 1111,
+      "messaggi": 1112,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1976,7 +1976,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 24260,
+      "exp": 24262,
       "limit": 16,
       "money": null,
       "msg": {},
@@ -2019,7 +2019,9 @@
         "completate": [],
         "fallite": [],
         "dolciGuadagnati": 0
-      }
+      },
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393505223258@s.whatsapp.net": {
       "messaggi": 2,
@@ -58123,7 +58125,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 87972,
+      "messaggi": 87973,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
