@@ -1940,7 +1940,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 1112,
+      "messaggi": 1117,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1976,7 +1976,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 24262,
+      "exp": 24287,
       "limit": 16,
       "money": null,
       "msg": {},
@@ -3572,7 +3572,7 @@
       "rejoins": 0
     },
     "393501819848@s.whatsapp.net": {
-      "messaggi": 383,
+      "messaggi": 388,
       "muto": false,
       "expired": 0,
       "blasphemy": 11,
@@ -3619,7 +3619,7 @@
       "ultimoLavoro": {
         "disoccupato": 1748455901581
       },
-      "exp": 5604,
+      "exp": 5638,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -3649,7 +3649,9 @@
         "completate": [],
         "fallite": [],
         "dolciGuadagnati": 0
-      }
+      },
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393515186505@s.whatsapp.net": {
       "messaggi": 4,
@@ -58125,7 +58127,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 87973,
+      "messaggi": 87983,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
