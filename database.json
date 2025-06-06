@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 97942,
+      "messaggi": 97944,
       "muto": false,
       "expired": 0,
       "blasphemy": 44,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 108015,
+      "exp": 108024,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -754,7 +754,7 @@
       "rejoins": 0
     },
     "393206045496@s.whatsapp.net": {
-      "messaggi": 1980,
+      "messaggi": 1983,
       "muto": false,
       "expired": 0,
       "blasphemy": 100,
@@ -791,7 +791,7 @@
         "393791281577@s.whatsapp.net"
       ],
       "lega_io": false,
-      "exp": 42042,
+      "exp": 42112,
       "limit": 235,
       "money": null,
       "msg": {},
@@ -2626,7 +2626,7 @@
       "money": null
     },
     "393801932294@s.whatsapp.net": {
-      "messaggi": 2867,
+      "messaggi": 2869,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -2662,7 +2662,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 47066,
+      "exp": 47083,
       "limit": 19,
       "money": null,
       "msg": {},
@@ -3270,7 +3270,7 @@
       "warnReasons": []
     },
     "393207991819@s.whatsapp.net": {
-      "messaggi": 4325,
+      "messaggi": 4330,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -3308,7 +3308,7 @@
       ],
       "lega_io": true,
       "lavoro": "postino",
-      "exp": 68450,
+      "exp": 68542,
       "limit": 4,
       "money": null,
       "msg": {},
@@ -51733,7 +51733,7 @@
       "money": null
     },
     "393514346443@s.whatsapp.net": {
-      "messaggi": 628,
+      "messaggi": 637,
       "muto": false,
       "expired": 0,
       "blasphemy": 9,
@@ -51773,7 +51773,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 8126,
+      "exp": 8175,
       "limit": 20,
       "money": null,
       "firstJoin": 1749054293577,
@@ -59467,7 +59467,7 @@
       "cavallo": false
     },
     "393760823799@s.whatsapp.net": {
-      "messaggi": 404,
+      "messaggi": 414,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -59509,7 +59509,7 @@
       "message": 0,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "exp": 4480,
+      "exp": 4587,
       "limit": 20,
       "money": null,
       "firstJoin": 1749225373370,
@@ -60886,7 +60886,7 @@
       "money": null
     },
     "393517398021@s.whatsapp.net": {
-      "messaggi": 15,
+      "messaggi": 18,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -60928,7 +60928,7 @@
       "message": 0,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "exp": 67,
+      "exp": 83,
       "limit": 20,
       "money": null,
       "firstJoin": 1749243872318,
@@ -61021,7 +61021,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 91875,
+      "messaggi": 91884,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -61267,7 +61267,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 3089,
+      "messaggi": 3114,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -63197,10 +63197,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 5470,
-      "success": 5470,
-      "last": 1749244850031,
-      "lastSuccess": 1749244850031
+      "total": 5471,
+      "success": 5471,
+      "last": 1749244947340,
+      "lastSuccess": 1749244947340
     },
     "risposta-amo.js": {
       "total": 1211,
@@ -63269,10 +63269,10 @@
       "lastSuccess": 1749171560366
     },
     "audio-tutti.js": {
-      "total": 1555,
-      "success": 1555,
-      "last": 1749244551028,
-      "lastSuccess": 1749244551028
+      "total": 1556,
+      "success": 1556,
+      "last": 1749244984832,
+      "lastSuccess": 1749244984832
     },
     "menzione-insulti-random.js": {
       "total": 1115,
@@ -63665,10 +63665,10 @@
       "lastSuccess": 1749148297620
     },
     "gp-hidetag.js": {
-      "total": 70,
-      "success": 70,
-      "last": 1749244489031,
-      "lastSuccess": 1749244489031
+      "total": 71,
+      "success": 71,
+      "last": 1749245034859,
+      "lastSuccess": 1749245034859
     },
     "tools-gender.js": {
       "total": 10,
