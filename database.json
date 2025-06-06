@@ -943,7 +943,7 @@
       "warnReasons": []
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 4503,
+      "messaggi": 4508,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -980,7 +980,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 20213,
+      "exp": 20254,
       "limit": 727,
       "money": null,
       "msg": {},
@@ -5319,7 +5319,7 @@
       "cavallo": false
     },
     "393519075558@s.whatsapp.net": {
-      "messaggi": 520,
+      "messaggi": 525,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
@@ -5355,7 +5355,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 7455,
+      "exp": 7467,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -41273,7 +41273,7 @@
       "cavallo": false
     },
     "393454353273@s.whatsapp.net": {
-      "messaggi": 107,
+      "messaggi": 112,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -41313,7 +41313,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 951,
+      "exp": 982,
       "limit": 20,
       "money": null,
       "firstJoin": 1748811835395,
@@ -41325,7 +41325,9 @@
       "textCount": 0,
       "lastSpamTime": 1748819084580,
       "lastWarnTime": 0,
-      "warnReasons": []
+      "warnReasons": [],
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393280577168@s.whatsapp.net": {
       "messaggi": 5,
@@ -47897,7 +47899,7 @@
       "rejoins": 0
     },
     "393755682923@s.whatsapp.net": {
-      "messaggi": 1382,
+      "messaggi": 1387,
       "muto": false,
       "expired": 0,
       "blasphemy": 32,
@@ -47937,7 +47939,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 24585,
+      "exp": 24605,
       "limit": 11,
       "money": null,
       "firstJoin": 1748975812163,
@@ -50372,7 +50374,7 @@
       "cavallo": false
     },
     "393703542521@s.whatsapp.net": {
-      "messaggi": 243,
+      "messaggi": 244,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -50412,7 +50414,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 4111,
+      "exp": 4112,
       "limit": 20,
       "money": null,
       "firstJoin": 1749025403316,
@@ -53780,7 +53782,7 @@
       "money": null
     },
     "393444309499@s.whatsapp.net": {
-      "messaggi": 33,
+      "messaggi": 43,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -53820,7 +53822,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 382,
+      "exp": 421,
       "limit": 20,
       "money": null,
       "firstJoin": 1749098351671,
@@ -58127,7 +58129,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 87983,
+      "messaggi": 88009,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58334,7 +58336,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1677,
+      "messaggi": 1682,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
