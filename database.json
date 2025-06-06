@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98054,
+      "messaggi": 98055,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 110030,
+      "exp": 110038,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -947,7 +947,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 4946,
+      "messaggi": 4947,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -977,15 +977,15 @@
       "forcina": 0,
       "cane": 8,
       "gatto": 1,
-      "coniglio": false,
+      "coniglio": 1,
       "drago": false,
       "lega_vittime": [
         "393898954259@s.whatsapp.net",
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 33403,
-      "limit": 94824,
+      "exp": 33459,
+      "limit": 94586,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -3270,7 +3270,7 @@
       "warnReasons": []
     },
     "393207991819@s.whatsapp.net": {
-      "messaggi": 4383,
+      "messaggi": 4388,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -3308,7 +3308,7 @@
       ],
       "lega_io": true,
       "lavoro": "postino",
-      "exp": 69283,
+      "exp": 69310,
       "limit": 504,
       "money": null,
       "msg": {},
@@ -18862,7 +18862,7 @@
       "warnReasons": []
     },
     "393517041773@s.whatsapp.net": {
-      "messaggi": 178,
+      "messaggi": 181,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -18899,7 +18899,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2434,
+      "exp": 2453,
       "limit": 20,
       "money": null,
       "firstJoin": 1748346949533,
@@ -61121,7 +61121,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 92227,
+      "messaggi": 92235,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -61249,7 +61249,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2635,
+      "messaggi": 2637,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -63381,10 +63381,10 @@
       "lastSuccess": 1749248549968
     },
     "rpg-buy|compra|shop.js": {
-      "total": 120,
-      "success": 119,
-      "last": 1749248745235,
-      "lastSuccess": 1749248745235
+      "total": 121,
+      "success": 120,
+      "last": 1749248787501,
+      "lastSuccess": 1749248787501
     },
     "risposta-basta.js": {
       "total": 93,
