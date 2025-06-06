@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98225,
+      "messaggi": 98226,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112105,
+      "exp": 112115,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -656,7 +656,7 @@
       "money": null
     },
     "120363329245024816@g.us": {
-      "messaggi": 587,
+      "messaggi": 588,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -691,7 +691,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 3239,
+      "exp": 3243,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -947,7 +947,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 5032,
+      "messaggi": 5034,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -984,7 +984,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 38818,
+      "exp": 38833,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -61153,7 +61153,7 @@
       "cavallo": false
     },
     "393519483057@s.whatsapp.net": {
-      "messaggi": 1,
+      "messaggi": 3,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -61195,9 +61195,14 @@
       "message": 0,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "exp": null,
-      "limit": null,
-      "money": null
+      "exp": 16,
+      "limit": 20,
+      "money": null,
+      "firstJoin": 1749254081198,
+      "rejoins": 0,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
     }
   },
   "chats": {
@@ -61233,7 +61238,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 92491,
+      "messaggi": 92496,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -61322,7 +61327,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1438,
+      "messaggi": 1439,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
