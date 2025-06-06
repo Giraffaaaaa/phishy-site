@@ -63,7 +63,7 @@
       "lega_lista": []
     },
     "393280627125@s.whatsapp.net": {
-      "messaggi": 128,
+      "messaggi": 129,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -98,7 +98,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 6,
+      "exp": 7,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -114,7 +114,9 @@
       "lastSpamTime": 1748707831688,
       "lastWarnTime": 0,
       "warnReasons": [],
-      "lastSlotReset": 1749153488641
+      "lastSlotReset": 1749153488641,
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393292346237@s.whatsapp.net": {
       "messaggi": 583,
@@ -176,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 96698,
+      "messaggi": 96701,
       "muto": false,
       "expired": 0,
       "blasphemy": 35,
@@ -211,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 90877,
+      "exp": 90893,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -652,7 +654,7 @@
       "money": null
     },
     "120363329245024816@g.us": {
-      "messaggi": 554,
+      "messaggi": 555,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -687,7 +689,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 3072,
+      "exp": 3075,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -697,7 +699,9 @@
       "slotLimit": 5,
       "stickerCount": 0,
       "antiBan": 0,
-      "message": 0
+      "message": 0,
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393713776464@s.whatsapp.net": {
       "firstJoin": 1748179492683,
@@ -939,7 +943,7 @@
       "warnReasons": []
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 4501,
+      "messaggi": 4503,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -976,7 +980,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 20207,
+      "exp": 20213,
       "limit": 727,
       "money": null,
       "msg": {},
@@ -55027,7 +55031,7 @@
       "money": null
     },
     "393899922953@s.whatsapp.net": {
-      "messaggi": 2,
+      "messaggi": 3,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -55067,14 +55071,16 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 1,
+      "exp": 5,
       "limit": 20,
       "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
       "flamePass": 0,
-      "flamePassScadenza": ""
+      "flamePassScadenza": "",
+      "firstJoin": 1749176867275,
+      "rejoins": 0
     },
     "393500425190@s.whatsapp.net": {
       "messaggi": 6,
@@ -55180,7 +55186,7 @@
       "money": null
     },
     "393773094553@s.whatsapp.net": {
-      "messaggi": 4,
+      "messaggi": 6,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -55220,7 +55226,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 11,
+      "exp": 14,
       "limit": 20,
       "money": null,
       "firstJoin": 1749126571153,
@@ -55230,9 +55236,11 @@
       "cavallo": false,
       "photoVideoCount": 0,
       "textCount": 0,
-      "lastSpamTime": 1749126594347,
+      "lastSpamTime": 1749177134251,
       "lastWarnTime": 0,
-      "warnReasons": []
+      "warnReasons": [],
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393701328716@s.whatsapp.net": {
       "messaggi": 38,
@@ -58115,7 +58123,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 87967,
+      "messaggi": 87972,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58204,7 +58212,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1367,
+      "messaggi": 1368,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58361,7 +58369,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2299,
+      "messaggi": 2301,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -58400,7 +58408,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2626,
+      "messaggi": 2628,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
