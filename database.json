@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98259,
+      "messaggi": 98260,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112427,
+      "exp": 112430,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -947,7 +947,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 5048,
+      "messaggi": 5051,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -984,7 +984,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 38905,
+      "exp": 38971,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -1027,8 +1027,8 @@
       "antiBan": 4,
       "message": 0,
       "photoVideoCount": 0,
-      "textCount": 0,
-      "lastSpamTime": 1749258631673,
+      "textCount": 2,
+      "lastSpamTime": 1749258705029,
       "lastWarnTime": 1749216870332,
       "warnReasons": [
         {
@@ -62601,7 +62601,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 808,
+      "messaggi": 812,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -64552,10 +64552,10 @@
       "lastSuccess": 1749249728416
     },
     "stato- info.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1749258658714,
-      "lastSuccess": 1749258658714
+      "total": 4,
+      "success": 4,
+      "last": 1749258699779,
+      "lastSuccess": 1749258699779
     }
   },
   "msgs": {},
