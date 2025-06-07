@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98285,
+      "messaggi": 98286,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112911,
+      "exp": 112964,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -1956,7 +1956,7 @@
       "money": null
     },
     "393207746766@s.whatsapp.net": {
-      "messaggi": 1133,
+      "messaggi": 1134,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -1992,9 +1992,9 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 24829,
+      "exp": 24884,
       "limit": 16,
-      "money": null,
+      "money": 0,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -61456,7 +61456,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 92556,
+      "messaggi": 92558,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -63692,10 +63692,10 @@
       "lastSuccess": 1749250700728
     },
     "risposta-buongiorno.js": {
-      "total": 1053,
-      "success": 1053,
-      "last": 1749259884219,
-      "lastSuccess": 1749259884219
+      "total": 1055,
+      "success": 1055,
+      "last": 1749263782801,
+      "lastSuccess": 1749263782801
     },
     "rpg-levelup.js": {
       "total": 55,
