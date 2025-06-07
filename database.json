@@ -17754,7 +17754,7 @@
       "cavallo": false
     },
     "393921838493@s.whatsapp.net": {
-      "messaggi": 15,
+      "messaggi": 16,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -17791,7 +17791,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 65,
+      "exp": 74,
       "limit": 20,
       "money": null,
       "firstJoin": 1748309303166,
@@ -17806,7 +17806,9 @@
       "textCount": 0,
       "lastSpamTime": 1748707797028,
       "lastWarnTime": 0,
-      "warnReasons": []
+      "warnReasons": [],
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393802803469@s.whatsapp.net": {
       "messaggi": 4,
@@ -36214,7 +36216,7 @@
       "cavallo": false
     },
     "393294148293@s.whatsapp.net": {
-      "messaggi": 14,
+      "messaggi": 15,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -36254,14 +36256,21 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 87,
+      "exp": 93,
       "limit": 20,
       "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
       "firstJoin": 1748758327765,
-      "rejoins": 1
+      "rejoins": 1,
+      "flamePass": 0,
+      "flamePassScadenza": "",
+      "photoVideoCount": 0,
+      "textCount": 0,
+      "lastSpamTime": 1749267519313,
+      "lastWarnTime": 0,
+      "warnReasons": []
     },
     "393515169062@s.whatsapp.net": {
       "messaggi": 2,
@@ -61545,7 +61554,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1441,
+      "messaggi": 1442,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -61741,7 +61750,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2690,
+      "messaggi": 2691,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
