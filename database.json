@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98283,
+      "messaggi": 98285,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112905,
+      "exp": 112911,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -947,7 +947,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 5073,
+      "messaggi": 5075,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -984,7 +984,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 39797,
+      "exp": 39862,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -1028,7 +1028,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1749261305999,
+      "lastSpamTime": 1749261342406,
       "lastWarnTime": 1749216870332,
       "warnReasons": [
         {
@@ -51544,7 +51544,7 @@
       "oldWarnReasons": []
     },
     "393801783790@s.whatsapp.net": {
-      "messaggi": 17,
+      "messaggi": 18,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -51584,14 +51584,16 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 145,
+      "exp": 153,
       "limit": 20,
       "money": null,
       "firstJoin": 1749042953618,
       "rejoins": 0,
       "msg": {},
       "premiumDate": -1,
-      "cavallo": false
+      "cavallo": false,
+      "flamePass": 0,
+      "flamePassScadenza": ""
     },
     "393773580561@s.whatsapp.net": {
       "messaggi": 3,
@@ -61451,7 +61453,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 92548,
+      "messaggi": 92550,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -62708,7 +62710,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 865,
+      "messaggi": 868,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -64401,10 +64403,10 @@
       "lastSuccess": 1748574557070
     },
     "node.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1749261318658,
-      "lastSuccess": 1749261318658
+      "total": 13,
+      "success": 13,
+      "last": 1749261345530,
+      "lastSuccess": 1749261345530
     },
     "tagall.js": {
       "total": 2,
