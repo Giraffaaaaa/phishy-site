@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98277,
+      "messaggi": 98283,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112877,
+      "exp": 112905,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -947,7 +947,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 5066,
+      "messaggi": 5073,
       "muto": false,
       "expired": 0,
       "blasphemy": 21,
@@ -984,7 +984,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 39606,
+      "exp": 39797,
       "limit": 0,
       "money": null,
       "msg": {},
@@ -1028,7 +1028,7 @@
       "message": 0,
       "photoVideoCount": 0,
       "textCount": 1,
-      "lastSpamTime": 1749260574666,
+      "lastSpamTime": 1749261305999,
       "lastWarnTime": 1749216870332,
       "warnReasons": [
         {
@@ -60597,7 +60597,7 @@
       "cavallo": false
     },
     "393294453000@s.whatsapp.net": {
-      "messaggi": 2,
+      "messaggi": 5,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -60639,7 +60639,7 @@
       "message": 0,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "exp": 3,
+      "exp": 21,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -62708,7 +62708,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 852,
+      "messaggi": 865,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -63580,7 +63580,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 259,
+      "messaggi": 262,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -64401,10 +64401,10 @@
       "lastSuccess": 1748574557070
     },
     "node.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1749260576754,
-      "lastSuccess": 1749260576754
+      "total": 12,
+      "success": 12,
+      "last": 1749261318658,
+      "lastSuccess": 1749261318658
     },
     "tagall.js": {
       "total": 2,
