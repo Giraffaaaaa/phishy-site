@@ -178,7 +178,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 98286,
+      "messaggi": 98289,
       "muto": false,
       "expired": 0,
       "blasphemy": 46,
@@ -213,7 +213,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 112964,
+      "exp": 113076,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -8368,7 +8368,7 @@
       "money": null
     },
     "393757103706@s.whatsapp.net": {
-      "messaggi": 790,
+      "messaggi": 800,
       "muto": false,
       "expired": 0,
       "blasphemy": 76,
@@ -8404,7 +8404,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 11989,
+      "exp": 12050,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -29121,10 +29121,10 @@
       "message": 0
     },
     "393517469912@s.whatsapp.net": {
-      "messaggi": 634,
+      "messaggi": 643,
       "muto": false,
       "expired": 0,
-      "blasphemy": 13,
+      "blasphemy": 14,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -29158,7 +29158,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 12813,
+      "exp": 12997,
       "limit": 20,
       "money": null,
       "firstJoin": 1748514835592,
@@ -61512,7 +61512,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 92584,
+      "messaggi": 92606,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -63688,10 +63688,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 5527,
-      "success": 5527,
-      "last": 1749260577014,
-      "lastSuccess": 1749260577014
+      "total": 5530,
+      "success": 5530,
+      "last": 1749273184681,
+      "lastSuccess": 1749273184681
     },
     "risposta-amo.js": {
       "total": 1215,
@@ -63748,10 +63748,10 @@
       "lastSuccess": 1749250700728
     },
     "risposta-buongiorno.js": {
-      "total": 1055,
-      "success": 1055,
-      "last": 1749263782801,
-      "lastSuccess": 1749263782801
+      "total": 1057,
+      "success": 1057,
+      "last": 1749273162866,
+      "lastSuccess": 1749273162866
     },
     "rpg-levelup.js": {
       "total": 55,
