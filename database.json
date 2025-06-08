@@ -179,7 +179,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 100144,
+      "messaggi": 100151,
       "muto": false,
       "expired": 0,
       "blasphemy": 52,
@@ -214,7 +214,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 142276,
+      "exp": 142461,
       "limit": 50,
       "money": null,
       "msg": {},
@@ -4138,7 +4138,7 @@
       "cavallo": false
     },
     "393479166733@s.whatsapp.net": {
-      "messaggi": 553,
+      "messaggi": 560,
       "muto": false,
       "expired": 0,
       "blasphemy": 7,
@@ -4174,7 +4174,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 6918,
+      "exp": 6998,
       "limit": 20,
       "money": null,
       "msg": {},
@@ -7034,7 +7034,7 @@
       "money": null
     },
     "393295546716@s.whatsapp.net": {
-      "messaggi": 773,
+      "messaggi": 777,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -7070,7 +7070,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 11600,
+      "exp": 11676,
       "limit": 20,
       "money": null,
       "slotLimit": 5,
@@ -7087,7 +7087,8 @@
       "warnReasons": [],
       "oldWarnReasons": [],
       "flamePass": 0,
-      "flamePassScadenza": ""
+      "flamePassScadenza": "",
+      "lastadventure": 0
     },
     "6281248793265@s.whatsapp.net": {
       "firstJoin": 1748196697320,
@@ -18958,7 +18959,7 @@
       "flamePassScadenza": ""
     },
     "393517041773@s.whatsapp.net": {
-      "messaggi": 190,
+      "messaggi": 224,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -18995,7 +18996,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 2511,
+      "exp": 2911,
       "limit": 20,
       "money": null,
       "firstJoin": 1748346949533,
@@ -36191,7 +36192,7 @@
       "cavallo": false
     },
     "393294029206@s.whatsapp.net": {
-      "messaggi": 126,
+      "messaggi": 142,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -36231,7 +36232,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 1638,
+      "exp": 1795,
       "limit": 20,
       "money": null,
       "firstJoin": 1748647709322,
@@ -65494,7 +65495,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 101905,
+      "messaggi": 101972,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -65779,7 +65780,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2732,
+      "messaggi": 2733,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -67744,10 +67745,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 6237,
-      "success": 6237,
-      "last": 1749347980622,
-      "lastSuccess": 1749347980622
+      "total": 6239,
+      "success": 6239,
+      "last": 1749361252924,
+      "lastSuccess": 1749361252924
     },
     "risposta-amo.js": {
       "total": 1335,
@@ -67756,9 +67757,9 @@
       "lastSuccess": 1749344633135
     },
     "tools-rivela.js": {
-      "total": 3706,
+      "total": 3708,
       "success": 681,
-      "last": 1749347483600,
+      "last": 1749361339605,
       "lastSuccess": 1749347483600
     },
     "risposta-napoli.js": {
@@ -67804,10 +67805,10 @@
       "lastSuccess": 1749311091236
     },
     "risposta-buongiorno.js": {
-      "total": 1202,
-      "success": 1202,
-      "last": 1749359453918,
-      "lastSuccess": 1749359453918
+      "total": 1204,
+      "success": 1204,
+      "last": 1749360622256,
+      "lastSuccess": 1749360622256
     },
     "rpg-levelup.js": {
       "total": 58,
@@ -67870,10 +67871,10 @@
       "lastSuccess": 1749311080432
     },
     "bacio.js": {
-      "total": 107,
-      "success": 107,
-      "last": 1749335631537,
-      "lastSuccess": 1749335631537
+      "total": 111,
+      "success": 111,
+      "last": 1749361389039,
+      "lastSuccess": 1749361389039
     },
     "daily.js": {
       "total": 31,
