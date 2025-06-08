@@ -179,7 +179,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 100129,
+      "messaggi": 100133,
       "muto": false,
       "expired": 0,
       "blasphemy": 52,
@@ -214,9 +214,9 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 142014,
+      "exp": 142081,
       "limit": 50,
-      "money": 0,
+      "money": null,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -966,7 +966,7 @@
       "flamePassScadenza": ""
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 5637,
+      "messaggi": 5640,
       "muto": false,
       "expired": 0,
       "blasphemy": 24,
@@ -1003,9 +1003,9 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 59948,
+      "exp": 60125,
       "limit": 35517,
-      "money": null,
+      "money": 0,
       "msg": {},
       "premiumDate": -1,
       "cavallo": 0,
@@ -3647,7 +3647,7 @@
       "rejoins": 0
     },
     "393501819848@s.whatsapp.net": {
-      "messaggi": 922,
+      "messaggi": 924,
       "muto": false,
       "expired": 0,
       "blasphemy": 29,
@@ -3694,7 +3694,7 @@
       "ultimoLavoro": {
         "disoccupato": 1748455901581
       },
-      "exp": 12841,
+      "exp": 12846,
       "money": null,
       "msg": {},
       "premiumDate": -1,
@@ -12394,7 +12394,7 @@
       "money": null
     },
     "639093971531@s.whatsapp.net": {
-      "messaggi": 547,
+      "messaggi": 549,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -12430,7 +12430,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 8300,
+      "exp": 8311,
       "limit": 20,
       "money": null,
       "slotLimit": 5,
@@ -65487,7 +65487,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 101845,
+      "messaggi": 101847,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -65811,7 +65811,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 78830,
+      "messaggi": 78837,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -67616,7 +67616,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 1960,
+      "messaggi": 1962,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -68727,10 +68727,10 @@
       "lastSuccess": 1749213307384
     },
     "download-pinterest.js": {
-      "total": 13,
-      "success": 11,
-      "last": 1749223605312,
-      "lastSuccess": 1749223605312
+      "total": 14,
+      "success": 12,
+      "last": 1749346513907,
+      "lastSuccess": 1749346513907
     },
     "info-anime.js": {
       "total": 4,
@@ -68869,6 +68869,12 @@
       "success": 5,
       "last": 1749342480312,
       "lastSuccess": 1749342480312
+    },
+    "bottoni.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1749347230928,
+      "lastSuccess": 1749347230928
     }
   },
   "msgs": {},
