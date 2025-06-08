@@ -68889,6 +68889,14 @@
       "antiCall": true,
       "antiPrivate": false,
       "jadibot": true
+    },
+    "251716235988:68@s.whatsapp.net": {
+      "self": true,
+      "autoread": false,
+      "restrict": false,
+      "antiCall": true,
+      "antiPrivate": false,
+      "jadibot": true
     }
   },
   "banLog": {
