@@ -45434,7 +45434,7 @@
       "limit": 20,
       "money": 20,
       "firstJoin": 1748896042370,
-      "rejoins": 3,
+      "rejoins": 4,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -72824,7 +72824,7 @@
       "exp": 185,
       "money": 20,
       "firstJoin": 1749500678057,
-      "rejoins": 1,
+      "rejoins": 2,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false
@@ -73222,7 +73222,13 @@
       "flamePassScadenza": "",
       "lastadventure": 0,
       "exp": null,
-      "money": null
+      "money": null,
+      "firstJoin": 1749502237755,
+      "rejoins": 0
+    },
+    "393717589689@s.whatsapp.net": {
+      "firstJoin": 1749502233300,
+      "rejoins": 1
     }
   },
   "chats": {
