@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 103992,
+      "messaggi": 103994,
       "muto": false,
       "expired": 0,
       "blasphemy": 61,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 52750,
+      "exp": 52769,
       "limit": 11,
       "money": 11,
       "msg": {},
@@ -3546,7 +3546,7 @@
       "flamePassScadenza": ""
     },
     "212783761244@s.whatsapp.net": {
-      "messaggi": 267,
+      "messaggi": 268,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -3582,7 +3582,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 4920,
+      "exp": 4924,
       "limit": 16,
       "money": 16,
       "msg": {},
@@ -56013,7 +56013,7 @@
       "money": null
     },
     "393899922953@s.whatsapp.net": {
-      "messaggi": 23,
+      "messaggi": 24,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -56053,7 +56053,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 353,
+      "exp": 355,
       "limit": 20,
       "money": 20,
       "msg": {},
@@ -78149,7 +78149,7 @@
       "cavallo": false
     },
     "393517303450@s.whatsapp.net": {
-      "messaggi": 1,
+      "messaggi": 2,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -78192,10 +78192,13 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": null,
-      "money": null,
+      "exp": 7,
+      "money": 20,
       "firstJoin": 1749603069226,
-      "rejoins": 0
+      "rejoins": 0,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
     },
     "224613658614@s.whatsapp.net": {
       "messaggi": 1,
@@ -78278,7 +78281,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 120263,
+      "messaggi": 120267,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -78447,7 +78450,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 4203,
+      "messaggi": 4204,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
