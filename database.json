@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 103999,
+      "messaggi": 104000,
       "muto": false,
       "expired": 0,
       "blasphemy": 61,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 52843,
+      "exp": 52844,
       "limit": 11,
       "money": 11,
       "msg": {},
@@ -980,7 +980,7 @@
       "slotlimit": 5
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 6651,
+      "messaggi": 6654,
       "muto": false,
       "expired": 0,
       "blasphemy": 32,
@@ -1016,7 +1016,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 198018,
+      "exp": 198082,
       "limit": 8313,
       "money": 5698,
       "msg": {},
@@ -7133,7 +7133,7 @@
       "money": null
     },
     "393295546716@s.whatsapp.net": {
-      "messaggi": 948,
+      "messaggi": 950,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -7169,7 +7169,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 14461,
+      "exp": 14524,
       "limit": 20,
       "money": 20,
       "slotLimit": 5,
@@ -48358,7 +48358,7 @@
       "cavallo": false
     },
     "393481383635@s.whatsapp.net": {
-      "messaggi": 1329,
+      "messaggi": 1331,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -48398,7 +48398,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 23118,
+      "exp": 23183,
       "limit": 38,
       "money": 58,
       "firstJoin": 1748962418935,
@@ -78515,7 +78515,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 120286,
+      "messaggi": 120292,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -78762,7 +78762,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 4749,
+      "messaggi": 4751,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -81175,10 +81175,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 7515,
-      "success": 7515,
-      "last": 1749604835696,
-      "lastSuccess": 1749604835696
+      "total": 7517,
+      "success": 7517,
+      "last": 1749618568861,
+      "lastSuccess": 1749618568861
     },
     "risposta-amo.js": {
       "total": 1554,
@@ -81187,9 +81187,9 @@
       "lastSuccess": 1749594277049
     },
     "tools-rivela.js": {
-      "total": 4431,
+      "total": 4432,
       "success": 811,
-      "last": 1749617004562,
+      "last": 1749618580647,
       "lastSuccess": 1749595820544
     },
     "risposta-napoli.js": {
