@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 106751,
+      "messaggi": 106753,
       "muto": false,
       "expired": 0,
       "blasphemy": 67,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 92144,
+      "exp": 92162,
       "limit": 11,
       "money": 11,
       "msg": {},
@@ -9053,7 +9053,7 @@
       "money": null
     },
     "393791910485@s.whatsapp.net": {
-      "messaggi": 1603,
+      "messaggi": 1605,
       "muto": false,
       "expired": 0,
       "blasphemy": 13,
@@ -9089,7 +9089,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 22402,
+      "exp": 22407,
       "limit": 20,
       "money": 20,
       "msg": {},
@@ -43714,7 +43714,7 @@
       "money": null
     },
     "393500910410@s.whatsapp.net": {
-      "messaggi": 264,
+      "messaggi": 267,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -43754,7 +43754,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 4636,
+      "exp": 4751,
       "limit": 20,
       "money": 20,
       "firstJoin": 1748841799591,
@@ -77903,7 +77903,7 @@
       "cavallo": false
     },
     "393509082683@s.whatsapp.net": {
-      "messaggi": 366,
+      "messaggi": 367,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -77946,7 +77946,7 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 4926,
+      "exp": 4935,
       "money": 20,
       "firstJoin": 1749589845195,
       "rejoins": 0,
@@ -85781,6 +85781,56 @@
       "lastadventure": 0,
       "exp": null,
       "money": null
+    },
+    "275574211801096@lid": {
+      "messaggi": 3,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "Walaa",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "*💀 RANDOM SU VIRIDI V* 🪤",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotlimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "flamePass": 0,
+      "flamePassScadenza": "",
+      "lastadventure": 0,
+      "exp": 19,
+      "money": 20,
+      "msg": {},
+      "premiumDate": -1,
+      "cavallo": false
     }
   },
   "chats": {
@@ -85816,7 +85866,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 134782,
+      "messaggi": 134790,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -85906,7 +85956,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 2194,
+      "messaggi": 2197,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -88591,10 +88641,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 8510,
-      "success": 8510,
-      "last": 1749777356409,
-      "lastSuccess": 1749777356409
+      "total": 8511,
+      "success": 8511,
+      "last": 1749781876030,
+      "lastSuccess": 1749781876030
     },
     "risposta-amo.js": {
       "total": 1693,
@@ -88651,10 +88701,10 @@
       "lastSuccess": 1749716018853
     },
     "risposta-buongiorno.js": {
-      "total": 1834,
-      "success": 1834,
-      "last": 1749765745987,
-      "lastSuccess": 1749765745987
+      "total": 1835,
+      "success": 1835,
+      "last": 1749781863666,
+      "lastSuccess": 1749781863666
     },
     "rpg-levelup.js": {
       "total": 74,
