@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 106766,
+      "messaggi": 106770,
       "muto": false,
       "expired": 0,
       "blasphemy": 67,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 92727,
+      "exp": 92892,
       "limit": 11,
       "money": 11,
       "msg": {},
@@ -2206,7 +2206,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 6397,
+      "messaggi": 6398,
       "muto": false,
       "expired": 0,
       "blasphemy": 162,
@@ -2245,7 +2245,7 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 98378,
+      "exp": 98386,
       "limit": 77,
       "money": 20,
       "msg": {},
@@ -3899,7 +3899,7 @@
       "slotlimit": 5
     },
     "393316626199@s.whatsapp.net": {
-      "messaggi": 548,
+      "messaggi": 549,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
@@ -3935,7 +3935,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 7503,
+      "exp": 7561,
       "limit": 13,
       "money": 13,
       "msg": {},
@@ -6138,7 +6138,7 @@
       "money": null
     },
     "393331728466@s.whatsapp.net": {
-      "messaggi": 6731,
+      "messaggi": 6738,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -6176,7 +6176,7 @@
       ],
       "lega_io": false,
       "lavoro": "maffioso",
-      "exp": 120264,
+      "exp": 120401,
       "limit": 577,
       "money": 160,
       "msg": {},
@@ -11394,7 +11394,7 @@
       "cavallo": false
     },
     "393336812777@s.whatsapp.net": {
-      "messaggi": 1054,
+      "messaggi": 1065,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -11430,7 +11430,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 15518,
+      "exp": 15642,
       "limit": 22,
       "money": 22,
       "msg": {},
@@ -43714,7 +43714,7 @@
       "money": null
     },
     "393500910410@s.whatsapp.net": {
-      "messaggi": 267,
+      "messaggi": 275,
       "muto": false,
       "expired": 0,
       "blasphemy": 2,
@@ -43754,7 +43754,7 @@
       "stickerCount": 0,
       "antiBan": 0,
       "message": 0,
-      "exp": 4751,
+      "exp": 4945,
       "limit": 20,
       "money": 20,
       "firstJoin": 1748841799591,
@@ -85912,7 +85912,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 134858,
+      "messaggi": 134890,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -88687,10 +88687,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 8514,
-      "success": 8514,
-      "last": 1749793699839,
-      "lastSuccess": 1749793699839
+      "total": 8516,
+      "success": 8516,
+      "last": 1749794842237,
+      "lastSuccess": 1749794842237
     },
     "risposta-amo.js": {
       "total": 1693,
@@ -88747,10 +88747,10 @@
       "lastSuccess": 1749716018853
     },
     "risposta-buongiorno.js": {
-      "total": 1855,
-      "success": 1855,
-      "last": 1749793623141,
-      "lastSuccess": 1749793623141
+      "total": 1861,
+      "success": 1861,
+      "last": 1749795412451,
+      "lastSuccess": 1749795412451
     },
     "rpg-levelup.js": {
       "total": 74,
@@ -88765,10 +88765,10 @@
       "lastSuccess": 1749772058495
     },
     "menzione-insulti-random.js": {
-      "total": 1646,
-      "success": 1646,
-      "last": 1749793180536,
-      "lastSuccess": 1749793180536
+      "total": 1647,
+      "success": 1647,
+      "last": 1749794462868,
+      "lastSuccess": 1749794462868
     },
     "rpg-buy|compra|shop.js": {
       "total": 159,
@@ -88921,10 +88921,10 @@
       "lastSuccess": 1749768509299
     },
     "risposta-come.js": {
-      "total": 871,
-      "success": 871,
-      "last": 1749765039294,
-      "lastSuccess": 1749765039294
+      "total": 872,
+      "success": 872,
+      "last": 1749794987437,
+      "lastSuccess": 1749794987437
     },
     "fun-sega.js": {
       "total": 23,
