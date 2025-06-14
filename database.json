@@ -63,10 +63,10 @@
       "lega_lista": []
     },
     "393280627125@s.whatsapp.net": {
-      "messaggi": 165,
+      "messaggi": 166,
       "muto": false,
       "expired": 0,
-      "blasphemy": 2,
+      "blasphemy": 3,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -98,7 +98,7 @@
       "drago": false,
       "lega_vittime": "",
       "lega_io": false,
-      "exp": 416,
+      "exp": 417,
       "limit": 22,
       "money": 22,
       "msg": {},
@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 108282,
+      "messaggi": 108286,
       "muto": false,
       "expired": 0,
       "blasphemy": 68,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 114681,
+      "exp": 114703,
       "limit": 11,
       "money": 11,
       "msg": {},
@@ -766,10 +766,10 @@
       "rejoins": 0
     },
     "393206045496@s.whatsapp.net": {
-      "messaggi": 3634,
+      "messaggi": 3639,
       "muto": false,
       "expired": 0,
-      "blasphemy": 179,
+      "blasphemy": 181,
       "premium": false,
       "premiumTime": 0,
       "tprem": 0,
@@ -801,7 +801,7 @@
       "drago": 2,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 119706,
+      "exp": 119837,
       "limit": 472,
       "money": 0,
       "msg": {},
@@ -89593,7 +89593,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 142623,
+      "messaggi": 142633,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -92368,10 +92368,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 8973,
-      "success": 8973,
-      "last": 1749870653772,
-      "lastSuccess": 1749870653772
+      "total": 8974,
+      "success": 8974,
+      "last": 1749871630741,
+      "lastSuccess": 1749871630741
     },
     "risposta-amo.js": {
       "total": 1758,
@@ -92854,10 +92854,10 @@
       "lastSuccess": 1749500163322
     },
     "top-bestemmie.js": {
-      "total": 42,
-      "success": 42,
-      "last": 1749822187730,
-      "lastSuccess": 1749822187730
+      "total": 43,
+      "success": 43,
+      "last": 1749871643472,
+      "lastSuccess": 1749871643472
     },
     "fun-stupra.js": {
       "total": 27,
