@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 109838,
+      "messaggi": 109839,
       "muto": false,
       "expired": 0,
       "blasphemy": 69,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 134597,
+      "exp": 134602,
       "limit": 1011,
       "money": 11,
       "msg": {},
@@ -24832,7 +24832,7 @@
       "rejoins": 0
     },
     "120363389895263828@g.us": {
-      "messaggi": 111,
+      "messaggi": 112,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -24869,7 +24869,7 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 616,
+      "exp": 620,
       "limit": 20,
       "money": 20,
       "msg": {},
@@ -83800,7 +83800,7 @@
       "money": null
     },
     "393913019807@s.whatsapp.net": {
-      "messaggi": 368,
+      "messaggi": 369,
       "muto": false,
       "expired": 0,
       "blasphemy": 3,
@@ -83843,13 +83843,14 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 6288,
+      "exp": 6347,
       "money": 20,
       "firstJoin": 1749739837915,
       "rejoins": 1,
       "msg": {},
       "premiumDate": -1,
-      "cavallo": false
+      "cavallo": false,
+      "descrizione": "nessuna descrizione"
     },
     "393514866158@s.whatsapp.net": {
       "messaggi": 6,
@@ -94357,7 +94358,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 148974,
+      "messaggi": 148976,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -94838,7 +94839,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 462,
+      "messaggi": 463,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -97291,10 +97292,10 @@
       "lastSuccess": 1749923527865
     },
     "info-msg.js": {
-      "total": 153,
-      "success": 153,
-      "last": 1749944171652,
-      "lastSuccess": 1749944171652
+      "total": 154,
+      "success": 154,
+      "last": 1749962104240,
+      "lastSuccess": 1749962104240
     },
     "bacio.js": {
       "total": 179,
