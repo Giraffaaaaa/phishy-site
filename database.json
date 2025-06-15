@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 110863,
+      "messaggi": 110867,
       "muto": false,
       "expired": 0,
       "blasphemy": 70,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 147040,
+      "exp": 147048,
       "limit": 1011,
       "money": 0,
       "msg": {},
@@ -2216,7 +2216,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 8007,
+      "messaggi": 8011,
       "muto": false,
       "expired": 0,
       "blasphemy": 190,
@@ -2255,7 +2255,7 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 4295,
+      "exp": 4310,
       "limit": null,
       "money": 11,
       "msg": {},
@@ -6226,7 +6226,7 @@
       "money": null
     },
     "393331728466@s.whatsapp.net": {
-      "messaggi": 7507,
+      "messaggi": 7513,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -6241,10 +6241,10 @@
       "partner": "393207991819@s.whatsapp.net",
       "healt": 100,
       "health": 16,
-      "role": "*🔥 ZOZZAPER III* 🕷️",
+      "role": "*🔥 ZOZZAPER II* 🕷️",
       "joincount": 5,
       "level": 47,
-      "vita": 2,
+      "vita": 4,
       "spamMessaggi": 0,
       "credito": 4493,
       "pozione_minore": 8,
@@ -6264,7 +6264,7 @@
       ],
       "lega_io": false,
       "lavoro": "maffioso",
-      "exp": 206187,
+      "exp": 206313,
       "limit": 799,
       "money": 229,
       "msg": {},
@@ -6300,7 +6300,7 @@
       },
       "birthday": "13/11/2007",
       "lega_lista": [],
-      "uova": 4,
+      "uova": 3,
       "missioni": {
         "attive": [],
         "completate": [],
@@ -26203,7 +26203,7 @@
       "oldWarnReasons": []
     },
     "393285521111@s.whatsapp.net": {
-      "messaggi": 40,
+      "messaggi": 41,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -26240,11 +26240,11 @@
       "lega_io": false,
       "lavoro": "disoccupato",
       "slotLimit": 5,
-      "exp": 367,
+      "exp": 422,
       "limit": 20,
       "money": 20,
       "firstJoin": 1748445699138,
-      "rejoins": 9,
+      "rejoins": 10,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -95398,7 +95398,7 @@
       "money": null
     },
     "393662097369@s.whatsapp.net": {
-      "messaggi": 7,
+      "messaggi": 10,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -95441,10 +95441,10 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 142,
+      "exp": 163,
       "money": 20,
       "firstJoin": 1749996658709,
-      "rejoins": 0,
+      "rejoins": 2,
       "msg": {},
       "premiumDate": -1,
       "descrizione": "nessuna descrizione",
@@ -95642,7 +95642,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 151785,
+      "messaggi": 151798,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -95771,7 +95771,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 4423,
+      "messaggi": 4424,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -95928,7 +95928,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 4307,
+      "messaggi": 4311,
       "antispam": true,
       "antivoip": true,
       "eliminati": 0,
@@ -98612,10 +98612,10 @@
       "lastSuccess": 1749997104582
     },
     "ruota.js": {
-      "total": 51,
-      "success": 51,
-      "last": 1749980516749,
-      "lastSuccess": 1749980516749
+      "total": 52,
+      "success": 52,
+      "last": 1749997474821,
+      "lastSuccess": 1749997474821
     },
     "rpg-scassa.js": {
       "total": 7,
@@ -98726,10 +98726,10 @@
       "lastSuccess": 1749991160921
     },
     "rispsota-roma.js": {
-      "total": 270,
-      "success": 270,
-      "last": 1749970371769,
-      "lastSuccess": 1749970371769
+      "total": 271,
+      "success": 271,
+      "last": 1749997469824,
+      "lastSuccess": 1749997469824
     },
     "info-owner.js": {
       "total": 4,
@@ -98738,10 +98738,10 @@
       "lastSuccess": 1749172018934
     },
     "gp-topmessaggi.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1749988895156,
-      "lastSuccess": 1749988895156
+      "total": 22,
+      "success": 22,
+      "last": 1749997514582,
+      "lastSuccess": 1749997514582
     },
     "rpg-famiglia.js": {
       "total": 161,
