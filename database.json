@@ -180,7 +180,7 @@
       "lega_lista": []
     },
     "251716235988@s.whatsapp.net": {
-      "messaggi": 110259,
+      "messaggi": 110269,
       "muto": false,
       "expired": 0,
       "blasphemy": 70,
@@ -215,7 +215,7 @@
       "drago": false,
       "lega_vittime": [],
       "lega_io": true,
-      "exp": 140341,
+      "exp": 140468,
       "limit": 1011,
       "money": 11,
       "msg": {},
@@ -986,7 +986,7 @@
       "descrizione": "nessuna descrizione"
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 7311,
+      "messaggi": 7313,
       "muto": false,
       "expired": 0,
       "blasphemy": 34,
@@ -1022,7 +1022,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 380831,
+      "exp": 380886,
       "limit": 7313,
       "money": 7403,
       "msg": {},
@@ -2216,7 +2216,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 7771,
+      "messaggi": 7779,
       "muto": false,
       "expired": 0,
       "blasphemy": 188,
@@ -2230,7 +2230,7 @@
       "sposato": true,
       "partner": "393791910485@s.whatsapp.net",
       "healt": 100,
-      "health": 39,
+      "health": 35,
       "role": "*💀 RANDOM SU VIRIDI V* 🪤",
       "joincount": 0,
       "level": 0,
@@ -2255,9 +2255,9 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 122800,
+      "exp": 122946,
       "limit": 77,
-      "money": 6,
+      "money": 0,
       "msg": {},
       "premiumDate": -1,
       "cavallo": false,
@@ -2299,7 +2299,7 @@
       "lastSlotReset": 1749306323869,
       "flamePass": 0,
       "flamePassScadenza": "",
-      "uova": 9,
+      "uova": 10,
       "scoiattolo": null,
       "lastadventure": 0,
       "slotlimit": 5,
@@ -86074,7 +86074,7 @@
       "money": null
     },
     "584124960335@s.whatsapp.net": {
-      "messaggi": 2,
+      "messaggi": 4,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -86117,11 +86117,12 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 7,
+      "exp": 26,
       "money": 20,
       "msg": {},
       "premiumDate": -1,
-      "cavallo": false
+      "cavallo": false,
+      "descrizione": "nessuna descrizione"
     },
     "275574211801096@lid": {
       "messaggi": 3,
@@ -90495,7 +90496,7 @@
       "flamePassScadenza": ""
     },
     "393515881365@s.whatsapp.net": {
-      "messaggi": 166,
+      "messaggi": 174,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
@@ -90538,8 +90539,8 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 2691,
-      "money": 23,
+      "exp": 2929,
+      "money": 27,
       "firstJoin": 1749899922578,
       "rejoins": 0,
       "msg": {},
@@ -95146,6 +95147,53 @@
       "premiumDate": -1,
       "descrizione": "nessuna descrizione",
       "cavallo": false
+    },
+    "393662336140@s.whatsapp.net": {
+      "messaggi": 1,
+      "muto": false,
+      "expired": 0,
+      "blasphemy": 0,
+      "premium": false,
+      "premiumTime": 0,
+      "tprem": 0,
+      "warn": 0,
+      "warn_blasphemy": 0,
+      "bacini": 0,
+      "name": "+39 366 233 6140",
+      "sposato": false,
+      "partner": "",
+      "healt": 100,
+      "health": 100,
+      "role": "Novizio",
+      "joincount": 0,
+      "level": 0,
+      "vita": 0,
+      "spamMessaggi": 0,
+      "credito": 0,
+      "pozione_minore": 0,
+      "pozione_maggiore": 0,
+      "pozione_definitiva": 0,
+      "macchina": false,
+      "moto": false,
+      "bici": false,
+      "canna": 0,
+      "forcina": 0,
+      "cane": false,
+      "gatto": false,
+      "coniglio": false,
+      "drago": false,
+      "lega_vittime": "",
+      "lega_io": false,
+      "lavoro": "disoccupato",
+      "slotlimit": 5,
+      "stickerCount": 0,
+      "antiBan": 0,
+      "message": 0,
+      "flamePass": 0,
+      "flamePassScadenza": "",
+      "lastadventure": 0,
+      "exp": null,
+      "money": null
     }
   },
   "chats": {
@@ -95181,7 +95229,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 150468,
+      "messaggi": 150497,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -95350,7 +95398,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 5039,
+      "messaggi": 5041,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -97995,10 +98043,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 9402,
-      "success": 9402,
-      "last": 1749989343962,
-      "lastSuccess": 1749989343962
+      "total": 9404,
+      "success": 9404,
+      "last": 1749989485391,
+      "lastSuccess": 1749989485391
     },
     "risposta-amo.js": {
       "total": 1829,
@@ -98019,10 +98067,10 @@
       "lastSuccess": 1749959202375
     },
     "rpg-ruba.js": {
-      "total": 129,
-      "success": 125,
-      "last": 1749989357439,
-      "lastSuccess": 1749989357439
+      "total": 131,
+      "success": 127,
+      "last": 1749989449323,
+      "lastSuccess": 1749989449323
     },
     "rpg-work.js": {
       "total": 208,
@@ -98169,10 +98217,10 @@
       "lastSuccess": 1749980219551
     },
     "gp-muta.js": {
-      "total": 129,
-      "success": 123,
-      "last": 1749971597787,
-      "lastSuccess": 1749971597787
+      "total": 130,
+      "success": 124,
+      "last": 1749989504705,
+      "lastSuccess": 1749989504705
     },
     "menzione-scusa.js": {
       "total": 850,
@@ -98199,10 +98247,10 @@
       "lastSuccess": 1749989086955
     },
     "menzione-zitta.js": {
-      "total": 627,
-      "success": 627,
-      "last": 1749987108574,
-      "lastSuccess": 1749987108574
+      "total": 630,
+      "success": 630,
+      "last": 1749989492639,
+      "lastSuccess": 1749989492639
     },
     "fun-scuola.js": {
       "total": 22,
@@ -98769,10 +98817,10 @@
       "lastSuccess": 1748574557070
     },
     "node.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1749467257217,
-      "lastSuccess": 1749467257217
+      "total": 15,
+      "success": 15,
+      "last": 1749989485129,
+      "lastSuccess": 1749989485129
     },
     "tagall.js": {
       "total": 4,
