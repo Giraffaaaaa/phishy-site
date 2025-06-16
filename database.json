@@ -987,7 +987,7 @@
       "descrizione": "nessuna descrizione"
     },
     "393534409026@s.whatsapp.net": {
-      "messaggi": 7586,
+      "messaggi": 7587,
       "muto": false,
       "expired": 0,
       "blasphemy": 36,
@@ -1023,7 +1023,7 @@
         "393511401595@s.whatsapp.net"
       ],
       "lega_io": true,
-      "exp": 481146,
+      "exp": 481148,
       "limit": 6813,
       "money": 6941,
       "msg": {},
@@ -2224,7 +2224,7 @@
       "money": null
     },
     "393887920155@s.whatsapp.net": {
-      "messaggi": 8456,
+      "messaggi": 8460,
       "muto": false,
       "expired": 0,
       "blasphemy": 200,
@@ -2263,7 +2263,7 @@
       ],
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 1867,
+      "exp": 1887,
       "limit": null,
       "money": 17,
       "msg": {},
@@ -4654,7 +4654,7 @@
       "cavallo": false
     },
     "393891011548@s.whatsapp.net": {
-      "messaggi": 995,
+      "messaggi": 999,
       "muto": false,
       "expired": 0,
       "blasphemy": 5,
@@ -4690,7 +4690,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 13990,
+      "exp": 14007,
       "limit": 20,
       "money": 13,
       "msg": {},
@@ -8466,7 +8466,7 @@
       "cavallo": false
     },
     "393333335654@s.whatsapp.net": {
-      "messaggi": 2173,
+      "messaggi": 2175,
       "muto": false,
       "expired": 0,
       "blasphemy": 0,
@@ -8502,7 +8502,7 @@
       "lega_vittime": "",
       "lega_io": false,
       "lavoro": "disoccupato",
-      "exp": 37326,
+      "exp": 37340,
       "limit": 153,
       "money": 20,
       "msg": {},
@@ -69539,7 +69539,7 @@
       "slotlimit": 5
     },
     "393455857257@s.whatsapp.net": {
-      "messaggi": 161,
+      "messaggi": 168,
       "muto": false,
       "expired": 0,
       "blasphemy": 1,
@@ -69582,7 +69582,7 @@
       "flamePass": 0,
       "flamePassScadenza": "",
       "lastadventure": 0,
-      "exp": 2568,
+      "exp": 2664,
       "limit": 20,
       "money": 20,
       "firstJoin": 1749402118594,
@@ -98597,7 +98597,7 @@
       "modoadmin": false,
       "talk": true,
       "antiPorno": true,
-      "messaggi": 154514,
+      "messaggi": 154532,
       "antispam": false,
       "antivoip": true,
       "eliminati": 0,
@@ -101487,10 +101487,10 @@
   },
   "stats": {
     "menzione-si-no.js": {
-      "total": 9567,
-      "success": 9567,
-      "last": 1750043345118,
-      "lastSuccess": 1750043345118
+      "total": 9568,
+      "success": 9568,
+      "last": 1750044397688,
+      "lastSuccess": 1750044397688
     },
     "risposta-amo.js": {
       "total": 1858,
